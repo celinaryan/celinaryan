@@ -14,31 +14,34 @@ class About extends Component {
     const newTextElements = Array.from(
       document.querySelectorAll(".story-text")
     );
-    const scrollY = window.scrollY;
+    const windowHeight = window.innerHeight;
 
-    newTextElements.forEach((el, i, arr) => {
-      const rect = el.parentNode.getBoundingClientRect();
-      const vpWidth = Math.max(
-        document.documentElement.clientWidth || 0,
-        window.innerWidth || 0
-      );
+    newTextElements.forEach((el) => {
+      const rect = el.getBoundingClientRect();
+      const rectCenter =
+        rect.top +
+        rect.height /
+          2; /* center Y-coordinate of the element in the viewport */
 
-      // Check if the story item is in viewport
-      if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
-        let newOpacity, newSize;
-        if (vpWidth <= 600) {
-          // for small screen devices
-          newOpacity = Math.min(Math.max((rect.bottom - 100) / 150, 0), 1);
-          newSize = 1 + Math.min(Math.max((rect.bottom - 100) / 2000, 0), 0.5);
-        } else {
-          // for larger screens
-          newOpacity = Math.min(Math.max((rect.bottom - 200) / 300, 0), 1);
-          newSize = 1 + Math.min(Math.max((rect.bottom - 200) / 1000, 0), 0.5);
-        }
+      let newOpacity = 0;
+      let newSize = 1.5; /* font size for smaller screens */
 
-        el.style.opacity = newOpacity;
-        el.style.fontSize = `${newSize}em`;
+      // larger screens
+      if (window.innerWidth > 961) {
+        newOpacity = Math.max(
+          Math.min((2 * (windowHeight - rectCenter)) / windowHeight, 1),
+          0
+        );
+        newSize = 3 * newOpacity; /* so the size will range from 0 to 3 */
       }
+      // smaller screens
+      else {
+        newOpacity = Math.max(Math.min((2 * rectCenter) / windowHeight, 1), 0);
+        newSize += newOpacity / 2; /* so the size will range from 1.5 to 3 */
+      }
+
+      el.style.opacity = newOpacity;
+      el.style.fontSize = `${newSize}em`;
     });
   };
 
