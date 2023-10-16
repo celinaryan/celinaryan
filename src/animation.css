@@ -1,0 +1,15 @@
+@keyframes fadeIn {
+  0% {
+    opacity: 0.5;
+    color: rgba(0, 0, 0, 1); /* opaque black */
+  }
+  100% {
+    opacity: 1;
+    color: rgba(255, 255, 255, 1); /* opaque white */
+  }
+}
+
+.fade-in {
+  animation-name: fadeIn;
+  animation-duration: 2s;
+}

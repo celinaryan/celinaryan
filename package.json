@@ -1,0 +1,28 @@
+{
+  "name": "personal-website-draft-1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "start": "parcel index.html --open",
+    "build": "parcel build index.html"
+  },
+  "dependencies": {
+    "fre": "2.1.0-alpha3",
+    "parcel-bundler": "^1.6.1",
+    "preact": "10.5.13",
+    "preact-router": "3.2.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-scrollmagic": "2.3.0",
+    "ubrow": "2.0.6",
+    "use-routes": "0.2.2"
+  },
+  "devDependencies": {
+    "@babel/core": "7.2.0"
+  },
+  "resolutions": {
+    "@babel/preset-env": "7.13.8"
+  },
+  "keywords": []
+}

@@ -1,0 +1,56 @@
+[
+  {
+    "projectName": "Distributed Systems Final Project",
+    "institutionName": "University of Notre Dame",
+    "projectLocation": "Notre Dame, Indiana",
+    "projectDates": "March 2023 – May 2023",
+    "projectTitle": "SpoonNet: An Interactive Multiplayer Card Game",
+    "projectDescription": [
+      "Recreated the Spoons Card game with asynchronous client-server communication. Invoked remote procedure call using a custom client and server within Python.",
+      "Worked with an event-driven server to ensure consistency and low latency of communication while using threading."
+    ]
+  },
+  {
+    "projectName": "Data Science Final Project",
+    "institutionName": "University of Notre Dame",
+    "projectLocation": "Notre Dame, Indiana",
+    "projectDates": "September 2022 – December 2022",
+    "projectTitle": "Predicting the Number of Starbucks Based on Geo-Economic Data",
+    "projectDescription": [
+      "Explored the relationship between geo-economic data and the number of Starbucks stores in a given zip code by training linear and non-linear models within Python. The data used had 13608 rows and 13 columns.",
+      "Analyzed data using Naive-Bayes Classifier, and different forms of regression: Lasso, Support Vector, and K-Nearest Neighbors."
+    ]
+  },
+  {
+    "projectName": "High School Senior Project",
+    "institutionName": "The Potomac School",
+    "projectLocation": "McLean, Virginia",
+    "projectDates": "September 2022 – December 2022",
+    "projectTitle": "Learning Swift and Creating an App Interface",
+    "projectDescription": [
+      "Produced an interactive app interface after learning Swift. The app helps students take more organized notes in class by sorting photos from homework and classwork."
+    ]
+  },
+  {
+    "projectName": "Data Structures Project",
+    "institutionName": "University of Notre Dame",
+    "projectLocation": "Notre Dame, Indiana",
+    "projectDates": "March 2022 – May 2022",
+    "projectTitle": "Predictive Recommendations based on Grocery Data",
+    "projectDescription": [
+      "Used mock grocery store loyalty card data to predict grocery coupons for customers based on their previous purchases.",
+      "Added user input feature and was able to categorize the new data to give more recommended coupons to the user."
+    ]
+  },
+  {
+    "projectName": "Intro to Entrepreneurship Final Project",
+    "institutionName": "University of Notre Dame",
+    "projectLocation": "Notre Dame, Indiana",
+    "projectDates": "September 2021 – December 2021",
+    "projectTitle": "Level Measuring Set",
+    "projectDescription": [
+      "Prototyped and developed a business plan with my group for our idea: a measuring cup set for those with upper limb reductions.",
+      "The final product was a sleek, stainless-steel measuring cup set that can be used easily with one hand, as the current products on the market look as if they belong in a hospital, not in a kitchen."
+    ]
+  }
+]

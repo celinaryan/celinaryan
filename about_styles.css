@@ -1,0 +1,37 @@
+/* about.css */
+body {
+  font-family: "Trebuchet MS", sans-serif;
+  color: white;
+  line-height: 1.6;
+}
+
+.about {
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 0 1em;
+}
+
+.quick-look-section {
+  text-align: center;
+  padding: 2em 0;
+}
+
+.quicklook-title {
+  font-size: 1.2em;
+  color: #158, 202, 236;
+  margin-bottom: 0.5em;
+}
+
+.about-header {
+  font-size: 1.5em;
+  color: rgb(158, 202, 236);
+  margin: 1em 0;
+}
+
+.about-me-section,
+.about-site-section,
+.about-career-section {
+  padding: 1em 0;
+  line-height: 1.7em;
+  font-size: 1em;
+}

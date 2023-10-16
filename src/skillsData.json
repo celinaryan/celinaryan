@@ -1,0 +1,49 @@
+[
+  {
+    "skillCategory": "Coding Languages",
+    "skillsList": [
+      "Python",
+      "C",
+      "C++",
+      "Java",
+      "MATLAB",
+      "SQL",
+      "JavaScript, Preact, and React",
+      "Swift",
+      "Objective-C",
+      "HTML and CSS"
+    ]
+  },
+  {
+    "skillCategory": "Assembly Languages",
+    "skillsList": ["Verilog", "albacore", "ARM"]
+  },
+  {
+    "skillCategory": "Industry Specific Software",
+    "skillsList": [
+      "UiPath (Robotic Process Automation)",
+      "AWS",
+      "Tableau",
+      "PowerBI",
+      "XCode"
+    ]
+  },
+  {
+    "skillCategory": "Industry Understanding",
+    "skillsList": [
+      "Natural Language Processing",
+      "Data Science",
+      "Artificial Intelligence",
+      "Machine Learning",
+      "Data Lakes",
+      "Computer Vision",
+      "3D Modeling",
+      "graphics",
+      "iOS Development",
+      "Distributed Systems",
+      "Networks",
+      "Web Development",
+      "Compilers"
+    ]
+  }
+]

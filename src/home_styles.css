@@ -1,0 +1,84 @@
+* {
+  font-family: "Trebuchet MS", sans-serif;
+}
+.p {
+  letter-spacing: 0.2rem;
+}
+.story-container {
+  margin: 0;
+}
+.story-item {
+  position: relative;
+  margin: 0;
+  width: 100%; /* or set a maximum width if required*/
+}
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+.story-text {
+  font-size: 3em; /* adjust this to your desired initial size */
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  font-weight: 450;
+  transform: translateY(-50%) scale(0.8);
+  transition: transform 0.5s ease-in-out;
+}
+.story-text.show {
+  transform: translateY(0) scale(1);
+}
+.story-text p {
+  color: white;
+  text-shadow: -1px 0 #8bb8dd, 0 1px #8bb8dd, 1px 0 #8bb8dd, 0 -1px #8bb8dd;
+  font-weight: 10;
+}
+/* Optional: Add this to make your images responsive and fit the div */
+.story-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.story-item {
+  position: relative;
+}
+
+.story-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white; /* color depending on your image */
+  opacity: 0; /* It's important to set initial opacity to 0 */
+  transition: opacity 0.3s ease-in-out, font-size 0.5s ease-in-out;
+}
+
+@media only screen and (max-width: 600px) {
+  .story-text {
+    /* Increase the height property */
+    height: 300%; /* Adjust as per need */
+    width: 120%;
+    top: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%) scale(0.7);
+    transition: opacity 0.1s ease-in-out, font-size 0.1s ease-in-out,
+      transform 0.1s ease-in-out;
+
+    /* Use flex to vertically center child elements and set direction */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 60em; /* adjust font size to a more readable level */
+    font-size: min(max(0.8em, 30vw), 400em); /* adjust min and max values too */
+  }
+}
+
+@media only screen and (min-width: 961px) {
+  .story-text {
+    font-size: 3em;
+  }
+}

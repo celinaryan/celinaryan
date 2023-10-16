@@ -1,0 +1,41 @@
+[
+  {
+    "companyName": "Apple",
+    "jobTitle": "Software Development Intern on Field Design Engineering Team",
+    "jobDates": "May 2023 – August 2023",
+    "jobLocation": "Austin, Texas",
+    "jobDescription": [
+      "Developed new features within Apple’s internal apps with Xcode using Swift, SwiftUI, and Objective-C on the FDE Tools, Automation, and Robotics Team.",
+      "Added feature connected another internal Apple app to our team’s internal app. This streamlined the processes already in place which thus enhances the system validation process for devices tested by the FDE team.",
+      "Developed and integrated internal iOS frameworks for reusability of the code. The new feature is used by Apple engineers across worldwide locations for their validation efforts."
+    ]
+  },
+  {
+    "companyName": "University of Notre Dame",
+    "jobTitle": "Teaching Assistant for Fundamentals of Computing",
+    "jobDates": "August 2022 – Present",
+    "jobLocation": "Notre Dame, Indiana",
+    "jobDescription": [
+      "Oversaw labs and assisted office hours for a required class for Notre Dame CS majors; students learn C and Linux."
+    ]
+  },
+  {
+    "companyName": "CACI International",
+    "jobTitle": "Data Science Intern on Digital Transformations Team",
+    "jobDates": "May 2022 – August 2022",
+    "jobLocation": "Arlington, Virginia",
+    "jobDescription": [
+      "Developed solutions within CACI’s new Data Lake in AWS. Used my ML and NLP knowledge within Python to develop a comprehensive solution for the Business Development Team.",
+      "Enhanced data-read in with Computer Vision using Python libraries."
+    ]
+  },
+  {
+    "companyName": "CACI International",
+    "jobTitle": "Data Science Intern on HR Team",
+    "jobDates": "May 2021 – August 2021",
+    "jobLocation": "Arlington, Virginia",
+    "jobDescription": [
+      "Developed a large-scale web scraping program within UiPath. Orchestrated web scraping initially with Python."
+    ]
+  }
+]

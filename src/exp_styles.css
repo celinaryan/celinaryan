@@ -1,0 +1,149 @@
+body {
+  font-family: "Trebuchet MS", sans-serif;
+  color: white;
+  line-height: 1.6;
+}
+.navbar {
+  top: 0;
+  width: 100%;
+  background-color: rgb(158, 202, 236);
+  z-index: 10;
+}
+.navbar a {
+  margin: 0 15px;
+}
+
+.resume-section,
+.skills-section {
+  margin: 20px 0;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.skills-section {
+  margin: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #3e7fbf;
+  border: 2px solid rgb(158, 202, 236);
+  border-radius: 15px;
+}
+.experience-section,
+.projects-section,
+.skills-section,
+.extracurricular-section {
+  margin-bottom: 20px; /* Adding some space between sections */
+  padding: 14px;
+  border: 2px solid rgb(158, 202, 236);
+  border-radius: 15px;
+  box-sizing: border-box;
+  background-color: #3e7fbf;
+}
+
+.job-experience,
+.project,
+.skill,
+.activity {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgb(158, 202, 236);
+  border: 1px solid white;
+  margin-top: 10px;
+}
+.job-experience:hover,
+.project:hover,
+.skill:hover,
+.activity:hover {
+  transform: scale(1.03); /* Enlarge the box to 103% of its original size */
+  transition: transform 0.3s ease-in-out; /* Animation effect */
+}
+.job-title,
+.project-title,
+.skill-category,
+.activity-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  color: white;
+  letter-spacing: 5px;
+}
+
+.job-title h3,
+.project-title h3,
+.activity-title h3 {
+  margin: 0;
+  color: white;
+  letter-spacing: 5px;
+}
+
+.company-title,
+.project-name,
+.activity-name {
+  font-size: 1.4em;
+  color: white;
+  letter-spacing: 1px;
+}
+
+.title-date-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.date-location-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.company-title,
+.project-name,
+.activity-name {
+  margin-right: 10px;
+}
+.company-title,
+.project-name,
+.activity-date {
+  margin-right: 10px;
+}
+
+.institution-name {
+  font-size: 1.2em;
+  color: #3e7fbf;
+}
+
+.job-location,
+.project-location,
+.activity-location {
+  font-size: 1em;
+  color: white;
+}
+
+.job-date,
+.project-date,
+.activity-date {
+  font-size: 1.2em;
+  color: white;
+}
+
+.job-description,
+.project-description,
+.activity-description {
+  margin-left: 20px;
+  color: white;
+  line-height: 1.2;
+}
+
+.job-description li,
+.skill-list li,
+.project-description li,
+.activity-description li {
+  margin-bottom: 10px;
+  color: white;
+}
+
+/* make sure text doesn't overflow on small devices */
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 0.8em;
+  }
+}

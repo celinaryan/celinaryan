@@ -1,0 +1,28 @@
+* {
+  font-family: "Trebuchet MS", sans-serif;
+}
+.frame {
+  margin-right: 10px;
+}
+.button-style {
+  padding: 7px 12px;
+  font-size: 14px;
+  text-align: center;
+  cursor: pointer;
+  outline-color: white;
+  color: white;
+  background-color: #3e7fbf; /* blue */
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0 1px #80a0c0; /* Light blue */
+}
+
+.button-style:hover {
+  background-color: #8bb8dd; /* Slightly lighter blue when hovered */
+}
+
+.button-style:active {
+  background-color: #3e7fbf;
+  box-shadow: 1px 2px #8bb8dd;
+  transform: translateY(4px);
+}

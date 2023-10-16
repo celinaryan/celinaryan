@@ -1,0 +1,22 @@
+[
+  {
+    "projectName": "Design Automation Conference",
+    "institutionName": "University of Notre Dame",
+    "projectLocation": "San Francisco, California",
+    "projectDates": "July 2022",
+    "projectTitle": "Young Fellow at DAC '22",
+    "projectDescription": [
+      "Granted scholarship from Notre Dame and the Design Automation Conference Young Fellows board to travel to San Francisco, CA to participate in the 59th annual conference. (ML, AI, Computer Vision, and SW/HW Codesign)."
+    ]
+  },
+  {
+    "projectName": "CS4Good",
+    "institutionName": "University of Notre Dame",
+    "projectLocation": "Notre Dame, Indiana",
+    "projectDates": "January 2022 - December 2023",
+    "projectTitle": "Team Member",
+    "projectDescription": [
+      "Created activities and informational guides to help members of an elderly home in South Bend become more proficient in technology and software."
+    ]
+  }
+]

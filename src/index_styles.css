@@ -1,0 +1,54 @@
+/*
+  trying to make the image within a frame but also centered
+  it's not centering which is annoying me
+*/
+
+@import url("https://fonts.cdnfonts.com/css/helvetica-neue-5");
+
+.centered-frame {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.frame-image {
+  border: 7px solid rgb(255, 255, 255);
+  width: 150px;
+}
+
+.frame-image img {
+  display: block;
+  width: 100%;
+  height: auto; /* Maintain aspect ratio of the image */
+}
+
+@import url("https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: "Trebuchet MS", sans-serif;
+}
+body {
+  font-family: "Trebuchet MS", sans-serif;
+
+  display: grid;
+  place-items: center;
+  background-color: rgb(107, 164, 207);
+  width: 100%;
+}
+
+/* https://codepen.io/MarkBoots/pen/XWVMWZw changed color scheme but liked this card format*/
+
+.home {
+  text-align: center;
+  background-color: rgb(107, 164, 207);
+  margin: 0%;
+}
+.contact {
+  text-align: center;
+}
