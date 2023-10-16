@@ -57,6 +57,7 @@ html {
 
 @media only screen and (max-width: 600px) {
   .story-text {
+    z-index: 1;
     /* Increase the height property */
     height: 300%; /* Adjust as per need */
     width: 120%;
@@ -80,5 +81,6 @@ html {
 @media only screen and (min-width: 961px) {
   .story-text {
     font-size: 3em;
+    opacity: 1;
   }
 }
