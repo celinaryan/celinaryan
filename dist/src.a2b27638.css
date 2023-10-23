@@ -1,0 +1,587 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Trebuchet MS", sans-serif;
+}
+
+.logo img {
+  width: 80px;
+}
+.logo {
+  display: flex; /* Make the logo and nav links display in a row */
+  align-items: normal; /* Vertically center logo with nav links */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex; /* Display the nav links in a row */
+  margin-left: auto;
+}
+
+/* Remove unnecessary align-items and align-items styles */
+.nav-links a {
+  display: inline-block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: white;
+}
+
+.nav-links li:hover {
+  background-color: white;
+}
+
+.nav-links li:hover a {
+  color: rgb(107, 164, 207);
+}
+
+/* Initially hide the mobile navigation menu */
+.mobile-nav-links {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: rgb(158, 202, 236);
+  position: relative;
+  z-index: 9999;
+}
+
+.toggle-button .bar {
+  width: 30px;
+  height: 3px;
+  margin: 5px 0;
+  background-color: white;
+}
+.toggle-button {
+  display: none; /* Hide by default on larger screens */
+  cursor: pointer;
+}
+.navbar-container {
+  margin: 0;
+  background-color: rgb(158, 202, 236);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.logo {
+  display: flex; /* Make the logo and nav links display in a row */
+  align-items: normal; /* Vertically center logo with nav links */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex; /* Display the nav links in a row */
+  align-items: center; /* Vertically center nav links with logo */
+}
+
+.nav-item {
+  align-items: right; /* Vertically align navigation items with logo */
+}
+
+/* Remove unnecessary align-items and align-items styles */
+.nav-item a {
+  display: inline-block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: white;
+}
+
+.nav-item:hover {
+  background-color: white;
+}
+
+.nav-item:hover a {
+  color: rgb(107, 164, 207);
+}
+
+/* Initially hide the mobile navigation menu */
+.mobile-nav-links {
+  display: none;
+  list-style: none;
+  padding: 0;
+}
+
+.logo img {
+  width: 80px;
+  padding-left: 5px;
+}
+/* trying to animate this guy*/
+.bar {
+  width: 30px;
+  height: 3px;
+  margin: 5px 0;
+  background-color: white;
+  display: block;
+  transition: all 0.3 ease;
+}
+/* Rotate the first bar */
+.toggle-button.change .bar:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px);
+  transition: transform 0.3s ease-out;
+}
+
+/* Fade out the second bar */
+.toggle-button.change .bar:nth-child(2) {
+  opacity: 0;
+}
+
+/* Rotate the third bar */
+.toggle-button.change .bar:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
+  transition: transform 0.3s ease-out;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px;
+  background-color: rgb(158, 202, 236);
+  position: relative;
+  z-index: 9999;
+}
+
+/* hide navigation menu on small screens */
+.nav-links {
+  display: flex;
+}
+
+.toggle-button {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 21px;
+}
+
+/* Add media query to show/hide elements based on screen width */
+@media (max-width: 768px) {
+  .toggle-button {
+    display: inline-block;
+    right: 0;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  /* Display the mobile navigation menu when the hamburger icon is clicked */
+  .nav-links.active {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(158, 202, 236);
+    position: absolute;
+    right: 0;
+    top: 60px; /* Adjust this value as needed */
+    width: 100%;
+    justify-content: left;
+    align-items: center;
+  }
+
+  /* Style the mobile navigation links */
+  .nav-links.active li {
+    text-align: center;
+    align-items: stretch;
+    flex-direction: column;
+    display: flex;
+  }
+}
+
+* {
+  font-family: "Trebuchet MS", sans-serif;
+}
+.p {
+  letter-spacing: 0.2rem;
+}
+.story-container {
+  margin: 0;
+}
+.story-item {
+  position: relative;
+  margin: 0;
+  width: 100%; /* or set a maximum width if required*/
+}
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+.story-text {
+  font-size: 3em; /* adjust this to your desired initial size */
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  font-weight: 450;
+  transform: translateY(-50%) scale(0.8);
+  transition: transform 0.5s ease-in-out;
+}
+.story-text.show {
+  transform: translateY(0) scale(1);
+}
+.story-text p {
+  color: white;
+  text-shadow: -1px 0 #8bb8dd, 0 1px #8bb8dd, 1px 0 #8bb8dd, 0 -1px #8bb8dd;
+  font-weight: 10;
+}
+/* Optional: Add this to make your images responsive and fit the div */
+.story-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.story-item {
+  position: relative;
+}
+
+.story-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white; /* color depending on your image */
+  opacity: 0; /* It's important to set initial opacity to 0 */
+  transition: opacity 0.3s ease-in-out, font-size 0.5s ease-in-out;
+}
+
+@media only screen and (max-width: 600px) {
+  .story-text {
+    z-index: 1;
+    /* Increase the height property */
+    height: 300%; /* Adjust as per need */
+    width: 120%;
+    top: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%) scale(0.7);
+    transition: opacity 0.1s ease-in-out, font-size 0.1s ease-in-out,
+      transform 0.1s ease-in-out;
+
+    /* Use flex to vertically center child elements and set direction */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 60em; /* adjust font size to a more readable level */
+    font-size: min(max(0.8em, 30vw), 400em); /* adjust min and max values too */
+  }
+}
+
+@media only screen and (min-width: 961px) {
+  .story-text {
+    font-size: 3em;
+    opacity: 1;
+  }
+}
+
+/* about.css */
+body {
+  font-family: "Trebuchet MS", sans-serif;
+  color: white;
+  line-height: 1.6;
+  background-color: white;
+}
+.about,
+.contact {
+  background-color: rgb(158, 202, 236);
+}
+.about-section {
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 0 1em;
+}
+
+.centered-frame {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
+}
+
+.frame-image {
+  border: 7px solid rgb(255, 255, 255);
+  width: 150px;
+  margin: auto;
+  margin-top: 15px;
+}
+
+.frame-image img {
+  display: flex;
+  width: 100%;
+  height: auto; /* Maintain aspect ratio of the image */
+}
+
+.quick-look-section {
+  text-align: left;
+  padding: 2em 0;
+  display: flex;
+  align-items: center;
+}
+
+.figure {
+  margin-left: auto;
+}
+.quicklook-title {
+  font-size: 1.2em;
+  color: white;
+  margin-bottom: 0.5em;
+}
+
+.about-header {
+  font-size: 1.5em;
+  color: white;
+  margin: 1em 0;
+  text-decoration: underline;
+}
+
+.about-me-section,
+.about-site-section,
+.about-career-section {
+  padding: 1em 0;
+  line-height: 1.7em;
+  font-size: 1em;
+}
+
+.centered-frame {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: column; /* Stacks children vertically by default */
+}
+
+.frame-image {
+  border: 7px solid rgb(255, 255, 255);
+  width: 150px;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.frame-image img {
+  display: block; /* Change from flex to block to display image correctly */
+  width: 100%;
+  height: auto; /* Maintain aspect ratio of the image */
+}
+
+.quick-look-section {
+  text-align: left;
+  padding: 2em 0;
+  display: flex;
+  flex-direction: column; /* Stacks children vertically by default */
+  align-items: center; /* Centers children horizontally */
+}
+
+/* Media query for tablet to desktop sized screens */
+@media (min-width: 768px) {
+  .quick-look-section {
+    flex-direction: row; /* Set children to be side by side */
+    align-items: flex-start; /* Aligns top of children with top of container */
+  }
+
+  .centered-frame {
+    flex-direction: row; /* Set children to be side by side */
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0.5;
+    color: rgba(0, 0, 0, 1); /* opaque black */
+  }
+  100% {
+    opacity: 1;
+    color: rgba(255, 255, 255, 1); /* opaque white */
+  }
+}
+
+.fade-in {
+  animation-name: fadeIn;
+  animation-duration: 2s;
+}
+
+body {
+  font-family: "Trebuchet MS", sans-serif;
+  color: white;
+  line-height: 1.6;
+}
+.navbar {
+  top: 0;
+  width: 100%;
+  background-color: rgb(158, 202, 236);
+  z-index: 10;
+}
+.navbar a {
+  margin: 0 15px;
+}
+
+.resume-section,
+.skills-section {
+  margin: 20px 0;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.skills-section {
+  margin: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #3e7fbf;
+  border: 2px solid rgb(158, 202, 236);
+  border-radius: 15px;
+}
+.experience-section,
+.projects-section,
+.skills-section,
+.extracurricular-section {
+  margin-bottom: 20px; /* Adding some space between sections */
+  padding: 14px;
+  border: 2px solid rgb(158, 202, 236);
+  border-radius: 15px;
+  box-sizing: border-box;
+  background-color: #3e7fbf;
+}
+
+.job-experience,
+.project,
+.skill,
+.activity {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgb(158, 202, 236);
+  border: 1px solid white;
+  margin-top: 10px;
+}
+.job-experience:hover,
+.project:hover,
+.skill:hover,
+.activity:hover {
+  transform: scale(1.03); /* Enlarge the box to 103% of its original size */
+  transition: transform 0.3s ease-in-out; /* Animation effect */
+}
+.job-title,
+.project-title,
+.skill-category,
+.activity-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  color: white;
+  letter-spacing: 5px;
+}
+
+.job-title h3,
+.project-title h3,
+.activity-title h3 {
+  margin: 0;
+  color: white;
+  letter-spacing: 5px;
+}
+
+.company-title,
+.project-name,
+.activity-name {
+  font-size: 1.4em;
+  color: white;
+  letter-spacing: 1px;
+}
+
+.title-date-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.date-location-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.company-title,
+.project-name,
+.activity-name {
+  margin-right: 10px;
+}
+.company-title,
+.project-name,
+.activity-date {
+  margin-right: 10px;
+}
+
+.institution-name {
+  font-size: 1.2em;
+  color: #3e7fbf;
+}
+
+.job-location,
+.project-location,
+.activity-location {
+  font-size: 1em;
+  color: white;
+}
+
+.job-date,
+.project-date,
+.activity-date {
+  font-size: 1.2em;
+  color: white;
+}
+
+.job-description,
+.project-description,
+.activity-description {
+  margin-left: 20px;
+  color: white;
+  line-height: 1.2;
+}
+
+.job-description li,
+.skill-list li,
+.project-description li,
+.activity-description li {
+  margin-bottom: 10px;
+  color: white;
+}
+
+/* make sure text doesn't overflow on small devices */
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 0.8em;
+  }
+}
+
+* {
+  font-family: "Trebuchet MS", sans-serif;
+}
+.frame {
+  margin-right: 10px;
+}
+.button-style {
+  padding: 7px 12px;
+  font-size: 14px;
+  text-align: center;
+  cursor: pointer;
+  outline-color: white;
+  color: white;
+  background-color: #3e7fbf; /* blue */
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0 1px #80a0c0; /* Light blue */
+}
+
+.button-style:hover {
+  background-color: #8bb8dd; /* Slightly lighter blue when hovered */
+}
+
+.button-style:active {
+  background-color: #3e7fbf;
+  box-shadow: 1px 2px #8bb8dd;
+  transform: translateY(4px);
+}
+
+
+/*# sourceMappingURL=/src.a2b27638.css.map */
