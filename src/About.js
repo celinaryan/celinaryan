@@ -113,7 +113,23 @@ class About extends Component {
             </p>
             <br />
             <p>
-              All of the photos on this website are taken by me—either taken on
+             This website was made with a JavaScript library called Preact. This 
+             semester (Fall 2023) I'm taking Modern Web Development, and I took advantage of new 
+             content from this class and some extra office hours with my teacher to make the website 
+             you see now. This past summer, I found that I really like iOS Development, and this past semester 
+             I found that I really like Web Development, too. For this website I used Preact as opposed to 
+             React because I liked how Preact is a bit closer to HTML-style code which I'm more familiar with. After working at 
+            Apple this past summer, I found myself excited to learn more about their
+            web development process. One of my roommates this summer was working on one of the apple.com teams and I was always curious about it. 
+            If you look at the <a href="https://www.apple.com/airpods-pro/">Apple AirPods Pro Page</a>
+            you'll see what excited me the most about Apple -- not only do they make 
+            great technology products, they utilize their mastery in technology (in this case, 
+            their mastery of web development) to showcase their products. The scrolling images along with the expanding text
+            on this website is inspired by what I've been intrigued by on the Apple website.
+            </p>
+            <br />
+            <p>
+              Fun side note-- all of the photos on this website are taken by me—either taken on
               my phone or taken on a little digital camera that I bring around
               everywhere. I wanted this website to be easy to navigate, to have
               aesthetically pleasing scrolling animations, and to be an accurate
