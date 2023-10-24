@@ -80,10 +80,10 @@ footer .navbar-container .frame {
   }
   .nav-container, footer .navbar-container, .exp .navbar {
     padding: 40px;
-    height: 30vh;
+    height: 50vh;
   }
   .nav-links a {
-    font-size: 40px;
+    font-size: 70px;
   }
 
   .nav-links {
