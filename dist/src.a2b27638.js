@@ -1046,14 +1046,14 @@ var Home = /*#__PURE__*/function (_Component) {
         alt: "hawaii"
       }), (0, _preact.h)("h2", {
         class: "story-text"
-      }, (0, _preact.h)("p", null, "I'm currently a senior and graduating in May 2024. Following graduation, I hope to have a job because I like to eat and sleep with a roof over my head. So yeah, I'm looking for a job. Oh, what'd you say? What type of job am I looking for? Funny that you mention it actually..."))), (0, _preact.h)("div", {
+      }, (0, _preact.h)("p", null, "I'm currently a senior and graduating in May 2024. Following graduation, I hope to have a job by September 2024. I'm looking for a full-time software development and/or engineering position. I'm not too picky where the job is..."))), (0, _preact.h)("div", {
         class: "story-item"
       }, (0, _preact.h)("img", {
         src: _geis.default,
         alt: "Geissenheim"
       }), (0, _preact.h)("h2", {
         class: "story-text"
-      }, (0, _preact.h)("p", null, "I'm looking for a full-time software development and/or engineering position. I hope to start my job by September 2024, and I'm not too picky where it is. I hope to end up either in the Washington D.C. area, Austin, Texas, California, New York City, or in Denver, Colorado. So that's my spiel. You're welcome to look around this site and learn more about me. If you'd like to chat about a potential position, please feel free to reach out."))), (0, _preact.h)("div", {
+      }, (0, _preact.h)("p", null, "I hope to end up either in the Washington D.C. area, Austin, Texas, California, New York City, or in Denver, Colorado. So that's my spiel. You're welcome to look around this site and learn more about me. If you'd like to chat about a potential position, please feel free to reach out."))), (0, _preact.h)("div", {
         class: "story-item"
       }, (0, _preact.h)("img", {
         src: _amalfi_boat.default,
@@ -1954,7 +1954,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49741" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50541" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];

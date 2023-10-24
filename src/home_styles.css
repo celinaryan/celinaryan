@@ -59,7 +59,7 @@ html {
   .story-text {
     z-index: 1;
     /* Increase the height property */
-    height: 300%; /* Adjust as per need */
+    height: 170%; /* Adjust as per need */
     width: 120%;
     top: 50%;
     position: absolute;
