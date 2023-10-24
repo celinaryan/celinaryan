@@ -77,12 +77,15 @@ footer .navbar-container .frame {
     display: inline-block;
     right: 0;
   }
-  /*
+
   .nav-container, footer .navbar-container, .exp .navbar {
-    padding: 90px;
-  }*/
+    padding: 20px;
+  }
   .nav-links a {
-    font-size: 14px;
+    font-size: 20px;
+  }
+  .logo img{
+    width: 100px;
   }
 
   .nav-links {

@@ -30,8 +30,8 @@
 @media (max-width: 768px) {
 
   .button-style {
-    padding: 10px 15px;
-    font-size: 18px;
+    padding: 10px;
+    font-size: .8em;
     text-align: center;
     cursor: pointer;
     outline-color: white;
