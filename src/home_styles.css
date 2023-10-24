@@ -72,7 +72,7 @@ html {
     justify-content: center;
     align-items: center;
 
-    font-size: 2em; /* adjust font size to a more readable level */
+    font-size: 3em; /* adjust font size to a more readable level */
   }
 }
 
@@ -85,7 +85,7 @@ html {
     width: 80%; /* Adjust as per need */
     position: absolute;
     transform: translate(-50%, -50%); /* To center the text */
-
+    transition: transform 0.2s ease-in-out, font-size 0.2s ease-in-out;
     /* Use flex to vertically center child elements and set direction */
     display: flex;
     flex-direction: column;
@@ -93,6 +93,7 @@ html {
     align-items: center;
     font-size: 3em; /* adjust font size to a more readable level */
   }
+  
 }
 
 @media only screen and (max-width: 600px) {
