@@ -155,7 +155,9 @@ html {
 .story-item {
   position: relative;
 }
-
+.skills{
+  background-color: #8bb8dd;
+}
 .story-text {
   position: absolute;
   top: 50%;
@@ -263,15 +265,20 @@ body {
 .quicklook-title a:link,
 .quicklook-title a:visited,
 .about-career-section a:link,
+.about-site-section a:link,
+.about-site-section a:visited,
 .about-career-section a:visited {
   color: #3e7fbf; 
   font-weight: bold; 
   text-decoration: none;
 }
 
+
 .quicklook-title a:hover,
 .quicklook-title a:active,
 .about-career-section a:hover,
+.about-site-section a:hover,
+.about-site-section a:active,
 .about-career-section a:active {
   color: #3c6c8f; 
   text-decoration: underline; 

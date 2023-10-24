@@ -121,11 +121,10 @@ class About extends Component {
              React because I liked how Preact is a bit closer to HTML-style code which I'm more familiar with. After working at 
             Apple this past summer, I found myself excited to learn more about their
             web development process. One of my roommates this summer was working on one of the apple.com teams and I was always curious about it. 
-            If you look at the <a href="https://www.apple.com/airpods-pro/">Apple AirPods Pro Page</a>
-            you'll see what excited me the most about Apple -- not only do they make 
+            If you look at the <a href="https://www.apple.com/airpods-pro/">Apple AirPods Pro Page</a> you'll something that truly excited me about Apple -- not only do they make 
             great technology products, they utilize their mastery in technology (in this case, 
             their mastery of web development) to showcase their products. The scrolling images along with the expanding text
-            on this website is inspired by what I've been intrigued by on the Apple website.
+            on this website are inspired by what I've been intrigued by on the Apple website.
             </p>
             <br />
             <p>

@@ -44,7 +44,9 @@ html {
 .story-item {
   position: relative;
 }
-
+.skills{
+  background-color: #8bb8dd;
+}
 .story-text {
   position: absolute;
   top: 50%;

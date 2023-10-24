@@ -1194,7 +1194,9 @@ var About = /*#__PURE__*/function (_Component) {
         class: "about-site-section"
       }, (0, _preact.h)("h2", {
         class: "about-header"
-      }, "About this Website"), (0, _preact.h)("p", null, "It\u2019s been a goal of mine to make a personal website for a while now. Resumes nowadays are fairly cookie-cutter. I wanted this website to be a showcase of all of my skills, past projects, and jobs. I also wanted to show potential employers a bit more of my personality as it\u2019s hard to come across on a simple one page resume."), (0, _preact.h)("br", null), (0, _preact.h)("p", null, "All of the photos on this website are taken by me\u2014either taken on my phone or taken on a little digital camera that I bring around everywhere. I wanted this website to be easy to navigate, to have aesthetically pleasing scrolling animations, and to be an accurate reflection of myself.", " ")), (0, _preact.h)("div", {
+      }, "About this Website"), (0, _preact.h)("p", null, "It\u2019s been a goal of mine to make a personal website for a while now. Resumes nowadays are fairly cookie-cutter. I wanted this website to be a showcase of all of my skills, past projects, and jobs. I also wanted to show potential employers a bit more of my personality as it\u2019s hard to come across on a simple one page resume."), (0, _preact.h)("br", null), (0, _preact.h)("p", null, "This website was made with a JavaScript library called Preact. This semester (Fall 2023) I'm taking Modern Web Development, and I took advantage of new content from this class and some extra office hours with my teacher to make the website you see now. This past summer, I found that I really like iOS Development, and this past semester I found that I really like Web Development, too. For this website I used Preact as opposed to React because I liked how Preact is a bit closer to HTML-style code which I'm more familiar with. After working at Apple this past summer, I found myself excited to learn more about their web development process. One of my roommates this summer was working on one of the apple.com teams and I was always curious about it. If you look at the ", (0, _preact.h)("a", {
+        href: "https://www.apple.com/airpods-pro/"
+      }, "Apple AirPods Pro Page"), " you'll something that truly excited me about Apple -- not only do they make great technology products, they utilize their mastery in technology (in this case, their mastery of web development) to showcase their products. The scrolling images along with the expanding text on this website are inspired by what I've been intrigued by on the Apple website."), (0, _preact.h)("br", null), (0, _preact.h)("p", null, "Fun side note-- all of the photos on this website are taken by me\u2014either taken on my phone or taken on a little digital camera that I bring around everywhere. I wanted this website to be easy to navigate, to have aesthetically pleasing scrolling animations, and to be an accurate reflection of myself.", " ")), (0, _preact.h)("div", {
         class: "about-career-section"
       }, (0, _preact.h)("h2", {
         class: "about-header"
@@ -1956,7 +1958,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57260" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58327" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
