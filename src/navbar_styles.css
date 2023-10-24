@@ -7,18 +7,18 @@
 .logo img {
   width: 80px;
 }
+
 .logo {
-  display: flex; /* Make the logo and nav links display in a row */
-  align-items: normal; /* Vertically center logo with nav links */
+  display: flex;
+  align-items: center;
 }
 
 .nav-links {
   list-style: none;
-  display: flex; /* Display the nav links in a row */
+  display: flex;
   margin-left: auto;
 }
 
-/* Remove unnecessary align-items and align-items styles */
 .nav-links a {
   display: inline-block;
   padding: 10px 15px;
@@ -34,13 +34,6 @@
   color: rgb(107, 164, 207);
 }
 
-/* Initially hide the mobile navigation menu */
-.mobile-nav-links {
-  display: flex;
-  list-style: none;
-  padding: 0;
-}
-
 .nav-container {
   display: flex;
   justify-content: space-between;
@@ -51,109 +44,6 @@
   z-index: 9999;
 }
 
-.toggle-button .bar {
-  width: 30px;
-  height: 3px;
-  margin: 5px 0;
-  background-color: white;
-}
-.toggle-button {
-  display: none; /* Hide by default on larger screens */
-  cursor: pointer;
-}
-.navbar-container {
-  margin: 0;
-  background-color: rgb(158, 202, 236);
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-}
-
-.logo {
-  display: flex; /* Make the logo and nav links display in a row */
-  align-items: normal; /* Vertically center logo with nav links */
-}
-
-.nav-links {
-  list-style: none;
-  display: flex; /* Display the nav links in a row */
-  align-items: center; /* Vertically center nav links with logo */
-}
-
-.nav-item {
-  align-items: right; /* Vertically align navigation items with logo */
-}
-
-/* Remove unnecessary align-items and align-items styles */
-.nav-item a {
-  display: inline-block;
-  padding: 10px 15px;
-  text-decoration: none;
-  color: white;
-}
-
-.nav-item:hover {
-  background-color: white;
-}
-
-.nav-item:hover a {
-  color: rgb(107, 164, 207);
-}
-
-/* Initially hide the mobile navigation menu */
-.mobile-nav-links {
-  display: none;
-  list-style: none;
-  padding: 0;
-}
-
-.logo img {
-  width: 80px;
-  padding-left: 5px;
-}
-/* trying to animate this guy*/
-.bar {
-  width: 30px;
-  height: 3px;
-  margin: 5px 0;
-  background-color: white;
-  display: block;
-  transition: all 0.3 ease;
-}
-/* Rotate the first bar */
-.toggle-button.change .bar:nth-child(1) {
-  transform: rotate(-45deg) translate(-5px, 6px);
-  transition: transform 0.3s ease-out;
-}
-
-/* Fade out the second bar */
-.toggle-button.change .bar:nth-child(2) {
-  opacity: 0;
-}
-
-/* Rotate the third bar */
-.toggle-button.change .bar:nth-child(3) {
-  transform: rotate(45deg) translate(-5px, -6px);
-  transition: transform 0.3s ease-out;
-}
-.navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  padding: 10px;
-  background-color: rgb(158, 202, 236);
-  position: relative;
-  z-index: 9999;
-}
-
-/* hide navigation menu on small screens */
-.nav-links {
-  display: flex;
-}
-
 .toggle-button {
   display: none;
   flex-direction: column;
@@ -161,7 +51,15 @@
   height: 21px;
 }
 
-/* Add media query to show/hide elements based on screen width */
+.toggle-button .bar {
+  width: 30px;
+  height: 3px;
+  margin: 5px 0;
+  background-color: white;
+  display: block;
+  transition: all 0.3 ease;
+}
+
 @media (max-width: 768px) {
   .toggle-button {
     display: inline-block;
@@ -170,53 +68,31 @@
 
   .nav-links {
     display: none;
-  }
-
-  /* Display the mobile navigation menu when the hamburger icon is clicked */
-  .nav-links.active {
-    display: flex;
     flex-direction: column;
-    background-color: rgb(158, 202, 236);
     position: absolute;
     right: 0;
-    top: 60px; /* Adjust this value as needed */
+    top: 60px;
+    background-color: rgb(158, 202, 236);
     width: 100%;
-    justify-content: left;
     align-items: center;
+    justify-content: left;
   }
 
-  /* Style the mobile navigation links */
-  .nav-links.active li {
-    text-align: center;
-    align-items: stretch;
-    flex-direction: column;
+  .nav-links.active {
     display: flex;
   }
 }
 
+.toggle-button.change .bar:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px);
+  transition: transform 0.3s ease-out;
+}
 
-@media (max-width: 768px) {
-  .toggle-button {
-    /* Keep at your needed display property when screen size is reduced */
-    display: flex;
-  }
+.toggle-button.change .bar:nth-child(2) {
+  opacity: 0;
+}
 
-  .nav-links {
-    /* Display the nav-menu by default when hamburger icon is clicked */
-    display: none;
-    position: absolute;
-    right: 0;
-    height: 100vh; /* So that the background color covers the full height */
-    top: 60px;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(158, 202, 236);
-    width: 100%;
-  }
-
-  .nav-links.active {
-     /* Change display to flex when hamburger icon is clicked (handled in your JS code) */
-    display: flex;
-  }
+.toggle-button.change .bar:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
+  transition: transform 0.3s ease-out;
 }
