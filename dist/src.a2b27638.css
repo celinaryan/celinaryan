@@ -199,11 +199,13 @@ html {
     z-index: 1;
     top: 50%;
     left: 50%;
-    height: 70%; /* Adjust as per need */
     width: 80%; /* Adjust as per need */
     position: absolute;
-    transform: translate(-50%, -50%); /* To center the text */
-    transition: transform 0.5s ease-in-out, font-size 0.5s ease-in-out;
+
+
+    transition: transform 0.5s ease-in-out, font-size 0.2s ease-in-out; /* adjust transition */
+    height: 90%; /* Increase from 70% to 90% */
+    font-size: 1.8em; /* increase font size */
     /* Use flex to vertically center child elements and set direction */
     display: flex;
     flex-direction: column;
@@ -216,9 +218,9 @@ html {
 
 @media only screen and (max-width: 600px) {
   .story-text {
-    height: 70%; /* Adjust as per need */
+    height: 90%; /* Adjust as per need */
     width: 80%; /* Adjust as per need */
-    font-size: 1.6em; /* decrease font size for smaller screens */
+    font-size: 1.5em; /* decrease font size for smaller screens */
   }
 }
 /* about.css */
