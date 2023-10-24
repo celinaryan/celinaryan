@@ -1,7 +1,6 @@
 import { h, Component } from "preact";
-import "./home_styles.css";
 import "./about_styles.css";
-
+import "./home_styles.css";
 import hotel_at_lake_img from "../images/hotel_at_lake.jpg";
 import me_in_HI_img from "../images/me.jpg";
 import headshot_img from "../images/jpw_headshot_blue.jpg";
