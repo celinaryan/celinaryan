@@ -1008,7 +1008,7 @@ var Home = /*#__PURE__*/function (_Component) {
         // smaller screens
         else {
           newOpacity = Math.max(Math.min(2 * rectCenter / windowHeight, 1), 0);
-          newSize += newOpacity / 2; /* so the size will range from 1.5 to 3 */
+          newSize += newOpacity / 4; /* so the size will range from 1.5 to 3 */
         }
 
         el.style.opacity = newOpacity;
@@ -1958,7 +1958,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58887" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60330" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];

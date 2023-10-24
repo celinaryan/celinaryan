@@ -46,7 +46,6 @@
 }
 
 
-
 footer .navbar-container .logo-cont,
 footer .navbar-container .frame {
   display: inline-flex;
@@ -78,11 +77,12 @@ footer .navbar-container .frame {
     display: inline-block;
     right: 0;
   }
+  /*
   .nav-container, footer .navbar-container, .exp .navbar {
-    padding: 15px;
-  }
+    padding: 90px;
+  }*/
   .nav-links a {
-    font-size: 18px;
+    font-size: 14px;
   }
 
   .nav-links {
@@ -101,9 +101,6 @@ footer .navbar-container .frame {
     display: flex;
   }
   
-  .story-text{
-    font-size: 14px;
-  }
 }
 
 .toggle-button.change .bar:nth-child(1) {
@@ -119,6 +116,7 @@ footer .navbar-container .frame {
   transform: rotate(45deg) translate(-5px, -6px);
   transition: transform 0.3s ease-out;
 }
+
 * {
   font-family: "Trebuchet MS", sans-serif;
 }
@@ -175,7 +173,7 @@ html {
   transform: translate(-50%, -50%);
   color: white; /* color depending on your image */
   opacity: 0; /* It's important to set initial opacity to 0 */
-  transition: opacity 0.2s ease-in-out, font-size 0.5s ease-in-out;
+  transition: opacity 0.1s ease-in-out;
 }
 @media only screen and (max-width: 961px) {
   .story-text {
@@ -183,7 +181,7 @@ html {
     top: 50%;
     left: 50%;
     height: fit-content; /* Adjust as per need */
-    width: 80%; /* Adjust as per need */
+    width: 100%; /* Adjust as per need */
     position: absolute;
     transform: translate(-50%, -50%); /* To center the text */
 
@@ -192,9 +190,28 @@ html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    font-size: 2em; /* adjust font size to a more readable level */
+    font-size: 3em; /* adjust font size to a more readable level */
   }
+}
+
+@media only screen and (max-width: 768px) {
+  .story-text {
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    height: 70%; /* Adjust as per need */
+    width: 80%; /* Adjust as per need */
+    position: absolute;
+    transform: translate(-50%, -50%); /* To center the text */
+    transition: transform 0.5s ease-in-out, font-size 0.5s ease-in-out;
+    /* Use flex to vertically center child elements and set direction */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em; /* adjust font size to a more readable level */
+  }
+  
 }
 
 @media only screen and (max-width: 600px) {
@@ -529,5 +546,20 @@ body {
   transform: translateY(4px);
 }
 
+@media (max-width: 768px) {
+
+  .button-style {
+    padding: 10px 15px;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+    outline-color: white;
+    color: white;
+    background-color: #3e7fbf; /* blue */
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0 1px #80a0c0; /* Light blue */
+  }
+}
 
 /*# sourceMappingURL=/src.a2b27638.css.map */
