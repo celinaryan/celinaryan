@@ -70,7 +70,7 @@ class Contact extends Component {
                   <u>Celina Ryan</u>
                 </h3>
                 <h3 class="quicklook-title">
-                  Contact me via:{" "}
+                  Contact me via {" "}
                   <a href="mailto:cryan27@nd.edu">cryan27@nd.edu</a>
                 </h3>
                 <h3 class="quicklook-title">

@@ -1801,7 +1801,7 @@ var Contact = /*#__PURE__*/function (_Component) {
         class: "quicklook-title"
       }, (0, _preact.h)("u", null, "Celina Ryan")), (0, _preact.h)("h3", {
         class: "quicklook-title"
-      }, "Contact me via:", " ", (0, _preact.h)("a", {
+      }, "Contact me via ", " ", (0, _preact.h)("a", {
         href: "mailto:cryan27@nd.edu"
       }, "cryan27@nd.edu")), (0, _preact.h)("h3", {
         class: "quicklook-title"
@@ -1960,7 +1960,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54688" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54962" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
