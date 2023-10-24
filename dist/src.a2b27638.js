@@ -888,11 +888,7 @@ var NavBar = /*#__PURE__*/function (_Component) {
       var buttonClass = this.state.buttonActive ? "toggle-button change" : "toggle-button";
       return (0, _preact.h)("div", {
         class: "nav-container"
-      }, (0, _preact.h)("link", {
-        rel: "icon",
-        href: "../images/cr_logo_up_mini.png",
-        type: "image/png"
-      }), (0, _preact.h)("div", {
+      }, (0, _preact.h)("div", {
         class: "logo-cont"
       }, (0, _preact.h)("a", {
         href: "/",
@@ -1960,7 +1956,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56298" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56671" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];

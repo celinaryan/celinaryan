@@ -27,7 +27,6 @@ class NavBar extends Component {
       : "toggle-button";
     return (
       <div class="nav-container">
-        <link rel="icon" href="../images/cr_logo_up_mini.png" type="image/png"></link>
         <div class="logo-cont">
           <a href="/" class="logo">
             <img src={crLogo} alt="celina logo" />
