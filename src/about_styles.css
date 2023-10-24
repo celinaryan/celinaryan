@@ -5,6 +5,7 @@ body {
   line-height: 1.6;
   background-color: white;
 }
+
 .about,
 .contact {
   background-color: rgb(158, 202, 236);
@@ -65,6 +66,23 @@ body {
   line-height: 1.7em;
   font-size: 1em;
   
+}
+
+.quicklook-title a:link,
+.quicklook-title a:visited,
+.about-career-section a:link,
+.about-career-section a:visited {
+  color: #3e7fbf; 
+  font-weight: bold; 
+  text-decoration: none;
+}
+
+.quicklook-title a:hover,
+.quicklook-title a:active,
+.about-career-section a:hover,
+.about-career-section a:active {
+  color: #3c6c8f; 
+  text-decoration: underline; 
 }
 
 .centered-frame {

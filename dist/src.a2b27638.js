@@ -1086,8 +1086,8 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 var _preact = require("preact");
-require("./about_styles.css");
 require("./home_styles.css");
+require("./about_styles.css");
 var _hotel_at_lake = _interopRequireDefault(require("../images/hotel_at_lake.jpg"));
 var _me = _interopRequireDefault(require("../images/me.jpg"));
 var _jpw_headshot_blue = _interopRequireDefault(require("../images/jpw_headshot_blue.jpg"));
@@ -1215,7 +1215,7 @@ var About = /*#__PURE__*/function (_Component) {
   return About;
 }(_preact.Component);
 var _default = exports.default = About;
-},{"preact":"node_modules/preact/dist/preact.module.js","./about_styles.css":"src/about_styles.css","./home_styles.css":"src/home_styles.css","../images/hotel_at_lake.jpg":"images/hotel_at_lake.jpg","../images/me.jpg":"images/me.jpg","../images/jpw_headshot_blue.jpg":"images/jpw_headshot_blue.jpg"}],"src/skillsData.json":[function(require,module,exports) {
+},{"preact":"node_modules/preact/dist/preact.module.js","./home_styles.css":"src/home_styles.css","./about_styles.css":"src/about_styles.css","../images/hotel_at_lake.jpg":"images/hotel_at_lake.jpg","../images/me.jpg":"images/me.jpg","../images/jpw_headshot_blue.jpg":"images/jpw_headshot_blue.jpg"}],"src/skillsData.json":[function(require,module,exports) {
 module.exports = [{
   "skillCategory": "Coding Languages",
   "skillsList": ["Python", "C", "C++", "Java", "MATLAB", "SQL", "JavaScript, Preact, and React", "Swift", "Objective-C", "HTML and CSS"]
@@ -1960,7 +1960,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54962" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55047" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
