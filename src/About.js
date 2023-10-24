@@ -95,12 +95,10 @@ class About extends Component {
               running, swimming, and hiking. I like to read, too. I read a
               couple books at a time, just to keep myself in a constant rotation
               of learning and appreciating separate topics. I’m also learning
-              the guitar and the bass because I love music and wanted to find a
-              way to appreciate it beyond just listening. I’m also an avid dog
-              lover; I have four dogs back home in Virginia, and I refer to my
-              gaggle of dogs as my “pack.” I’m a big fan of the great outdoors,
+              the guitar and the bass guitar. I’m an avid dog
+              lover; I have four dogs back home in Virginia. I’m a big fan of the great outdoors,
               cooking, and coffee shops. So that’s what I keep myself busy with
-              when I’m not busy with school!
+              when I’m not busy with school or work!
             </p>
           </div>
           <div class="about-site-section">
@@ -141,7 +139,7 @@ class About extends Component {
               where I end up, but I do have some preferences: Washington, D.C.
               area, Austin, Texas, California, New York City, or Denver,
               Colorado. If you think I’d be a good fit for your company, head on
-              over to the “contact me” section and reach out.
+              over to the <a href="/contact">Contact Me</a> section and reach out.
             </p>
           </div>
         </div>

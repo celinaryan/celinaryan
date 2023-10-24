@@ -888,7 +888,11 @@ var NavBar = /*#__PURE__*/function (_Component) {
       var buttonClass = this.state.buttonActive ? "toggle-button change" : "toggle-button";
       return (0, _preact.h)("div", {
         class: "nav-container"
-      }, (0, _preact.h)("div", {
+      }, (0, _preact.h)("link", {
+        rel: "icon",
+        href: "../images/cr_logo_up_mini.png",
+        type: "image/png"
+      }), (0, _preact.h)("div", {
         class: "logo-cont"
       }, (0, _preact.h)("a", {
         href: "/",
@@ -1190,7 +1194,7 @@ var About = /*#__PURE__*/function (_Component) {
         class: "about-me-section"
       }, (0, _preact.h)("h2", {
         class: "about-header"
-      }, "About Me"), (0, _preact.h)("p", null, "If I had to describe myself in one word, it\u2019d probably be hyperactive. I live a fairly active lifestyle and love to learn. I enjoy just about any form of exercise: weight-lifting, yoga, running, swimming, and hiking. I like to read, too. I read a couple books at a time, just to keep myself in a constant rotation of learning and appreciating separate topics. I\u2019m also learning the guitar and the bass because I love music and wanted to find a way to appreciate it beyond just listening. I\u2019m also an avid dog lover; I have four dogs back home in Virginia, and I refer to my gaggle of dogs as my \u201Cpack.\u201D I\u2019m a big fan of the great outdoors, cooking, and coffee shops. So that\u2019s what I keep myself busy with when I\u2019m not busy with school!")), (0, _preact.h)("div", {
+      }, "About Me"), (0, _preact.h)("p", null, "If I had to describe myself in one word, it\u2019d probably be hyperactive. I live a fairly active lifestyle and love to learn. I enjoy just about any form of exercise: weight-lifting, yoga, running, swimming, and hiking. I like to read, too. I read a couple books at a time, just to keep myself in a constant rotation of learning and appreciating separate topics. I\u2019m also learning the guitar and the bass guitar. I\u2019m an avid dog lover; I have four dogs back home in Virginia. I\u2019m a big fan of the great outdoors, cooking, and coffee shops. So that\u2019s what I keep myself busy with when I\u2019m not busy with school or work!")), (0, _preact.h)("div", {
         class: "about-site-section"
       }, (0, _preact.h)("h2", {
         class: "about-header"
@@ -1198,7 +1202,9 @@ var About = /*#__PURE__*/function (_Component) {
         class: "about-career-section"
       }, (0, _preact.h)("h2", {
         class: "about-header"
-      }, "About my Career"), (0, _preact.h)("p", null, "I\u2019ve interned as a Data Scientist at CACI and as a Software Developer at Apple. Of these two disciplines, I found I really enjoy software development. I had a great mentor and team at Apple that really helped me dig into the realm of Software Engineering and iOS Development. I really love problem-solving which is why I think I want to pursue software development/engineering for a full-time position.", (0, _preact.h)("br", null)), (0, _preact.h)("p", null, (0, _preact.h)("br", null), "I graduate May 2024 and hope to start a full-time position by September 2024. I\u2019m a US citizen so I don\u2019t require sponsorship, and I\u2019m willing to relocate. I\u2019m not really picky where I end up, but I do have some preferences: Washington, D.C. area, Austin, Texas, California, New York City, or Denver, Colorado. If you think I\u2019d be a good fit for your company, head on over to the \u201Ccontact me\u201D section and reach out."))), (0, _preact.h)("div", {
+      }, "About my Career"), (0, _preact.h)("p", null, "I\u2019ve interned as a Data Scientist at CACI and as a Software Developer at Apple. Of these two disciplines, I found I really enjoy software development. I had a great mentor and team at Apple that really helped me dig into the realm of Software Engineering and iOS Development. I really love problem-solving which is why I think I want to pursue software development/engineering for a full-time position.", (0, _preact.h)("br", null)), (0, _preact.h)("p", null, (0, _preact.h)("br", null), "I graduate May 2024 and hope to start a full-time position by September 2024. I\u2019m a US citizen so I don\u2019t require sponsorship, and I\u2019m willing to relocate. I\u2019m not really picky where I end up, but I do have some preferences: Washington, D.C. area, Austin, Texas, California, New York City, or Denver, Colorado. If you think I\u2019d be a good fit for your company, head on over to the ", (0, _preact.h)("a", {
+        href: "/contact"
+      }, "Contact Me"), " section and reach out."))), (0, _preact.h)("div", {
         class: "story-item"
       }, (0, _preact.h)("img", {
         src: _me.default,
@@ -1636,7 +1642,7 @@ var Exp = /*#__PURE__*/function (_Component) {
         alt: "San Francisco"
       }), (0, _preact.h)("h2", {
         class: "story-text"
-      }, (0, _preact.h)("p", null, "Here you will find all of my academic and extracurricular endeavors. Don't have too much fun!"))), (0, _preact.h)("div", {
+      }, (0, _preact.h)("p", null, "Here you will find all of my academic and extracurricular endeavors. Enjoy!"))), (0, _preact.h)("div", {
         class: "navbar"
       }, (0, _preact.h)("button", {
         className: "button-style",
@@ -1954,7 +1960,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50541" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54688" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];

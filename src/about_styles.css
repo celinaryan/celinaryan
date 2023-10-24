@@ -13,6 +13,7 @@ body {
   margin: 0 auto;
   max-width: 800px;
   padding: 0 1em;
+  padding-bottom: 10px;
 }
 
 .centered-frame {
@@ -63,6 +64,7 @@ body {
   padding: 1em 0;
   line-height: 1.7em;
   font-size: 1em;
+  
 }
 
 .centered-frame {

@@ -54,18 +54,15 @@ html {
   opacity: 0; /* It's important to set initial opacity to 0 */
   transition: opacity 0.3s ease-in-out, font-size 0.5s ease-in-out;
 }
-
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 961px) {
   .story-text {
     z-index: 1;
-    /* Increase the height property */
-    height: 170%; /* Adjust as per need */
-    width: 120%;
     top: 50%;
+    left: 50%;
+    height: fit-content; /* Adjust as per need */
+    width: 80%; /* Adjust as per need */
     position: absolute;
-    transform: translate(-50%, -50%) scale(0.7);
-    transition: opacity 0.1s ease-in-out, font-size 0.1s ease-in-out,
-      transform 0.1s ease-in-out;
+    transform: translate(-50%, -50%); /* To center the text */
 
     /* Use flex to vertically center child elements and set direction */
     display: flex;
@@ -73,14 +70,12 @@ html {
     justify-content: center;
     align-items: center;
 
-    font-size: 60em; /* adjust font size to a more readable level */
-    font-size: min(max(0.8em, 30vw), 400em); /* adjust min and max values too */
+    font-size: 2em; /* adjust font size to a more readable level */
   }
 }
 
-@media only screen and (min-width: 961px) {
+@media only screen and (max-width: 600px) {
   .story-text {
-    font-size: 3em;
-    opacity: 1;
+    font-size: 1.6em; /* decrease font size for smaller screens */
   }
 }

@@ -193,3 +193,30 @@
     display: flex;
   }
 }
+
+
+@media (max-width: 768px) {
+  .toggle-button {
+    /* Keep at your needed display property when screen size is reduced */
+    display: flex;
+  }
+
+  .nav-links {
+    /* Display the nav-menu by default when hamburger icon is clicked */
+    display: none;
+    position: absolute;
+    right: 0;
+    height: 100vh; /* So that the background color covers the full height */
+    top: 60px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(158, 202, 236);
+    width: 100%;
+  }
+
+  .nav-links.active {
+     /* Change display to flex when hamburger icon is clicked (handled in your JS code) */
+    display: flex;
+  }
+}

@@ -83,7 +83,7 @@ class Exp extends Component {
             <h2 class="story-text">
               <p>
                 Here you will find all of my academic and extracurricular
-                endeavors. Don't have too much fun!
+                endeavors. Enjoy!
               </p>
             </h2>
           </div>
