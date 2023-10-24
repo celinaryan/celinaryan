@@ -8,6 +8,8 @@ import projectData from "./projectData.json";
 import moreExpData from "./moreExpData.json";
 import "./animation.css";
 import "./button_styles.css";
+import sf_image from "../images/sf_overlook.jpg";
+import apple_image from "../images/at_apple.jpg";
 
 class Exp extends Component {
   componentDidMount() {
@@ -77,7 +79,7 @@ class Exp extends Component {
       <div class="exp">
         <div class="story-container">
           <div class="story-item">
-            <img src="./images/sf_overlook.jpg" alt="Lake Maggiore" />
+          <img src={sf_image} alt="San Francisco" />
             <h2 class="story-text">
               <p>
                 Here you will find all of my academic and extracurricular
@@ -132,7 +134,7 @@ class Exp extends Component {
         </div>
         <div class="story-container">
           <div class="story-item">
-            <img src="./images/at_apple.jpg" alt="on Apple campus" />
+          <img src={apple_image} alt="Lake Maggiore" />
           </div>
         </div>
       </div>

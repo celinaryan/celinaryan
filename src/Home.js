@@ -1,6 +1,9 @@
 import { h, Component } from "preact";
 import "./home_styles.css";
 import hawaiiTreesImgSrc from "../images/hawaii_trees.jpg";
+import lake_mag from "../images/maggiore.jpg";
+import amalfi_boat from "../images/amalfi_boat.jpg";
+import geis_img from "../images/geis.jpg";
 
 class Home extends Component {
   componentDidMount() {
@@ -50,7 +53,7 @@ class Home extends Component {
     return (
       <div class="story-container">
         <div class="story-item">
-          <img src="./images/maggiore.jpg" alt="Lake Maggiore" />
+        <img src={lake_mag} alt="Lake Maggiore" />
           <h2 class="story-text">
             <p>
               Welcome to my personal website. I'm Celina Ryan and I’m a Computer
@@ -74,7 +77,7 @@ class Home extends Component {
           </h2>
         </div>
         <div class="story-item">
-          <img src="./images/geis.jpg" alt="Description of image 3" />
+        <img src={geis_img} alt="Geissenheim" />
           <h2 class="story-text">
             <p>
               I'm looking for a full-time software development and/or
@@ -88,7 +91,7 @@ class Home extends Component {
           </h2>
         </div>
         <div class="story-item">
-          <img src="./images/amalfi_boat.jpg" alt="boat in amalfi" />
+          <img src={amalfi_boat} alt="Lake Maggiore" />
         </div>
       </div>
     );

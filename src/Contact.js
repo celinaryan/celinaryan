@@ -1,6 +1,11 @@
 import { h, Component } from "preact";
 import "./home_styles.css";
 import "./about_styles.css";
+import peacock_img from "../images/peacock.jpg";
+import headshot_img from "../images/jpw_headshot_blue.jpg";
+import sorrento_img from "../images/sorrento.jpg";
+  
+
 class Contact extends Component {
   componentDidMount() {
     window.addEventListener("scroll", this.handleScroll);
@@ -50,7 +55,7 @@ class Contact extends Component {
       <div class="contact">
         <div class="story-container">
           <div class="story-item">
-            <img src="./images/peacock.jpg" alt="peacock" />
+          <img src={peacock_img} alt="Lake Maggiore, peacock" />
             <h2 class="story-text">
               <p>
                 Please reach out to me about any job opportunities you think I'd
@@ -77,12 +82,12 @@ class Contact extends Component {
                 <div class="centered-frame"></div>
               </div>
               <figure class="frame-image">
-                <img src="images/jpw_headshot_blue.jpg" alt="Photo of Me" />
+              <img src={headshot_img} alt="photo of me" />
               </figure>
             </div>
           </div>
           <div class="story-item">
-            <img src="./images/sorrento.jpg" alt="a nice sunset" />
+            <img src={sorrento_img} alt="sorrento sunset" />           
           </div>
         </div>
       </div>

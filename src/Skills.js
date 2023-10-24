@@ -3,6 +3,9 @@ import "./home_styles.css";
 import skillsData from "./skillsData.json";
 import Skill from "./Skill";
 import "./animation.css";
+import walk_on_hill_image from "../images/walking_on_hill.jpg";
+import boat_and_rock_img from "../images/boat_and_rock.jpg";
+
 class Skills extends Component {
   componentDidMount() {
     window.addEventListener("scroll", this.handleScroll);
@@ -62,7 +65,7 @@ class Skills extends Component {
       <div class="exp">
         <div class="story-container">
           <div class="story-item">
-            <img src="./images/boat_and_rock.jpg" alt="Lake Maggiore" />
+            <img src={boat_and_rock_img} alt="boat" />
             <h2 class="story-text">
               <p>
                 So what do I bring to the table? If it's Thanksgiving, I'm
@@ -80,7 +83,7 @@ class Skills extends Component {
 
         <div class="story-container">
           <div class="story-item">
-            <img src="./images/walking_on_hill.jpg" alt="boat in amalfi" />
+            <img src={walk_on_hill_image} alt="me walking around" />
           </div>
         </div>
       </div>

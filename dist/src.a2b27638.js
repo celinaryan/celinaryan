@@ -886,53 +886,53 @@ var NavBar = /*#__PURE__*/function (_Component) {
     value: function render() {
       var mobileMenuClass = this.state.mobileMenuActive ? "nav-links active" : "nav-links";
       var buttonClass = this.state.buttonActive ? "toggle-button change" : "toggle-button";
-      return /*#__PURE__*/React.createElement("div", {
+      return (0, _preact.h)("div", {
         class: "nav-container"
-      }, /*#__PURE__*/React.createElement("div", {
+      }, (0, _preact.h)("div", {
         class: "logo-cont"
-      }, /*#__PURE__*/React.createElement("a", {
+      }, (0, _preact.h)("a", {
         href: "/",
         class: "logo"
-      }, /*#__PURE__*/React.createElement("img", {
+      }, (0, _preact.h)("img", {
         src: _cr_logo_up.default,
         alt: "celina logo"
-      }))), /*#__PURE__*/React.createElement("div", {
+      }))), (0, _preact.h)("div", {
         class: "menu-container"
-      }, /*#__PURE__*/React.createElement("ul", {
+      }, (0, _preact.h)("ul", {
         class: mobileMenuClass
-      }, /*#__PURE__*/React.createElement("li", {
+      }, (0, _preact.h)("li", {
         class: "nav-item"
-      }, /*#__PURE__*/React.createElement("a", {
+      }, (0, _preact.h)("a", {
         href: "/",
         onClick: this.toggleMobileMenu
-      }, "home")), /*#__PURE__*/React.createElement("li", {
+      }, "home")), (0, _preact.h)("li", {
         class: "nav-item"
-      }, /*#__PURE__*/React.createElement("a", {
+      }, (0, _preact.h)("a", {
         href: "/exp",
         onClick: this.toggleMobileMenu
-      }, "experience")), /*#__PURE__*/React.createElement("li", {
+      }, "experience")), (0, _preact.h)("li", {
         class: "nav-item"
-      }, /*#__PURE__*/React.createElement("a", {
+      }, (0, _preact.h)("a", {
         href: "/skills",
         onClick: this.toggleMobileMenu
-      }, "skills")), /*#__PURE__*/React.createElement("li", {
+      }, "skills")), (0, _preact.h)("li", {
         class: "nav-item"
-      }, /*#__PURE__*/React.createElement("a", {
+      }, (0, _preact.h)("a", {
         href: "/about",
         onClick: this.toggleMobileMenu
-      }, "about")), /*#__PURE__*/React.createElement("li", {
+      }, "about")), (0, _preact.h)("li", {
         class: "nav-item"
-      }, /*#__PURE__*/React.createElement("a", {
+      }, (0, _preact.h)("a", {
         href: "/contact",
         onClick: this.toggleMobileMenu
-      }, "contact me")))), /*#__PURE__*/React.createElement("div", {
+      }, "contact me")))), (0, _preact.h)("div", {
         class: buttonClass,
         onClick: this.toggleMobileMenu
-      }, /*#__PURE__*/React.createElement("span", {
+      }, (0, _preact.h)("span", {
         class: "bar"
-      }), /*#__PURE__*/React.createElement("span", {
+      }), (0, _preact.h)("span", {
         class: "bar"
-      }), /*#__PURE__*/React.createElement("span", {
+      }), (0, _preact.h)("span", {
         class: "bar"
       })));
     }
@@ -946,6 +946,12 @@ module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
 },{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"images/hawaii_trees.jpg":[function(require,module,exports) {
 module.exports = "/hawaii_trees.d0b9ecd4.jpg";
+},{}],"images/maggiore.jpg":[function(require,module,exports) {
+module.exports = "/maggiore.63a928ac.jpg";
+},{}],"images/amalfi_boat.jpg":[function(require,module,exports) {
+module.exports = "/amalfi_boat.aef6e7d7.jpg";
+},{}],"images/geis.jpg":[function(require,module,exports) {
+module.exports = "/geis.d0560979.jpg";
 },{}],"src/Home.js":[function(require,module,exports) {
 "use strict";
 
@@ -956,6 +962,9 @@ exports.default = void 0;
 var _preact = require("preact");
 require("./home_styles.css");
 var _hawaii_trees = _interopRequireDefault(require("../images/hawaii_trees.jpg"));
+var _maggiore = _interopRequireDefault(require("../images/maggiore.jpg"));
+var _amalfi_boat = _interopRequireDefault(require("../images/amalfi_boat.jpg"));
+var _geis = _interopRequireDefault(require("../images/geis.jpg"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -1021,45 +1030,51 @@ var Home = /*#__PURE__*/function (_Component) {
   }, {
     key: "render",
     value: function render() {
-      return /*#__PURE__*/React.createElement("div", {
+      return (0, _preact.h)("div", {
         class: "story-container"
-      }, /*#__PURE__*/React.createElement("div", {
+      }, (0, _preact.h)("div", {
         class: "story-item"
-      }, /*#__PURE__*/React.createElement("img", {
-        src: "./images/maggiore.jpg",
+      }, (0, _preact.h)("img", {
+        src: _maggiore.default,
         alt: "Lake Maggiore"
-      }), /*#__PURE__*/React.createElement("h2", {
+      }), (0, _preact.h)("h2", {
         class: "story-text"
-      }, /*#__PURE__*/React.createElement("p", null, "Welcome to my personal website. I'm Celina Ryan and I\u2019m a Computer Science major at the University of Notre Dame. I made this website to tell potential employers a bit more about myself beyond my resume, to dig a bit deeper into web development, and to explain what I hope to achieve with my career."))), /*#__PURE__*/React.createElement("div", {
+      }, (0, _preact.h)("p", null, "Welcome to my personal website. I'm Celina Ryan and I\u2019m a Computer Science major at the University of Notre Dame. I made this website to tell potential employers a bit more about myself beyond my resume, to dig a bit deeper into web development, and to explain what I hope to achieve with my career."))), (0, _preact.h)("div", {
         class: "story-item"
-      }, /*#__PURE__*/React.createElement("img", {
+      }, (0, _preact.h)("img", {
         src: _hawaii_trees.default,
         alt: "hawaii"
-      }), /*#__PURE__*/React.createElement("h2", {
+      }), (0, _preact.h)("h2", {
         class: "story-text"
-      }, /*#__PURE__*/React.createElement("p", null, "I'm currently a senior and graduating in May 2024. Following graduation, I hope to have a job because I like to eat and sleep with a roof over my head. So yeah, I'm looking for a job. Oh, what'd you say? What type of job am I looking for? Funny that you mention it actually..."))), /*#__PURE__*/React.createElement("div", {
+      }, (0, _preact.h)("p", null, "I'm currently a senior and graduating in May 2024. Following graduation, I hope to have a job because I like to eat and sleep with a roof over my head. So yeah, I'm looking for a job. Oh, what'd you say? What type of job am I looking for? Funny that you mention it actually..."))), (0, _preact.h)("div", {
         class: "story-item"
-      }, /*#__PURE__*/React.createElement("img", {
-        src: "./images/geis.jpg",
-        alt: "Description of image 3"
-      }), /*#__PURE__*/React.createElement("h2", {
+      }, (0, _preact.h)("img", {
+        src: _geis.default,
+        alt: "Geissenheim"
+      }), (0, _preact.h)("h2", {
         class: "story-text"
-      }, /*#__PURE__*/React.createElement("p", null, "I'm looking for a full-time software development and/or engineering position. I hope to start my job by September 2024, and I'm not too picky where it is. I hope to end up either in the Washington D.C. area, Austin, Texas, California, New York City, or in Denver, Colorado. So that's my spiel. You're welcome to look around this site and learn more about me. If you'd like to chat about a potential position, please feel free to reach out."))), /*#__PURE__*/React.createElement("div", {
+      }, (0, _preact.h)("p", null, "I'm looking for a full-time software development and/or engineering position. I hope to start my job by September 2024, and I'm not too picky where it is. I hope to end up either in the Washington D.C. area, Austin, Texas, California, New York City, or in Denver, Colorado. So that's my spiel. You're welcome to look around this site and learn more about me. If you'd like to chat about a potential position, please feel free to reach out."))), (0, _preact.h)("div", {
         class: "story-item"
-      }, /*#__PURE__*/React.createElement("img", {
-        src: "./images/amalfi_boat.jpg",
-        alt: "boat in amalfi"
+      }, (0, _preact.h)("img", {
+        src: _amalfi_boat.default,
+        alt: "Lake Maggiore"
       })));
     }
   }]);
   return Home;
 }(_preact.Component);
 var _default = exports.default = Home;
-},{"preact":"node_modules/preact/dist/preact.module.js","./home_styles.css":"src/home_styles.css","../images/hawaii_trees.jpg":"images/hawaii_trees.jpg"}],"src/about_styles.css":[function(require,module,exports) {
+},{"preact":"node_modules/preact/dist/preact.module.js","./home_styles.css":"src/home_styles.css","../images/hawaii_trees.jpg":"images/hawaii_trees.jpg","../images/maggiore.jpg":"images/maggiore.jpg","../images/amalfi_boat.jpg":"images/amalfi_boat.jpg","../images/geis.jpg":"images/geis.jpg"}],"src/about_styles.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/About.js":[function(require,module,exports) {
+},{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"images/hotel_at_lake.jpg":[function(require,module,exports) {
+module.exports = "/hotel_at_lake.21bc3b0f.jpg";
+},{}],"images/me.jpg":[function(require,module,exports) {
+module.exports = "/me.31ff53e3.jpg";
+},{}],"images/jpw_headshot_blue.jpg":[function(require,module,exports) {
+module.exports = "/jpw_headshot_blue.030324cf.jpg";
+},{}],"src/About.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1069,6 +1084,10 @@ exports.default = void 0;
 var _preact = require("preact");
 require("./about_styles.css");
 require("./home_styles.css");
+var _hotel_at_lake = _interopRequireDefault(require("../images/hotel_at_lake.jpg"));
+var _me = _interopRequireDefault(require("../images/me.jpg"));
+var _jpw_headshot_blue = _interopRequireDefault(require("../images/jpw_headshot_blue.jpg"));
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, _toPropertyKey(descriptor.key), descriptor); } }
@@ -1133,56 +1152,56 @@ var About = /*#__PURE__*/function (_Component) {
   }, {
     key: "render",
     value: function render() {
-      return /*#__PURE__*/React.createElement("div", {
+      return (0, _preact.h)("div", {
         class: "about"
-      }, /*#__PURE__*/React.createElement("div", {
+      }, (0, _preact.h)("div", {
         class: "story-container"
-      }, /*#__PURE__*/React.createElement("div", {
+      }, (0, _preact.h)("div", {
         class: "story-item"
-      }, /*#__PURE__*/React.createElement("img", {
-        src: "./images/dc_cherry_blossoms.jpg",
-        alt: "Lake Maggiore"
-      }), /*#__PURE__*/React.createElement("h2", {
+      }, (0, _preact.h)("img", {
+        src: _hotel_at_lake.default,
+        alt: "Lake Maggiore, from the hotel"
+      }), (0, _preact.h)("h2", {
         class: "story-text"
-      }, /*#__PURE__*/React.createElement("p", null, "Answering the classic question: \"so tell me a little about yourself\"... This page will tell you more about me, my goals, and why I made this website.")))), /*#__PURE__*/React.createElement("div", {
+      }, (0, _preact.h)("p", null, "Answering the classic question: \"so tell me a little about yourself\"... This page will tell you more about me, my goals, and why I made this website.")))), (0, _preact.h)("div", {
         class: "about-section"
-      }, /*#__PURE__*/React.createElement("div", {
+      }, (0, _preact.h)("div", {
         class: "quick-look-section"
-      }, /*#__PURE__*/React.createElement("div", {
+      }, (0, _preact.h)("div", {
         class: "quick-look-bullets"
-      }, /*#__PURE__*/React.createElement("h3", {
+      }, (0, _preact.h)("h3", {
         class: "quicklook-title"
-      }, /*#__PURE__*/React.createElement("u", null, "Celina Ryan")), /*#__PURE__*/React.createElement("h3", {
+      }, (0, _preact.h)("u", null, "Celina Ryan")), (0, _preact.h)("h3", {
         class: "quicklook-title"
-      }, "Education: University of Notre Dame"), /*#__PURE__*/React.createElement("h3", {
+      }, "Education: University of Notre Dame"), (0, _preact.h)("h3", {
         class: "quicklook-title"
-      }, "Major: Computer Science in the College of Engineering"), /*#__PURE__*/React.createElement("h3", {
+      }, "Major: Computer Science in the College of Engineering"), (0, _preact.h)("h3", {
         class: "quicklook-title"
-      }, "Minor: Engineering Corporate Practice"), /*#__PURE__*/React.createElement("h3", {
+      }, "Minor: Engineering Corporate Practice"), (0, _preact.h)("h3", {
         class: "quicklook-title"
-      }, "Expected Graduation: May 2024"), /*#__PURE__*/React.createElement("div", {
+      }, "Expected Graduation: May 2024"), (0, _preact.h)("div", {
         class: "centered-frame"
-      })), /*#__PURE__*/React.createElement("figure", {
+      })), (0, _preact.h)("figure", {
         class: "frame-image"
-      }, /*#__PURE__*/React.createElement("img", {
-        src: "images/jpw_headshot_blue.jpg",
-        alt: "Photo of Me"
-      }))), /*#__PURE__*/React.createElement("div", {
+      }, (0, _preact.h)("img", {
+        src: _jpw_headshot_blue.default,
+        alt: "my headshot"
+      }))), (0, _preact.h)("div", {
         class: "about-me-section"
-      }, /*#__PURE__*/React.createElement("h2", {
+      }, (0, _preact.h)("h2", {
         class: "about-header"
-      }, "About Me"), /*#__PURE__*/React.createElement("p", null, "If I had to describe myself in one word, it\u2019d probably be hyperactive. I live a fairly active lifestyle and love to learn. I enjoy just about any form of exercise: weight-lifting, yoga, running, swimming, and hiking. I like to read, too. I read a couple books at a time, just to keep myself in a constant rotation of learning and appreciating separate topics. I\u2019m also learning the guitar and the bass because I love music and wanted to find a way to appreciate it beyond just listening. I\u2019m also an avid dog lover; I have four dogs back home in Virginia, and I refer to my gaggle of dogs as my \u201Cpack.\u201D I\u2019m a big fan of the great outdoors, cooking, and coffee shops. So that\u2019s what I keep myself busy with when I\u2019m not busy with school!")), /*#__PURE__*/React.createElement("div", {
+      }, "About Me"), (0, _preact.h)("p", null, "If I had to describe myself in one word, it\u2019d probably be hyperactive. I live a fairly active lifestyle and love to learn. I enjoy just about any form of exercise: weight-lifting, yoga, running, swimming, and hiking. I like to read, too. I read a couple books at a time, just to keep myself in a constant rotation of learning and appreciating separate topics. I\u2019m also learning the guitar and the bass because I love music and wanted to find a way to appreciate it beyond just listening. I\u2019m also an avid dog lover; I have four dogs back home in Virginia, and I refer to my gaggle of dogs as my \u201Cpack.\u201D I\u2019m a big fan of the great outdoors, cooking, and coffee shops. So that\u2019s what I keep myself busy with when I\u2019m not busy with school!")), (0, _preact.h)("div", {
         class: "about-site-section"
-      }, /*#__PURE__*/React.createElement("h2", {
+      }, (0, _preact.h)("h2", {
         class: "about-header"
-      }, "About this Website"), /*#__PURE__*/React.createElement("p", null, "It\u2019s been a goal of mine to make a personal website for a while now. Resumes nowadays are fairly cookie-cutter. I wanted this website to be a showcase of all of my skills, past projects, and jobs. I also wanted to show potential employers a bit more of my personality as it\u2019s hard to come across on a simple one page resume."), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("p", null, "All of the photos on this website are taken by me\u2014either taken on my phone or taken on a little digital camera that I bring around everywhere. I wanted this website to be easy to navigate, to have aesthetically pleasing scrolling animations, and to be an accurate reflection of myself.", " ")), /*#__PURE__*/React.createElement("div", {
+      }, "About this Website"), (0, _preact.h)("p", null, "It\u2019s been a goal of mine to make a personal website for a while now. Resumes nowadays are fairly cookie-cutter. I wanted this website to be a showcase of all of my skills, past projects, and jobs. I also wanted to show potential employers a bit more of my personality as it\u2019s hard to come across on a simple one page resume."), (0, _preact.h)("br", null), (0, _preact.h)("p", null, "All of the photos on this website are taken by me\u2014either taken on my phone or taken on a little digital camera that I bring around everywhere. I wanted this website to be easy to navigate, to have aesthetically pleasing scrolling animations, and to be an accurate reflection of myself.", " ")), (0, _preact.h)("div", {
         class: "about-career-section"
-      }, /*#__PURE__*/React.createElement("h2", {
+      }, (0, _preact.h)("h2", {
         class: "about-header"
-      }, "About my Career"), /*#__PURE__*/React.createElement("p", null, "I\u2019ve interned as a Data Scientist at CACI and as a Software Developer at Apple. Of these two disciplines, I found I really enjoy software development. I had a great mentor and team at Apple that really helped me dig into the realm of Software Engineering and iOS Development. I really love problem-solving which is why I think I want to pursue software development/engineering for a full-time position.", /*#__PURE__*/React.createElement("br", null)), /*#__PURE__*/React.createElement("p", null, /*#__PURE__*/React.createElement("br", null), "I graduate May 2024 and hope to start a full-time position by September 2024. I\u2019m a US citizen so I don\u2019t require sponsorship, and I\u2019m willing to relocate. I\u2019m not really picky where I end up, but I do have some preferences: Washington, D.C. area, Austin, Texas, California, New York City, or Denver, Colorado. If you think I\u2019d be a good fit for your company, head on over to the \u201Ccontact me\u201D section and reach out."))), /*#__PURE__*/React.createElement("div", {
+      }, "About my Career"), (0, _preact.h)("p", null, "I\u2019ve interned as a Data Scientist at CACI and as a Software Developer at Apple. Of these two disciplines, I found I really enjoy software development. I had a great mentor and team at Apple that really helped me dig into the realm of Software Engineering and iOS Development. I really love problem-solving which is why I think I want to pursue software development/engineering for a full-time position.", (0, _preact.h)("br", null)), (0, _preact.h)("p", null, (0, _preact.h)("br", null), "I graduate May 2024 and hope to start a full-time position by September 2024. I\u2019m a US citizen so I don\u2019t require sponsorship, and I\u2019m willing to relocate. I\u2019m not really picky where I end up, but I do have some preferences: Washington, D.C. area, Austin, Texas, California, New York City, or Denver, Colorado. If you think I\u2019d be a good fit for your company, head on over to the \u201Ccontact me\u201D section and reach out."))), (0, _preact.h)("div", {
         class: "story-item"
-      }, /*#__PURE__*/React.createElement("img", {
-        src: "./images/me.jpg",
+      }, (0, _preact.h)("img", {
+        src: _me.default,
         alt: "me in hawaii"
       })));
     }
@@ -1190,7 +1209,7 @@ var About = /*#__PURE__*/function (_Component) {
   return About;
 }(_preact.Component);
 var _default = exports.default = About;
-},{"preact":"node_modules/preact/dist/preact.module.js","./about_styles.css":"src/about_styles.css","./home_styles.css":"src/home_styles.css"}],"src/skillsData.json":[function(require,module,exports) {
+},{"preact":"node_modules/preact/dist/preact.module.js","./about_styles.css":"src/about_styles.css","./home_styles.css":"src/home_styles.css","../images/hotel_at_lake.jpg":"images/hotel_at_lake.jpg","../images/me.jpg":"images/me.jpg","../images/jpw_headshot_blue.jpg":"images/jpw_headshot_blue.jpg"}],"src/skillsData.json":[function(require,module,exports) {
 module.exports = [{
   "skillCategory": "Coding Languages",
   "skillsList": ["Python", "C", "C++", "Java", "MATLAB", "SQL", "JavaScript, Preact, and React", "Swift", "Objective-C", "HTML and CSS"]
@@ -1214,21 +1233,25 @@ exports.default = Skill;
 var _preact = require("preact");
 function Skill(_ref) {
   var skill = _ref.skill;
-  return /*#__PURE__*/React.createElement("div", {
+  return (0, _preact.h)("div", {
     className: "skill"
-  }, /*#__PURE__*/React.createElement("h4", {
+  }, (0, _preact.h)("h4", {
     className: "skill-category"
-  }, skill.skillCategory), /*#__PURE__*/React.createElement("ul", {
+  }, skill.skillCategory), (0, _preact.h)("ul", {
     className: "skills-list"
   }, skill.skillsList.map(function (desc) {
-    return /*#__PURE__*/React.createElement("li", null, desc);
+    return (0, _preact.h)("li", null, desc);
   })));
 }
 },{"preact":"node_modules/preact/dist/preact.module.js"}],"src/animation.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/Skills.js":[function(require,module,exports) {
+},{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"images/walking_on_hill.jpg":[function(require,module,exports) {
+module.exports = "/walking_on_hill.3747aeda.jpg";
+},{}],"images/boat_and_rock.jpg":[function(require,module,exports) {
+module.exports = "/boat_and_rock.4dbcde83.jpg";
+},{}],"src/Skills.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1240,6 +1263,8 @@ require("./home_styles.css");
 var _skillsData = _interopRequireDefault(require("./skillsData.json"));
 var _Skill = _interopRequireDefault(require("./Skill"));
 require("./animation.css");
+var _walking_on_hill = _interopRequireDefault(require("../images/walking_on_hill.jpg"));
+var _boat_and_rock = _interopRequireDefault(require("../images/boat_and_rock.jpg"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -1314,38 +1339,38 @@ var Skills = /*#__PURE__*/function (_Component) {
   }, {
     key: "render",
     value: function render() {
-      return /*#__PURE__*/React.createElement("div", {
+      return (0, _preact.h)("div", {
         class: "exp"
-      }, /*#__PURE__*/React.createElement("div", {
+      }, (0, _preact.h)("div", {
         class: "story-container"
-      }, /*#__PURE__*/React.createElement("div", {
+      }, (0, _preact.h)("div", {
         class: "story-item"
-      }, /*#__PURE__*/React.createElement("img", {
-        src: "./images/boat_and_rock.jpg",
-        alt: "Lake Maggiore"
-      }), /*#__PURE__*/React.createElement("h2", {
+      }, (0, _preact.h)("img", {
+        src: _boat_and_rock.default,
+        alt: "boat"
+      }), (0, _preact.h)("h2", {
         class: "story-text"
-      }, /*#__PURE__*/React.createElement("p", null, "So what do I bring to the table? If it's Thanksgiving, I'm bringing a mean mac and cheese, but more likely than not it's not Thanksgiving. Scroll down to see my technical skills.")))), /*#__PURE__*/React.createElement("div", {
+      }, (0, _preact.h)("p", null, "So what do I bring to the table? If it's Thanksgiving, I'm bringing a mean mac and cheese, but more likely than not it's not Thanksgiving. Scroll down to see my technical skills.")))), (0, _preact.h)("div", {
         class: "skills-section"
       }, _skillsData.default.map(function (skill, index) {
-        return /*#__PURE__*/React.createElement(_Skill.default, {
+        return (0, _preact.h)(_Skill.default, {
           skill: skill,
           key: index
         });
-      })), /*#__PURE__*/React.createElement("div", {
+      })), (0, _preact.h)("div", {
         class: "story-container"
-      }, /*#__PURE__*/React.createElement("div", {
+      }, (0, _preact.h)("div", {
         class: "story-item"
-      }, /*#__PURE__*/React.createElement("img", {
-        src: "./images/walking_on_hill.jpg",
-        alt: "boat in amalfi"
+      }, (0, _preact.h)("img", {
+        src: _walking_on_hill.default,
+        alt: "me walking around"
       }))));
     }
   }]);
   return Skills;
 }(_preact.Component);
 var _default = exports.default = Skills;
-},{"preact":"node_modules/preact/dist/preact.module.js","./home_styles.css":"src/home_styles.css","./skillsData.json":"src/skillsData.json","./Skill":"src/Skill.js","./animation.css":"src/animation.css"}],"src/exp_styles.css":[function(require,module,exports) {
+},{"preact":"node_modules/preact/dist/preact.module.js","./home_styles.css":"src/home_styles.css","./skillsData.json":"src/skillsData.json","./Skill":"src/Skill.js","./animation.css":"src/animation.css","../images/walking_on_hill.jpg":"images/walking_on_hill.jpg","../images/boat_and_rock.jpg":"images/boat_and_rock.jpg"}],"src/exp_styles.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
@@ -1385,24 +1410,24 @@ exports.default = Job;
 var _preact = require("preact");
 function Job(_ref) {
   var job = _ref.job;
-  return /*#__PURE__*/React.createElement("div", {
+  return (0, _preact.h)("div", {
     className: "job-experience"
-  }, /*#__PURE__*/React.createElement("div", {
+  }, (0, _preact.h)("div", {
     className: "title-date-container"
-  }, /*#__PURE__*/React.createElement("h3", {
+  }, (0, _preact.h)("h3", {
     className: "company-title"
-  }, job.companyName), /*#__PURE__*/React.createElement("div", {
+  }, job.companyName), (0, _preact.h)("div", {
     className: "date-location-container"
-  }, /*#__PURE__*/React.createElement("p", {
+  }, (0, _preact.h)("p", {
     className: "job-date"
-  }, job.jobDates), /*#__PURE__*/React.createElement("p", {
+  }, job.jobDates), (0, _preact.h)("p", {
     className: "job-location"
-  }, job.jobLocation))), /*#__PURE__*/React.createElement("h4", {
+  }, job.jobLocation))), (0, _preact.h)("h4", {
     className: "job-heading"
-  }, job.jobTitle), /*#__PURE__*/React.createElement("ul", {
+  }, job.jobTitle), (0, _preact.h)("ul", {
     className: "job-description"
   }, job.jobDescription.map(function (desc) {
-    return /*#__PURE__*/React.createElement("li", null, desc);
+    return (0, _preact.h)("li", null, desc);
   })));
 }
 },{"preact":"node_modules/preact/dist/preact.module.js"}],"src/Project.js":[function(require,module,exports) {
@@ -1415,24 +1440,24 @@ exports.default = Project;
 var _preact = require("preact");
 function Project(_ref) {
   var project = _ref.project;
-  return /*#__PURE__*/React.createElement("div", {
+  return (0, _preact.h)("div", {
     className: "project"
-  }, /*#__PURE__*/React.createElement("div", {
+  }, (0, _preact.h)("div", {
     className: "title-date-container"
-  }, /*#__PURE__*/React.createElement("h3", {
+  }, (0, _preact.h)("h3", {
     className: "project-name"
-  }, project.projectName), /*#__PURE__*/React.createElement("div", {
+  }, project.projectName), (0, _preact.h)("div", {
     className: "date-location-container"
-  }, /*#__PURE__*/React.createElement("p", {
+  }, (0, _preact.h)("p", {
     className: "project-date"
-  }, project.projectDates), /*#__PURE__*/React.createElement("p", {
+  }, project.projectDates), (0, _preact.h)("p", {
     className: "project-location"
-  }, project.projectLocation))), /*#__PURE__*/React.createElement("h4", {
+  }, project.projectLocation))), (0, _preact.h)("h4", {
     className: "project-heading"
-  }, project.projectTitle), /*#__PURE__*/React.createElement("ul", {
+  }, project.projectTitle), (0, _preact.h)("ul", {
     className: "project-description"
   }, project.projectDescription.map(function (desc) {
-    return /*#__PURE__*/React.createElement("li", null, desc);
+    return (0, _preact.h)("li", null, desc);
   })));
 }
 },{"preact":"node_modules/preact/dist/preact.module.js"}],"src/projectData.json":[function(require,module,exports) {
@@ -1492,7 +1517,11 @@ module.exports = [{
 var reloadCSS = require('_css_loader');
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/Exp.js":[function(require,module,exports) {
+},{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"images/sf_overlook.jpg":[function(require,module,exports) {
+module.exports = "/sf_overlook.106948cc.jpg";
+},{}],"images/at_apple.jpg":[function(require,module,exports) {
+module.exports = "/at_apple.6bb7479e.jpg";
+},{}],"src/Exp.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1509,6 +1538,8 @@ var _projectData = _interopRequireDefault(require("./projectData.json"));
 var _moreExpData = _interopRequireDefault(require("./moreExpData.json"));
 require("./animation.css");
 require("./button_styles.css");
+var _sf_overlook = _interopRequireDefault(require("../images/sf_overlook.jpg"));
+var _at_apple = _interopRequireDefault(require("../images/at_apple.jpg"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -1594,74 +1625,78 @@ var Exp = /*#__PURE__*/function (_Component) {
     key: "render",
     value: function render() {
       var _this2 = this;
-      return /*#__PURE__*/React.createElement("div", {
+      return (0, _preact.h)("div", {
         class: "exp"
-      }, /*#__PURE__*/React.createElement("div", {
+      }, (0, _preact.h)("div", {
         class: "story-container"
-      }, /*#__PURE__*/React.createElement("div", {
+      }, (0, _preact.h)("div", {
         class: "story-item"
-      }, /*#__PURE__*/React.createElement("img", {
-        src: "./images/sf_overlook.jpg",
-        alt: "Lake Maggiore"
-      }), /*#__PURE__*/React.createElement("h2", {
+      }, (0, _preact.h)("img", {
+        src: _sf_overlook.default,
+        alt: "San Francisco"
+      }), (0, _preact.h)("h2", {
         class: "story-text"
-      }, /*#__PURE__*/React.createElement("p", null, "Here you will find all of my academic and extracurricular endeavors. Don't have too much fun!"))), /*#__PURE__*/React.createElement("div", {
+      }, (0, _preact.h)("p", null, "Here you will find all of my academic and extracurricular endeavors. Don't have too much fun!"))), (0, _preact.h)("div", {
         class: "navbar"
-      }, /*#__PURE__*/React.createElement("button", {
+      }, (0, _preact.h)("button", {
         className: "button-style",
         onClick: function onClick() {
           return _this2.scrollToElement("experience-section");
         }
-      }, "work experience"), /*#__PURE__*/React.createElement("button", {
+      }, "work experience"), (0, _preact.h)("button", {
         className: "button-style",
         onClick: function onClick() {
           return _this2.scrollToElement("projects-section");
         }
-      }, "related projects"), /*#__PURE__*/React.createElement("button", {
+      }, "related projects"), (0, _preact.h)("button", {
         className: "button-style",
         onClick: function onClick() {
           return _this2.scrollToElement("extracurricular-section");
         }
-      }, "additional experience"))), /*#__PURE__*/React.createElement("div", {
+      }, "additional experience"))), (0, _preact.h)("div", {
         className: "resume-section"
-      }, /*#__PURE__*/React.createElement("div", {
+      }, (0, _preact.h)("div", {
         class: "experience-section",
         id: "experience-section"
-      }, /*#__PURE__*/React.createElement("h2", null, "Work Experience"), _jobData.default.map(function (job, index) {
-        return /*#__PURE__*/React.createElement(_Job.default, {
+      }, (0, _preact.h)("h2", null, "Work Experience"), _jobData.default.map(function (job, index) {
+        return (0, _preact.h)(_Job.default, {
           job: job,
           key: index
         });
-      })), /*#__PURE__*/React.createElement("div", {
+      })), (0, _preact.h)("div", {
         class: "projects-section",
         id: "projects-section"
-      }, /*#__PURE__*/React.createElement("h2", null, "Related Projects"), _projectData.default.map(function (project, index) {
-        return /*#__PURE__*/React.createElement(_Project.default, {
+      }, (0, _preact.h)("h2", null, "Related Projects"), _projectData.default.map(function (project, index) {
+        return (0, _preact.h)(_Project.default, {
           project: project,
           key: index
         });
-      })), /*#__PURE__*/React.createElement("div", {
+      })), (0, _preact.h)("div", {
         class: "extracurricular-section",
         id: "extracurricular-section"
-      }, /*#__PURE__*/React.createElement("h2", null, "Additional Experience"), _moreExpData.default.map(function (project, index) {
-        return /*#__PURE__*/React.createElement(_Project.default, {
+      }, (0, _preact.h)("h2", null, "Additional Experience"), _moreExpData.default.map(function (project, index) {
+        return (0, _preact.h)(_Project.default, {
           project: project,
           key: index
         });
-      }))), /*#__PURE__*/React.createElement("div", {
+      }))), (0, _preact.h)("div", {
         class: "story-container"
-      }, /*#__PURE__*/React.createElement("div", {
+      }, (0, _preact.h)("div", {
         class: "story-item"
-      }, /*#__PURE__*/React.createElement("img", {
-        src: "./images/at_apple.jpg",
-        alt: "on Apple campus"
+      }, (0, _preact.h)("img", {
+        src: _at_apple.default,
+        alt: "Lake Maggiore"
       }))));
     }
   }]);
   return Exp;
 }(_preact.Component);
 var _default = exports.default = Exp;
-},{"preact":"node_modules/preact/dist/preact.module.js","./home_styles.css":"src/home_styles.css","./exp_styles.css":"src/exp_styles.css","./jobData.json":"src/jobData.json","./Job":"src/Job.js","./Project":"src/Project.js","./projectData.json":"src/projectData.json","./moreExpData.json":"src/moreExpData.json","./animation.css":"src/animation.css","./button_styles.css":"src/button_styles.css"}],"src/Contact.js":[function(require,module,exports) {
+},{"preact":"node_modules/preact/dist/preact.module.js","./home_styles.css":"src/home_styles.css","./exp_styles.css":"src/exp_styles.css","./jobData.json":"src/jobData.json","./Job":"src/Job.js","./Project":"src/Project.js","./projectData.json":"src/projectData.json","./moreExpData.json":"src/moreExpData.json","./animation.css":"src/animation.css","./button_styles.css":"src/button_styles.css","../images/sf_overlook.jpg":"images/sf_overlook.jpg","../images/at_apple.jpg":"images/at_apple.jpg"}],"images/peacock.jpg":[function(require,module,exports) {
+module.exports = "/peacock.f9ebe1e2.jpg";
+},{}],"images/sorrento.jpg":[function(require,module,exports) {
+module.exports = "/sorrento.a4aa4271.jpg";
+},{}],"src/Contact.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1671,6 +1706,10 @@ exports.default = void 0;
 var _preact = require("preact");
 require("./home_styles.css");
 require("./about_styles.css");
+var _peacock = _interopRequireDefault(require("../images/peacock.jpg"));
+var _jpw_headshot_blue = _interopRequireDefault(require("../images/jpw_headshot_blue.jpg"));
+var _sorrento = _interopRequireDefault(require("../images/sorrento.jpg"));
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, _toPropertyKey(descriptor.key), descriptor); } }
@@ -1735,52 +1774,52 @@ var Contact = /*#__PURE__*/function (_Component) {
   }, {
     key: "render",
     value: function render() {
-      return /*#__PURE__*/React.createElement("div", {
+      return (0, _preact.h)("div", {
         class: "contact"
-      }, /*#__PURE__*/React.createElement("div", {
+      }, (0, _preact.h)("div", {
         class: "story-container"
-      }, /*#__PURE__*/React.createElement("div", {
+      }, (0, _preact.h)("div", {
         class: "story-item"
-      }, /*#__PURE__*/React.createElement("img", {
-        src: "./images/peacock.jpg",
-        alt: "peacock"
-      }), /*#__PURE__*/React.createElement("h2", {
+      }, (0, _preact.h)("img", {
+        src: _peacock.default,
+        alt: "Lake Maggiore, peacock"
+      }), (0, _preact.h)("h2", {
         class: "story-text"
-      }, /*#__PURE__*/React.createElement("p", null, "Please reach out to me about any job opportunities you think I'd be a good fit for. You'll find my contact information below."))), /*#__PURE__*/React.createElement("div", {
+      }, (0, _preact.h)("p", null, "Please reach out to me about any job opportunities you think I'd be a good fit for. You'll find my contact information below."))), (0, _preact.h)("div", {
         class: "about-section"
-      }, /*#__PURE__*/React.createElement("div", {
+      }, (0, _preact.h)("div", {
         class: "quick-look-section"
-      }, /*#__PURE__*/React.createElement("div", {
+      }, (0, _preact.h)("div", {
         class: "quick-look-bullets"
-      }, /*#__PURE__*/React.createElement("h3", {
+      }, (0, _preact.h)("h3", {
         class: "quicklook-title"
-      }, /*#__PURE__*/React.createElement("u", null, "Celina Ryan")), /*#__PURE__*/React.createElement("h3", {
+      }, (0, _preact.h)("u", null, "Celina Ryan")), (0, _preact.h)("h3", {
         class: "quicklook-title"
-      }, "Contact me via:", " ", /*#__PURE__*/React.createElement("a", {
+      }, "Contact me via:", " ", (0, _preact.h)("a", {
         href: "mailto:cryan27@nd.edu"
-      }, "cryan27@nd.edu")), /*#__PURE__*/React.createElement("h3", {
+      }, "cryan27@nd.edu")), (0, _preact.h)("h3", {
         class: "quicklook-title"
-      }, "Check out my", " ", /*#__PURE__*/React.createElement("a", {
+      }, "Check out my", " ", (0, _preact.h)("a", {
         href: "https://www.linkedin.com/in/celina-ryan-870641168/"
-      }, "LinkedIn")), /*#__PURE__*/React.createElement("div", {
+      }, "LinkedIn")), (0, _preact.h)("div", {
         class: "centered-frame"
-      })), /*#__PURE__*/React.createElement("figure", {
+      })), (0, _preact.h)("figure", {
         class: "frame-image"
-      }, /*#__PURE__*/React.createElement("img", {
-        src: "images/jpw_headshot_blue.jpg",
-        alt: "Photo of Me"
-      })))), /*#__PURE__*/React.createElement("div", {
+      }, (0, _preact.h)("img", {
+        src: _jpw_headshot_blue.default,
+        alt: "photo of me"
+      })))), (0, _preact.h)("div", {
         class: "story-item"
-      }, /*#__PURE__*/React.createElement("img", {
-        src: "./images/sorrento.jpg",
-        alt: "a nice sunset"
+      }, (0, _preact.h)("img", {
+        src: _sorrento.default,
+        alt: "sorrento sunset"
       }))));
     }
   }]);
   return Contact;
 }(_preact.Component);
 var _default = exports.default = Contact;
-},{"preact":"node_modules/preact/dist/preact.module.js","./home_styles.css":"src/home_styles.css","./about_styles.css":"src/about_styles.css"}],"src/Footer.js":[function(require,module,exports) {
+},{"preact":"node_modules/preact/dist/preact.module.js","./home_styles.css":"src/home_styles.css","./about_styles.css":"src/about_styles.css","../images/peacock.jpg":"images/peacock.jpg","../images/jpw_headshot_blue.jpg":"images/jpw_headshot_blue.jpg","../images/sorrento.jpg":"images/sorrento.jpg"}],"src/Footer.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1829,19 +1868,19 @@ var Footer = /*#__PURE__*/function (_Component) {
   _createClass(Footer, [{
     key: "render",
     value: function render() {
-      return /*#__PURE__*/React.createElement("footer", null, /*#__PURE__*/React.createElement("div", {
+      return (0, _preact.h)("footer", null, (0, _preact.h)("div", {
         className: "navbar-container"
-      }, /*#__PURE__*/React.createElement("div", {
+      }, (0, _preact.h)("div", {
         class: "logo-cont"
-      }, /*#__PURE__*/React.createElement("a", {
+      }, (0, _preact.h)("a", {
         href: "/",
         class: "logo"
-      }, /*#__PURE__*/React.createElement("img", {
+      }, (0, _preact.h)("img", {
         src: _cr_logo_up.default,
         alt: "celina logo"
-      }))), /*#__PURE__*/React.createElement("div", {
+      }))), (0, _preact.h)("div", {
         className: "frame"
-      }, /*#__PURE__*/React.createElement("button", {
+      }, (0, _preact.h)("button", {
         className: "button-style",
         onClick: this.scrollToTop
       }, "scroll to top"))));
@@ -1868,19 +1907,19 @@ var _Contact = _interopRequireDefault(require("./Contact"));
 var _Footer = _interopRequireDefault(require("./Footer"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 var App = function App() {
-  return /*#__PURE__*/React.createElement("div", {
+  return (0, _preact.h)("div", {
     id: "app"
-  }, /*#__PURE__*/React.createElement(_NavBar.default, null), /*#__PURE__*/React.createElement(_preactRouter.default, null, /*#__PURE__*/React.createElement(_Home.default, {
+  }, (0, _preact.h)(_NavBar.default, null), (0, _preact.h)(_preactRouter.default, null, (0, _preact.h)(_Home.default, {
     default: true
-  }), /*#__PURE__*/React.createElement(_Exp.default, {
+  }), (0, _preact.h)(_Exp.default, {
     path: "/exp"
-  }), /*#__PURE__*/React.createElement(_Skills.default, {
+  }), (0, _preact.h)(_Skills.default, {
     path: "/skills"
-  }), /*#__PURE__*/React.createElement(_About.default, {
+  }), (0, _preact.h)(_About.default, {
     path: "/about"
-  }), /*#__PURE__*/React.createElement(_Contact.default, {
+  }), (0, _preact.h)(_Contact.default, {
     path: "/contact"
-  })), /*#__PURE__*/React.createElement(_Footer.default, null));
+  })), (0, _preact.h)(_Footer.default, null));
 };
 var _default = exports.default = App;
 },{"preact":"node_modules/preact/dist/preact.module.js","preact-router":"node_modules/preact-router/dist/preact-router.es.js","./NavBar":"src/NavBar.js","./Home":"src/Home.js","./About":"src/About.js","./Skills":"src/Skills.js","./Exp":"src/Exp.js","./Contact":"src/Contact.js","./Footer":"src/Footer.js"}],"src/index.js":[function(require,module,exports) {
@@ -1889,7 +1928,7 @@ var _default = exports.default = App;
 var _preact = require("preact");
 var _App = _interopRequireDefault(require("./App"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-(0, _preact.render)( /*#__PURE__*/React.createElement(_App.default, null), document.body);
+(0, _preact.render)((0, _preact.h)(_App.default, null), document.body);
 },{"preact":"node_modules/preact/dist/preact.module.js","./App":"src/App.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -1915,7 +1954,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "41989" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49741" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];

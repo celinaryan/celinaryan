@@ -1,6 +1,10 @@
 import { h, Component } from "preact";
 import "./about_styles.css";
 import "./home_styles.css";
+import hotel_at_lake_img from "../images/hotel_at_lake.jpg";
+import me_in_HI_img from "../images/me.jpg";
+import headshot_img from "../images/jpw_headshot_blue.jpg";
+
 class About extends Component {
   componentDidMount() {
     window.addEventListener("scroll", this.handleScroll);
@@ -50,7 +54,7 @@ class About extends Component {
       <div class="about">
         <div class="story-container">
           <div class="story-item">
-            <img src="./images/dc_cherry_blossoms.jpg" alt="Lake Maggiore" />
+            <img src={hotel_at_lake_img} alt="Lake Maggiore, from the hotel" />
             <h2 class="story-text">
               <p>
                 Answering the classic question: "so tell me a little about
@@ -79,7 +83,7 @@ class About extends Component {
               <div class="centered-frame"></div>
             </div>
             <figure class="frame-image">
-              <img src="images/jpw_headshot_blue.jpg" alt="Photo of Me" />
+              <img src={headshot_img} alt="my headshot" />
             </figure>
           </div>
           <div class="about-me-section">
@@ -142,7 +146,7 @@ class About extends Component {
           </div>
         </div>
         <div class="story-item">
-          <img src="./images/me.jpg" alt="me in hawaii" />
+        <img src={me_in_HI_img} alt="me in hawaii" />
         </div>
       </div>
     );
