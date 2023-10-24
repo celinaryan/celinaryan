@@ -190,7 +190,7 @@ html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 3em; /* adjust font size to a more readable level */
+    font-size: 2em; /* adjust font size to a more readable level */
   }
 }
 
@@ -202,7 +202,6 @@ html {
     width: 80%; /* Adjust as per need */
     position: absolute;
 
-
     transition: transform 0.5s ease-in-out, font-size 0.2s ease-in-out; /* adjust transition */
     height: 90%; /* Increase from 70% to 90% */
     font-size: 1.8em; /* increase font size */
@@ -211,7 +210,8 @@ html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 3em; /* adjust font size to a more readable level */
+    font-size: 1.8em; /* adjust font size to a more readable level */
+    /*overflow: scroll;*/
   }
   
 }
@@ -220,7 +220,7 @@ html {
   .story-text {
     height: 90%; /* Adjust as per need */
     width: 80%; /* Adjust as per need */
-    font-size: 1.5em; /* decrease font size for smaller screens */
+    font-size: 1em; /* decrease font size for smaller screens */
   }
 }
 /* about.css */
