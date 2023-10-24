@@ -34,16 +34,29 @@
   color: rgb(107, 164, 207);
 }
 
-.nav-container {
+.nav-container,footer .navbar-container, .exp .navbar {
   display: flex;
-  justify-content: space-between;
+  flex-direction: row; /* add this line */
   align-items: center;
   padding: 10px;
   background-color: rgb(158, 202, 236);
   position: relative;
   z-index: 9999;
+  justify-content: space-between;  /* Ensures the maximal distance */
 }
 
+
+
+footer .navbar-container .logo-cont,
+footer .navbar-container .frame {
+  display: inline-flex;
+  align-items: center;
+}
+
+.frame {
+  margin-left: auto;
+  margin-right: 10px;
+}
 .toggle-button {
   display: none;
   flex-direction: column;
