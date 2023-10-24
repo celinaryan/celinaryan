@@ -101,9 +101,6 @@ footer .navbar-container .frame {
     display: flex;
   }
   
-  .story-text{
-    font-size: 14px;
-  }
 }
 
 .toggle-button.change .bar:nth-child(1) {
