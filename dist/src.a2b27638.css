@@ -181,7 +181,7 @@ html {
     top: 50%;
     left: 50%;
     height: fit-content; /* Adjust as per need */
-    width: 100%; /* Adjust as per need */
+    width: 80%; /* Adjust as per need */
     position: absolute;
     transform: translate(-50%, -50%); /* To center the text */
 
@@ -216,6 +216,8 @@ html {
 
 @media only screen and (max-width: 600px) {
   .story-text {
+    height: 70%; /* Adjust as per need */
+    width: 80%; /* Adjust as per need */
     font-size: 1.6em; /* decrease font size for smaller screens */
   }
 }
