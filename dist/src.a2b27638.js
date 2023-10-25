@@ -997,12 +997,14 @@ var Home = /*#__PURE__*/function (_Component) {
         var rect = el.getBoundingClientRect();
         var rectCenter = rect.top + rect.height / 2; /* center Y-coordinate of the element in the viewport */
 
-        var newOpacity = 0;
+        var newOpacity = 0.5; // Increased the base opacity
         var newSize = 1.5; /* font size for smaller screens */
 
         // larger screens
         if (window.innerWidth > 961) {
-          newOpacity = Math.max(Math.min(2 * (windowHeight - rectCenter) / windowHeight, 1), 0);
+          newOpacity = Math.max(Math.min(2 * (windowHeight - rectCenter) / windowHeight, 1), 0.5 // Adjusted the minimum opacity
+          );
+
           newSize = 3 * newOpacity; /* so the size will range from 0 to 3 */
         }
         // smaller screens
@@ -1958,7 +1960,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53974" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57107" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];

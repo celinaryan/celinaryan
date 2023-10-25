@@ -34,7 +34,7 @@
   color: rgb(107, 164, 207);
 }
 .nav-container, footer .navbar-container{
-  z-index: 99999;
+  z-index: 9999;
 }
 .nav-container,footer .navbar-container, .exp .navbar {
   display: flex;
@@ -88,10 +88,10 @@ footer .navbar-container .frame {
     font-size: 20px;
   }
   .logo img{
-    width: 120px;
+    width: 100px;
   }
   .nav-item:first-child {
-    margin-top: 20px; /* Adjust the distance between the first item and the logo/menu icon */
+    margin-top: 0px; /* Adjust the distance between the first item and the logo/menu icon */
   }
   .nav-links {
     display: none;
@@ -103,7 +103,7 @@ footer .navbar-container .frame {
     width: 100%;
     align-items: center;
     justify-content: left;
-    top:80px;
+    top:70px;
   }
 
   .nav-links.active {
@@ -227,6 +227,11 @@ html {
 }
 
 @media only screen and (max-width: 600px) {
+  /*
+  .story-item:first-child .story-text{
+    transition: transform 0.1s ease-in-out;
+  }*/
+  
   .story-text {
     transition: transform 0.5s ease-in-out;
     height: 90%; /* Adjust as per need */

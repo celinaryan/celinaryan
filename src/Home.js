@@ -19,22 +19,21 @@ class Home extends Component {
       document.querySelectorAll(".story-text")
     );
     const windowHeight = window.innerHeight;
-
+  
     newTextElements.forEach((el) => {
       const rect = el.getBoundingClientRect();
       const rectCenter =
         rect.top +
-        rect.height /
-          2; /* center Y-coordinate of the element in the viewport */
-
-      let newOpacity = 0;
+        rect.height / 2; /* center Y-coordinate of the element in the viewport */
+  
+      let newOpacity = 0.5; // Increased the base opacity
       let newSize = 1.5; /* font size for smaller screens */
-
+  
       // larger screens
       if (window.innerWidth > 961) {
         newOpacity = Math.max(
           Math.min((2 * (windowHeight - rectCenter)) / windowHeight, 1),
-          0
+          0.5  // Adjusted the minimum opacity
         );
         newSize = 3 * newOpacity; /* so the size will range from 0 to 3 */
       }
@@ -43,7 +42,7 @@ class Home extends Component {
         newOpacity = Math.max(Math.min((2 * rectCenter) / windowHeight, 1), 0);
         newSize += newOpacity / 25; /* so the size will range from 1.5 to 3 */
       }
-
+  
       el.style.opacity = newOpacity;
       el.style.fontSize = `${newSize}em`;
     });
