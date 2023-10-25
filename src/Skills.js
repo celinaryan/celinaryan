@@ -4,6 +4,7 @@ import skillsData from "./skillsData.json";
 import Skill from "./Skill";
 import "./animation.css";
 import walk_on_hill_image from "../images/walking_on_hill.jpg";
+import apple_combo from "../images/apple_combo.jpg";
 import boat_and_rock_img from "../images/boat_and_rock.jpg";
 
 class Skills extends Component {
@@ -62,7 +63,7 @@ class Skills extends Component {
 
   render() {
     return (
-      <div class="exp">
+      <div class="skills">
         <div class="story-container">
           <div class="story-item">
             <img src={boat_and_rock_img} alt="boat" />
@@ -83,7 +84,7 @@ class Skills extends Component {
 
         <div class="story-container">
           <div class="story-item">
-            <img src={walk_on_hill_image} alt="me walking around" />
+            <img src={apple_combo} alt="me at Apple" />
           </div>
         </div>
       </div>

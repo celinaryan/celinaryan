@@ -88,7 +88,7 @@ footer .navbar-container .frame {
     font-size: 20px;
   }
   .logo img{
-    width: 100px;
+    width: 80px;
   }
   .nav-item:first-child {
     margin-top: 0px; /* Adjust the distance between the first item and the logo/menu icon */
@@ -98,12 +98,11 @@ footer .navbar-container .frame {
     flex-direction: column;
     position: absolute;
     right: 0;
-    top: 60px;
     background-color: rgb(158, 202, 236);
     width: 100%;
     align-items: center;
     justify-content: left;
-    top:70px;
+    top:60px;
   }
 
   .nav-links.active {

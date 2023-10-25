@@ -1041,21 +1041,21 @@ var Home = /*#__PURE__*/function (_Component) {
         alt: "Lake Maggiore"
       }), (0, _preact.h)("h2", {
         class: "story-text"
-      }, (0, _preact.h)("p", null, "Welcome to my personal website. I'm Celina Ryan and I\u2019m a Computer Science major at the University of Notre Dame. I made this website to tell potential employers a bit more about myself beyond my resume, to dig a bit deeper into web development, and to explain what I hope to achieve with my career."))), (0, _preact.h)("div", {
+      }, (0, _preact.h)("p", null, "Welcome to my personal website. I'm Celina Ryan, a Computer Science major at the University of Notre Dame. I made this website to tell potential employers a bit more about myself beyond my resume, to dig a bit deeper into web development, and to explain what I hope to achieve with my career."))), (0, _preact.h)("div", {
         class: "story-item"
       }, (0, _preact.h)("img", {
         src: _hawaii_trees.default,
         alt: "hawaii"
       }), (0, _preact.h)("h2", {
         class: "story-text"
-      }, (0, _preact.h)("p", null, "I'm currently a senior and graduating in May 2024. Following graduation, I hope to have a job by September 2024. I'm looking for a full-time software development and/or engineering position. I'm not too picky where the job is..."))), (0, _preact.h)("div", {
+      }, (0, _preact.h)("p", null, "I'm currently a senior and graduating in May 2024.I'm looking for a full-time software development and/or engineering position. I\u2019m open to exploring new places and would be happy to start my career anywhere..."))), (0, _preact.h)("div", {
         class: "story-item"
       }, (0, _preact.h)("img", {
         src: _geis.default,
         alt: "Geissenheim"
       }), (0, _preact.h)("h2", {
         class: "story-text"
-      }, (0, _preact.h)("p", null, "I hope to end up either in the Washington D.C. area, Austin, Texas, California, New York City, or in Denver, Colorado. So that's my spiel. You're welcome to look around this site and learn more about me. If you'd like to chat about a potential position, please feel free to reach out."))), (0, _preact.h)("div", {
+      }, (0, _preact.h)("p", null, "My locations of preference are the Washington D.C. area, Austin, Texas, California, New York City, or in Denver, Colorado. So that's my spiel. You're welcome to look around this site and learn more about me. If you'd like to chat about a potential position, please feel free to reach out."))), (0, _preact.h)("div", {
         class: "story-item"
       }, (0, _preact.h)("img", {
         src: _amalfi_boat.default,
@@ -1218,7 +1218,7 @@ var _default = exports.default = About;
 },{"preact":"node_modules/preact/dist/preact.module.js","./about_styles.css":"src/about_styles.css","./home_styles.css":"src/home_styles.css","../images/hotel_at_lake.jpg":"images/hotel_at_lake.jpg","../images/me.jpg":"images/me.jpg","../images/jpw_headshot_blue.jpg":"images/jpw_headshot_blue.jpg"}],"src/skillsData.json":[function(require,module,exports) {
 module.exports = [{
   "skillCategory": "Coding Languages",
-  "skillsList": ["Python", "C", "C++", "Java", "MATLAB", "SQL", "JavaScript, Preact, and React", "Swift", "Objective-C", "HTML and CSS"]
+  "skillsList": ["Python", "C", "C++", "Java", "MATLAB", "SQL", "NoSQL", "JavaScript, Preact, and React", "Swift", "Objective-C", "HTML and CSS"]
 }, {
   "skillCategory": "Assembly Languages",
   "skillsList": ["Verilog", "albacore", "ARM"]
@@ -1227,7 +1227,7 @@ module.exports = [{
   "skillsList": ["UiPath (Robotic Process Automation)", "AWS", "Tableau", "PowerBI", "XCode"]
 }, {
   "skillCategory": "Industry Understanding",
-  "skillsList": ["Natural Language Processing", "Data Science", "Artificial Intelligence", "Machine Learning", "Data Lakes", "Computer Vision", "3D Modeling", "graphics", "iOS Development", "Distributed Systems", "Networks", "Web Development", "Compilers"]
+  "skillsList": ["Natural Language Processing", "Data Science", "Artificial Intelligence", "Machine Learning", "Data Lakes", "Computer Vision", "3D Modeling", "Graphics", "iOS Development", "Distributed Systems", "Networks", "Web Development", "Compilers"]
 }];
 },{}],"src/Skill.js":[function(require,module,exports) {
 "use strict";
@@ -1255,6 +1255,8 @@ module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
 },{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"images/walking_on_hill.jpg":[function(require,module,exports) {
 module.exports = "/walking_on_hill.3747aeda.jpg";
+},{}],"images/apple_combo.jpg":[function(require,module,exports) {
+module.exports = "/apple_combo.c4c53892.jpg";
 },{}],"images/boat_and_rock.jpg":[function(require,module,exports) {
 module.exports = "/boat_and_rock.4dbcde83.jpg";
 },{}],"src/Skills.js":[function(require,module,exports) {
@@ -1270,6 +1272,7 @@ var _skillsData = _interopRequireDefault(require("./skillsData.json"));
 var _Skill = _interopRequireDefault(require("./Skill"));
 require("./animation.css");
 var _walking_on_hill = _interopRequireDefault(require("../images/walking_on_hill.jpg"));
+var _apple_combo = _interopRequireDefault(require("../images/apple_combo.jpg"));
 var _boat_and_rock = _interopRequireDefault(require("../images/boat_and_rock.jpg"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
@@ -1346,7 +1349,7 @@ var Skills = /*#__PURE__*/function (_Component) {
     key: "render",
     value: function render() {
       return (0, _preact.h)("div", {
-        class: "exp"
+        class: "skills"
       }, (0, _preact.h)("div", {
         class: "story-container"
       }, (0, _preact.h)("div", {
@@ -1368,15 +1371,15 @@ var Skills = /*#__PURE__*/function (_Component) {
       }, (0, _preact.h)("div", {
         class: "story-item"
       }, (0, _preact.h)("img", {
-        src: _walking_on_hill.default,
-        alt: "me walking around"
+        src: _apple_combo.default,
+        alt: "me at Apple"
       }))));
     }
   }]);
   return Skills;
 }(_preact.Component);
 var _default = exports.default = Skills;
-},{"preact":"node_modules/preact/dist/preact.module.js","./home_styles.css":"src/home_styles.css","./skillsData.json":"src/skillsData.json","./Skill":"src/Skill.js","./animation.css":"src/animation.css","../images/walking_on_hill.jpg":"images/walking_on_hill.jpg","../images/boat_and_rock.jpg":"images/boat_and_rock.jpg"}],"src/exp_styles.css":[function(require,module,exports) {
+},{"preact":"node_modules/preact/dist/preact.module.js","./home_styles.css":"src/home_styles.css","./skillsData.json":"src/skillsData.json","./Skill":"src/Skill.js","./animation.css":"src/animation.css","../images/walking_on_hill.jpg":"images/walking_on_hill.jpg","../images/apple_combo.jpg":"images/apple_combo.jpg","../images/boat_and_rock.jpg":"images/boat_and_rock.jpg"}],"src/exp_styles.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
@@ -1523,10 +1526,10 @@ module.exports = [{
 var reloadCSS = require('_css_loader');
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"images/sf_overlook.jpg":[function(require,module,exports) {
-module.exports = "/sf_overlook.106948cc.jpg";
-},{}],"images/at_apple.jpg":[function(require,module,exports) {
+},{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"images/at_apple.jpg":[function(require,module,exports) {
 module.exports = "/at_apple.6bb7479e.jpg";
+},{}],"images/nd_snow.jpg":[function(require,module,exports) {
+module.exports = "/nd_snow.7b9afb7b.jpg";
 },{}],"src/Exp.js":[function(require,module,exports) {
 "use strict";
 
@@ -1544,8 +1547,8 @@ var _projectData = _interopRequireDefault(require("./projectData.json"));
 var _moreExpData = _interopRequireDefault(require("./moreExpData.json"));
 require("./animation.css");
 require("./button_styles.css");
-var _sf_overlook = _interopRequireDefault(require("../images/sf_overlook.jpg"));
 var _at_apple = _interopRequireDefault(require("../images/at_apple.jpg"));
+var _nd_snow = _interopRequireDefault(require("../images/nd_snow.jpg"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -1638,8 +1641,8 @@ var Exp = /*#__PURE__*/function (_Component) {
       }, (0, _preact.h)("div", {
         class: "story-item"
       }, (0, _preact.h)("img", {
-        src: _sf_overlook.default,
-        alt: "San Francisco"
+        src: _nd_snow.default,
+        alt: "Snowy Notre Dame"
       }), (0, _preact.h)("h2", {
         class: "story-text"
       }, (0, _preact.h)("p", null, "Here you will find all of my academic and extracurricular endeavors. Enjoy!"))), (0, _preact.h)("div", {
@@ -1698,7 +1701,7 @@ var Exp = /*#__PURE__*/function (_Component) {
   return Exp;
 }(_preact.Component);
 var _default = exports.default = Exp;
-},{"preact":"node_modules/preact/dist/preact.module.js","./home_styles.css":"src/home_styles.css","./exp_styles.css":"src/exp_styles.css","./jobData.json":"src/jobData.json","./Job":"src/Job.js","./Project":"src/Project.js","./projectData.json":"src/projectData.json","./moreExpData.json":"src/moreExpData.json","./animation.css":"src/animation.css","./button_styles.css":"src/button_styles.css","../images/sf_overlook.jpg":"images/sf_overlook.jpg","../images/at_apple.jpg":"images/at_apple.jpg"}],"images/peacock.jpg":[function(require,module,exports) {
+},{"preact":"node_modules/preact/dist/preact.module.js","./home_styles.css":"src/home_styles.css","./exp_styles.css":"src/exp_styles.css","./jobData.json":"src/jobData.json","./Job":"src/Job.js","./Project":"src/Project.js","./projectData.json":"src/projectData.json","./moreExpData.json":"src/moreExpData.json","./animation.css":"src/animation.css","./button_styles.css":"src/button_styles.css","../images/at_apple.jpg":"images/at_apple.jpg","../images/nd_snow.jpg":"images/nd_snow.jpg"}],"images/peacock.jpg":[function(require,module,exports) {
 module.exports = "/peacock.f9ebe1e2.jpg";
 },{}],"images/sorrento.jpg":[function(require,module,exports) {
 module.exports = "/sorrento.a4aa4271.jpg";
@@ -1960,7 +1963,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57107" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52795" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
