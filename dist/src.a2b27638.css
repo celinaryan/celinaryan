@@ -77,17 +77,20 @@ footer .navbar-container .frame {
     display: inline-block;
     right: 0;
   }
-
+/*
   .nav-container, footer .navbar-container, .exp .navbar {
     padding: 20px;
-  }
+  }*/
+
   .nav-links a {
     font-size: 20px;
   }
   .logo img{
-    width: 100px;
+    width: 120px;
   }
-
+  .nav-item:first-child {
+    margin-top: 20px; /* Adjust the distance between the first item and the logo/menu icon */
+  }
   .nav-links {
     display: none;
     flex-direction: column;
@@ -98,6 +101,7 @@ footer .navbar-container .frame {
     width: 100%;
     align-items: center;
     justify-content: left;
+    top:80px;
   }
 
   .nav-links.active {
@@ -215,15 +219,18 @@ html {
     align-items: center;
     font-size: 1.8em; /* adjust font size to a more readable level */
     /*overflow: scroll;*/
+    line-height: 1.2;
   }
   
 }
 
 @media only screen and (max-width: 600px) {
   .story-text {
+    transition: transform 0.5s ease-in-out;
     height: 90%; /* Adjust as per need */
     width: 80%; /* Adjust as per need */
     font-size: 1em; /* decrease font size for smaller screens */
+    line-height: 1.2;
   }
 }
 /* about.css */

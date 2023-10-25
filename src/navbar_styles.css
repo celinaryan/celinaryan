@@ -77,17 +77,20 @@ footer .navbar-container .frame {
     display: inline-block;
     right: 0;
   }
-
+/*
   .nav-container, footer .navbar-container, .exp .navbar {
     padding: 20px;
-  }
+  }*/
+
   .nav-links a {
     font-size: 20px;
   }
   .logo img{
-    width: 100px;
+    width: 120px;
   }
-
+  .nav-item:first-child {
+    margin-top: 20px; /* Adjust the distance between the first item and the logo/menu icon */
+  }
   .nav-links {
     display: none;
     flex-direction: column;
@@ -98,6 +101,7 @@ footer .navbar-container .frame {
     width: 100%;
     align-items: center;
     justify-content: left;
+    top:80px;
   }
 
   .nav-links.active {
