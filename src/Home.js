@@ -55,7 +55,7 @@ class Home extends Component {
         <img src={lake_mag} alt="Lake Maggiore" />
           <h2 class="story-text">
             <p>
-              Welcome to my personal website. I'm Celina Ryan and I’m a Computer
+              Welcome to my personal website. I'm Celina Ryan, a Computer
               Science major at the University of Notre Dame. I made this website
               to tell potential employers a bit more about myself beyond my
               resume, to dig a bit deeper into web development, and to explain
