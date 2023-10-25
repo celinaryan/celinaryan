@@ -10,7 +10,7 @@ import "./animation.css";
 import "./button_styles.css";
 import sf_image from "../images/sf_overlook.jpg";
 import apple_image from "../images/at_apple.jpg";
-
+import nd_snow from "../images/nd_snow.jpg";
 class Exp extends Component {
   componentDidMount() {
     window.addEventListener("scroll", this.handleScroll);
@@ -79,7 +79,7 @@ class Exp extends Component {
       <div class="exp">
         <div class="story-container">
           <div class="story-item">
-          <img src={sf_image} alt="San Francisco" />
+          <img src={nd_snow} alt="Snowy Notre Dame" />
             <h2 class="story-text">
               <p>
                 Here you will find all of my academic and extracurricular
