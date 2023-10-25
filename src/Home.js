@@ -67,9 +67,9 @@ class Home extends Component {
           <img src={hawaiiTreesImgSrc} alt="hawaii" />
           <h2 class="story-text">
             <p>
-              I'm currently a senior and graduating in May 2024. Following
-              graduation, I hope to have a job by September 2024. I'm looking for a full-time software development and/or
-              engineering position. I'm not too picky where the job is...
+              I'm currently a senior and graduating in May 2024.I'm looking for a full-time 
+              software development and/or engineering position. I’m open to exploring new places
+              and would be happy to start my career anywhere...
             </p>
           </h2>
         </div>
@@ -77,7 +77,7 @@ class Home extends Component {
         <img src={geis_img} alt="Geissenheim" />
           <h2 class="story-text">
             <p>
-              I hope to end up either in the Washington D.C. area, Austin, Texas, California, New York City, or
+              My locations of preference are the Washington D.C. area, Austin, Texas, California, New York City, or
               in Denver, Colorado. So that's my spiel. You're welcome to look
               around this site and learn more about me. If you'd like to chat
               about a potential position, please feel free to reach out.
