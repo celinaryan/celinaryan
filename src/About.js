@@ -92,10 +92,8 @@ class About extends Component {
               If I had to describe myself in one word, it’d probably be
               hyperactive. I live a fairly active lifestyle and love to learn. I
               enjoy just about any form of exercise: weight-lifting, yoga,
-              running, swimming, and hiking. I like to read, too. I read a
-              couple books at a time, just to keep myself in a constant rotation
-              of learning and appreciating separate topics. I’m also learning
-              the guitar and the bass guitar. I’m an avid dog
+              running, swimming, and hiking. As well as staying active I enjoy reading, normally several books
+              at a time. I’m also learning the guitar and the bass guitar. I’m an avid dog
               lover; I have four dogs back home in Virginia. I’m a big fan of the great outdoors,
               cooking, and coffee shops. So that’s what I keep myself busy with
               when I’m not busy with school or work!

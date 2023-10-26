@@ -77,9 +77,9 @@ class Home extends Component {
         <img src={geis_img} alt="Geissenheim" />
           <h2 class="story-text">
             <p>
-              My locations of preference are the Washington D.C. area, Austin, Texas, California, New York City, or
-              in Denver, Colorado. So that's my spiel. You're welcome to look
-              around this site and learn more about me. If you'd like to chat
+              My areas of preference are Austin, New York City, Denver, the Bay area, and the 
+              Washington D.C. area, but I’m always open to exploring new places. So that's my spiel. 
+              You're welcome to look around this site and learn more about me. If you'd like to chat
               about a potential position, please feel free to reach out.
             </p>
           </h2>
