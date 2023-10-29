@@ -1009,8 +1009,8 @@ var Home = /*#__PURE__*/function (_Component) {
         }
         // smaller screens
         else {
-          newOpacity = Math.max(Math.min(2 * rectCenter / windowHeight, 1), 0);
-          newSize += newOpacity / 25; /* so the size will range from 1.5 to 3 */
+          newOpacity = Math.max(Math.min(2 * rectCenter / windowHeight, 1), 0.8);
+          newSize += newOpacity / 9; /* so the size will range from 1.5 to 3 */
         }
 
         el.style.opacity = newOpacity;
@@ -1055,7 +1055,7 @@ var Home = /*#__PURE__*/function (_Component) {
         alt: "Geissenheim"
       }), (0, _preact.h)("h2", {
         class: "story-text"
-      }, (0, _preact.h)("p", null, "My locations of preference are the Washington D.C. area, Austin, Texas, California, New York City, or in Denver, Colorado. So that's my spiel. You're welcome to look around this site and learn more about me. If you'd like to chat about a potential position, please feel free to reach out."))), (0, _preact.h)("div", {
+      }, (0, _preact.h)("p", null, "My areas of preference are Austin, New York City, Denver, the Bay area, and the Washington D.C. area, but I\u2019m always open to exploring new places. So that's my spiel. You're welcome to look around this site and learn more about me. If you'd like to chat about a potential position, please feel free to reach out."))), (0, _preact.h)("div", {
         class: "story-item"
       }, (0, _preact.h)("img", {
         src: _amalfi_boat.default,
@@ -1131,7 +1131,7 @@ var About = /*#__PURE__*/function (_Component) {
         }
         // smaller screens
         else {
-          newOpacity = Math.max(Math.min(2 * rectCenter / windowHeight, 1), 0);
+          newOpacity = Math.max(Math.min(2 * rectCenter / windowHeight, 1), 0.8);
           newSize += newOpacity / 2; /* so the size will range from 1.5 to 3 */
         }
 
@@ -1192,7 +1192,7 @@ var About = /*#__PURE__*/function (_Component) {
         class: "about-me-section"
       }, (0, _preact.h)("h2", {
         class: "about-header"
-      }, "About Me"), (0, _preact.h)("p", null, "If I had to describe myself in one word, it\u2019d probably be hyperactive. I live a fairly active lifestyle and love to learn. I enjoy just about any form of exercise: weight-lifting, yoga, running, swimming, and hiking. I like to read, too. I read a couple books at a time, just to keep myself in a constant rotation of learning and appreciating separate topics. I\u2019m also learning the guitar and the bass guitar. I\u2019m an avid dog lover; I have four dogs back home in Virginia. I\u2019m a big fan of the great outdoors, cooking, and coffee shops. So that\u2019s what I keep myself busy with when I\u2019m not busy with school or work!")), (0, _preact.h)("div", {
+      }, "About Me"), (0, _preact.h)("p", null, "If I had to describe myself in one word, it\u2019d probably be hyperactive. I live a fairly active lifestyle and love to learn. I enjoy just about any form of exercise: weight-lifting, yoga, running, swimming, and hiking. As well as staying active I enjoy reading, normally several books at a time. I\u2019m also learning the guitar and the bass guitar. I\u2019m an avid dog lover; I have four dogs back home in Virginia. I\u2019m a big fan of the great outdoors, cooking, and coffee shops. So that\u2019s what I keep myself busy with when I\u2019m not busy with school or work!")), (0, _preact.h)("div", {
         class: "about-site-section"
       }, (0, _preact.h)("h2", {
         class: "about-header"
@@ -1325,7 +1325,7 @@ var Skills = /*#__PURE__*/function (_Component) {
         }
         // smaller screens
         else {
-          newOpacity = Math.max(Math.min(2 * rectCenter / windowHeight, 1), 0);
+          newOpacity = Math.max(Math.min(2 * rectCenter / windowHeight, 1), 0.8);
           newSize += newOpacity / 2; /* so the size will range from 1.5 to 3 */
         }
 
@@ -1401,7 +1401,7 @@ module.exports = [{
   "jobTitle": "Data Science Intern on Digital Transformations Team",
   "jobDates": "May 2022 – August 2022",
   "jobLocation": "Arlington, Virginia",
-  "jobDescription": ["Developed solutions within CACI’s new Data Lake in AWS. Used my ML and NLP knowledge within Python to develop a comprehensive solution for the Business Development Team.", "Enhanced data-read in with Computer Vision using Python libraries."]
+  "jobDescription": ["Developed solutions within CACI’s new Data Lake in AWS. Used ML and NLP within Python to develop a comprehensive solution for the Business Development Team.", "Enhanced data-read in with Computer Vision using Python libraries."]
 }, {
   "companyName": "CACI International",
   "jobTitle": "Data Science Intern on HR Team",
@@ -1606,7 +1606,7 @@ var Exp = /*#__PURE__*/function (_Component) {
         }
         // smaller screens
         else {
-          newOpacity = Math.max(Math.min(2 * rectCenter / windowHeight, 1), 0);
+          newOpacity = Math.max(Math.min(2 * rectCenter / windowHeight, 1), 0.8);
           newSize += newOpacity / 2; /* so the size will range from 1.5 to 3 */
         }
 
@@ -1760,7 +1760,7 @@ var Contact = /*#__PURE__*/function (_Component) {
         }
         // smaller screens
         else {
-          newOpacity = Math.max(Math.min(2 * rectCenter / windowHeight, 1), 0);
+          newOpacity = Math.max(Math.min(2 * rectCenter / windowHeight, 1), 0.8);
           newSize += newOpacity / 2; /* so the size will range from 1.5 to 3 */
         }
 
@@ -1963,7 +1963,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52795" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55638" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];

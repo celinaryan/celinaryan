@@ -39,8 +39,8 @@ class Home extends Component {
       }
       // smaller screens
       else {
-        newOpacity = Math.max(Math.min((2 * rectCenter) / windowHeight, 1), 0);
-        newSize += newOpacity / 25; /* so the size will range from 1.5 to 3 */
+        newOpacity = Math.max(Math.min((2 * rectCenter) / windowHeight, 1), 0.8);
+        newSize += newOpacity / 9; /* so the size will range from 1.5 to 3 */
       }
   
       el.style.opacity = newOpacity;

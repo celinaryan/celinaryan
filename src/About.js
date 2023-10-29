@@ -40,7 +40,7 @@ class About extends Component {
       }
       // smaller screens
       else {
-        newOpacity = Math.max(Math.min((2 * rectCenter) / windowHeight, 1), 0);
+        newOpacity = Math.max(Math.min((2 * rectCenter) / windowHeight, 1), 0.8);
         newSize += newOpacity / 2; /* so the size will range from 1.5 to 3 */
       }
 
