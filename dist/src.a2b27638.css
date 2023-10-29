@@ -171,7 +171,7 @@ html {
 .story-item {
   position: relative;
 }
-.skills{
+.skills, .exp{
   background-color: #8bb8dd;
 }
 .story-text {
