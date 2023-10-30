@@ -67,7 +67,7 @@ class Home extends Component {
           <img src={hawaiiTreesImgSrc} alt="hawaii" />
           <h2 class="story-text">
             <p>
-              I'm currently a senior and graduating in May 2024.I'm looking for a full-time 
+              I'm currently a senior and graduating in May 2024. I'm looking for a full-time 
               software development and/or engineering position. I’m open to exploring new places
               and would be happy to start my career anywhere...
             </p>
