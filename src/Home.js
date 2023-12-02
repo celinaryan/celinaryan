@@ -19,30 +19,30 @@ class Home extends Component {
       document.querySelectorAll(".story-text")
     );
     const windowHeight = window.innerHeight;
-  
-    newTextElements.forEach((el) => {
+
+    newTextElements.forEach((el, index) => {
       const rect = el.getBoundingClientRect();
-      const rectCenter =
-        rect.top +
-        rect.height / 2; /* center Y-coordinate of the element in the viewport */
-  
-      let newOpacity = 0.5; // Increased the base opacity
+      let newOpacity = 0.8; // Increased the base opacity
       let newSize = 1.5; /* font size for smaller screens */
-  
+      let rectCenter = rect.top;
+
+      // For the first element, we consider only the top edge
+      // For other elements, we still rely on the center.
+      if(index !== 0){
+         rectCenter += rect.height / 3; /* center Y-coordinate of the element in the viewport */
+      }
+
       // larger screens
       if (window.innerWidth > 961) {
-        newOpacity = Math.max(
-          Math.min((2 * (windowHeight - rectCenter)) / windowHeight, 1),
-          0.5  // Adjusted the minimum opacity
-        );
-        newSize = 3 * newOpacity; /* so the size will range from 0 to 3 */
+        newOpacity = Math.max(Math.min((2 * (windowHeight - rectCenter)) / windowHeight, 1), 0.8);
+        newSize += newOpacity /1.5; /* so the size will range from 0 to 3 */
       }
       // smaller screens
       else {
         newOpacity = Math.max(Math.min((2 * rectCenter) / windowHeight, 1), 0.8);
         newSize += newOpacity / 9; /* so the size will range from 1.5 to 3 */
       }
-  
+
       el.style.opacity = newOpacity;
       el.style.fontSize = `${newSize}em`;
     });
