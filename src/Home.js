@@ -29,17 +29,17 @@ class Home extends Component {
       // For the first element, we consider only the top edge
       // For other elements, we still rely on the center.
       if(index !== 0){
-         rectCenter += rect.height / 3; /* center Y-coordinate of the element in the viewport */
+         rectCenter += rect.height / 4; /* center Y-coordinate of the element in the viewport */
       }
 
       // larger screens
       if (window.innerWidth > 961) {
         newOpacity = Math.max(Math.min((2 * (windowHeight - rectCenter)) / windowHeight, 1), 0.8);
-        newSize += newOpacity /1.5; /* so the size will range from 0 to 3 */
+        newSize += newOpacity / 1.5; /* so the size will range from 0 to 3 */
       }
       // smaller screens
       else {
-        newOpacity = Math.max(Math.min((2 * rectCenter) / windowHeight, 1), 0.8);
+        newOpacity = Math.max(Math.min((3 * rectCenter ) / windowHeight, 1), 0.8);
         newSize += newOpacity / 9; /* so the size will range from 1.5 to 3 */
       }
 

@@ -75,6 +75,26 @@ html {
   }
 }
 
+@media only screen and (max-width: 1100px) {
+  .story-text {
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    height: fit-content; /* Adjust as per need */
+    width: 80%; /* Adjust as per need */
+    position: absolute;
+    transform: translate(-50%, -50%); /* To center the text */
+
+    /* Use flex to vertically center child elements and set direction */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 1em;
+    font-size: 1em; /* adjust font size to a more readable level */
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .story-text {
     z-index: 1;
