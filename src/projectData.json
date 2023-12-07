@@ -11,6 +11,18 @@
     ]
   },
   {
+    "projectName": "Modern Web Development Final Project",
+    "institutionName": "University of Notre Dame",
+    "projectLocation": "Notre Dame, Indiana",
+    "projectDates": "September 2023 – December 2023",
+    "projectTitle": "Study Buddy Connect: Student Collaboration Platform",
+    "projectDescription": [
+      "Developed a centralized platform, Study Buddy Connect, to address the challenges faced by students in finding suitable study partners, thus enhancing collaborative learning opportunities.",
+      "Utilized React to build the website, providing persistent user storage through Back4App. Integrated a chat feature to facilitate communication between students, using Google Firebase’s Cloud Firestore.",
+        "Find the project at: https://study-buddy-connect.vercel.app/"
+    ]
+  },
+  {
     "projectName": "Data Science Final Project",
     "institutionName": "University of Notre Dame",
     "projectLocation": "Notre Dame, Indiana",
