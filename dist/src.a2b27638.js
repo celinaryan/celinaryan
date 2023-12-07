@@ -1452,6 +1452,7 @@ exports.default = Project;
 var _preact = require("preact");
 function Project(_ref) {
   var project = _ref.project;
+  var urlRegex = /(https?:\/\/[^\s]+)/g;
   return (0, _preact.h)("div", {
     className: "project"
   }, (0, _preact.h)("div", {
@@ -1468,8 +1469,17 @@ function Project(_ref) {
     className: "project-heading"
   }, project.projectTitle), (0, _preact.h)("ul", {
     className: "project-description"
-  }, project.projectDescription.map(function (desc) {
-    return (0, _preact.h)("li", null, desc);
+  }, project.projectDescription.map(function (desc, index) {
+    var parts = desc.split(urlRegex);
+    return (0, _preact.h)("li", {
+      key: index
+    }, parts.map(function (part, i) {
+      return urlRegex.test(part) ? (0, _preact.h)("a", {
+        href: part,
+        target: "_blank",
+        rel: "noopener noreferrer"
+      }, part) : (0, _preact.h)("span", null, part);
+    }));
   })));
 }
 },{"preact":"node_modules/preact/dist/preact.module.js"}],"src/projectData.json":[function(require,module,exports) {
@@ -1480,6 +1490,13 @@ module.exports = [{
   "projectDates": "March 2023 – May 2023",
   "projectTitle": "SpoonNet: An Interactive Multiplayer Card Game",
   "projectDescription": ["Recreated the Spoons Card game with asynchronous client-server communication. Invoked remote procedure call using a custom client and server within Python.", "Worked with an event-driven server to ensure consistency and low latency of communication while using threading."]
+}, {
+  "projectName": "Modern Web Development Final Project",
+  "institutionName": "University of Notre Dame",
+  "projectLocation": "Notre Dame, Indiana",
+  "projectDates": "September 2023 – December 2023",
+  "projectTitle": "Study Buddy Connect: Student Collaboration Platform",
+  "projectDescription": ["Developed a centralized platform, Study Buddy Connect, to address the challenges faced by students in finding suitable study partners, thus enhancing collaborative learning opportunities.", "Utilized React to build the website, providing persistent user storage through Back4App. Integrated a chat feature to facilitate communication between students, using Google Firebase’s Cloud Firestore.", "Find the project at: https://study-buddy-connect.vercel.app/"]
 }, {
   "projectName": "Data Science Final Project",
   "institutionName": "University of Notre Dame",
@@ -1966,7 +1983,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54485" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61144" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
