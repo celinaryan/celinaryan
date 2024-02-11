@@ -33,18 +33,37 @@
     "skillCategory": "Industry Understanding",
     "skillsList": [
       "Natural Language Processing",
-      "Data Science",
       "Artificial Intelligence",
       "Machine Learning",
       "Data Lakes",
       "Computer Vision",
       "3D Modeling",
       "Graphics",
-      "iOS Development",
-      "Distributed Systems",
-      "Networks",
-      "Web Development",
-      "Compilers"
+      "iOS Development"
+    ]
+  },
+  {
+    "skillCategory": "Relevant Courses",
+    "skillsList": [
+      "Discrete Mathematics — CSE 20110",
+      "Fundamentals of Computing — CSE 20311",
+      "Data Structures — CSE 20312",
+      "Logic Design — CSE 20221 ",
+      "Systems Programming — CSE 20289",
+      "Computer Architecture — CSE 30321",
+      "Operating System Principles — CSE 30341",
+      "Compilers and Language Design — CSE 40243",
+      "Data Science — CSE 40647",
+      "Linear Algebra/Diff Eq — MATH 20580",
+      "Generative AI in the Wild — CDT 30750",
+      "Distributed Systems — CSE 40771",
+      "Theory of Computing — CSE 30151",
+      "Programming Paradigms — CSE 30332",
+      "Design/Analysis of Algorithms — CSE 40113",
+      "Probability and Statistics — ACMS 30440",
+      "Modern Web Development — CSE 40693",
+      "Human-AI Collaborative Systems — CSE 40748",
+      "Computer Networks — CSE 30264"
     ]
   }
 ]
