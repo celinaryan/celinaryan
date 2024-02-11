@@ -144,6 +144,6 @@ body {
 /* make sure text doesn't overflow on small devices */
 @media screen and (max-width: 600px) {
   body {
-    font-size: 0.8em;
+    font-size: 0.6em;
   }
 }
