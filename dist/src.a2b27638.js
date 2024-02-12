@@ -1198,25 +1198,26 @@ function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, _toPropertyKey(descriptor.key), descriptor); } }
 function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
-function _callSuper(t, o, e) { return o = _getPrototypeOf(o), _possibleConstructorReturn(t, _isNativeReflectConstruct() ? Reflect.construct(o, e || [], _getPrototypeOf(t).constructor) : o.apply(t, e)); }
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return _assertThisInitialized(self); }
-function _isNativeReflectConstruct() { try { var t = !Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); } catch (t) {} return (_isNativeReflectConstruct = function _isNativeReflectConstruct() { return !!t; })(); }
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) _setPrototypeOf(subClass, superClass); }
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return _assertThisInitialized(self); }
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
 function _defineProperty(obj, key, value) { key = _toPropertyKey(key); if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == _typeof(i) ? i : String(i); }
-function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != _typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
+function _toPropertyKey(arg) { var key = _toPrimitive(arg, "string"); return _typeof(key) === "symbol" ? key : String(key); }
+function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
 var About = /*#__PURE__*/function (_Component) {
   _inherits(About, _Component);
+  var _super = _createSuper(About);
   function About() {
     var _this;
     _classCallCheck(this, About);
     for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
       args[_key] = arguments[_key];
     }
-    _this = _callSuper(this, About, [].concat(args));
+    _this = _super.call.apply(_super, [this].concat(args));
     _defineProperty(_assertThisInitialized(_this), "handleScroll", function () {
       var newTextElements = Array.from(document.querySelectorAll(".story-text"));
       var windowHeight = window.innerHeight;
@@ -1237,6 +1238,7 @@ var About = /*#__PURE__*/function (_Component) {
           newOpacity = Math.max(Math.min(3 * rectCenter / windowHeight, 1), 0.8);
           newSize += newOpacity / 2; /* so the size will range from 1.5 to 3 */
         }
+
         el.style.opacity = newOpacity;
         el.style.fontSize = "".concat(newSize, "em");
       });
@@ -1300,7 +1302,7 @@ var About = /*#__PURE__*/function (_Component) {
         class: "about-header"
       }, "About this Website"), (0, _preact.h)("p", null, "It\u2019s been a goal of mine to make a personal website for a while now. Resumes nowadays are fairly cookie-cutter. I wanted this website to be a showcase of all of my skills, past projects, and jobs. I also wanted to show potential employers a bit more of my personality as it\u2019s hard to come across on a simple one page resume."), (0, _preact.h)("br", null), (0, _preact.h)("p", null, "This website was made with a JavaScript library called Preact. This semester (Fall 2023) I'm taking Modern Web Development, and I took advantage of new content from this class and some extra office hours with my teacher to make the website you see now. This past summer, I found that I really like iOS Development, and this past semester I found that I really like Web Development, too. For this website I used Preact as opposed to React because I liked how Preact is a bit closer to HTML-style code which I'm more familiar with. After working at Apple this past summer, I found myself excited to learn more about their web development process. One of my roommates this summer was working on one of the apple.com teams and I was always curious about it. If you look at the ", (0, _preact.h)("a", {
         href: "https://www.apple.com/airpods-pro/"
-      }, "Apple AirPods Pro Page"), " you'll find something that truly excited me about Apple -- not only do they make great technology products, they utilize their mastery in technology (in this case, their mastery of web development) to showcase their products. The scrolling images along with the expanding text on this website are inspired by what I've been intrigued by on the Apple website."), (0, _preact.h)("br", null), (0, _preact.h)("p", null, "Fun side note-- all of the photos on this website are taken by me\u2014either taken on my phone or taken on a little digital camera that I bring around everywhere. I wanted this website to be easy to navigate, to have aesthetically pleasing scrolling animations, and to be an accurate reflection of myself.", " ")), (0, _preact.h)("div", {
+      }, "Apple AirPods Pro Page"), " you'll find something that truly excited me about Apple -- not only do they make great technology products, they utilize their mastery in technology (in this case, their mastery of web development) to showcase their products. The scrolling images along with the expanding text on this website are inspired by what I've been intrigued by on the Apple website."), (0, _preact.h)("br", null), (0, _preact.h)("p", null, "Fun side note\u2014all of the photos on this website are taken by me\u2014either taken on my phone or taken on a little digital camera that I bring around everywhere. I wanted this website to be easy to navigate, to have aesthetically pleasing scrolling animations, and to be an accurate reflection of myself.", " ")), (0, _preact.h)("div", {
         class: "about-career-section"
       }, (0, _preact.h)("h2", {
         class: "about-header"
@@ -1329,7 +1331,10 @@ module.exports = [{
   "skillsList": ["UiPath (Robotic Process Automation)", "AWS", "Tableau", "PowerBI", "XCode"]
 }, {
   "skillCategory": "Industry Understanding",
-  "skillsList": ["Natural Language Processing", "Data Science", "Artificial Intelligence", "Machine Learning", "Data Lakes", "Computer Vision", "3D Modeling", "Graphics", "iOS Development", "Distributed Systems", "Networks", "Web Development", "Compilers"]
+  "skillsList": ["Natural Language Processing", "Artificial Intelligence", "Machine Learning", "Data Lakes", "Computer Vision", "3D Modeling", "Graphics", "iOS Development"]
+}, {
+  "skillCategory": "Relevant Courses",
+  "skillsList": ["Discrete Mathematics — CSE 20110", "Fundamentals of Computing — CSE 20311", "Data Structures — CSE 20312", "Logic Design — CSE 20221 ", "Systems Programming — CSE 20289", "Computer Architecture — CSE 30321", "Operating System Principles — CSE 30341", "Compilers and Language Design — CSE 40243", "Data Science — CSE 40647", "Linear Algebra/Diff Eq — MATH 20580", "Generative AI in the Wild — CDT 30750", "Distributed Systems — CSE 40771", "Theory of Computing — CSE 30151", "Programming Paradigms — CSE 30332", "Design/Analysis of Algorithms — CSE 40113", "Probability and Statistics — ACMS 30440", "Modern Web Development — CSE 40693", "Human-AI Collaborative Systems — CSE 40748", "Computer Networks — CSE 30264"]
 }];
 },{}],"src/Skill.js":[function(require,module,exports) {
 "use strict";
@@ -1509,7 +1514,221 @@ module.exports = [{
   "jobLocation": "Arlington, Virginia",
   "jobDescription": ["Developed a large-scale web scraping program within UiPath. Orchestrated web scraping initially with Python."]
 }];
-},{}],"src/Job.js":[function(require,module,exports) {
+},{}],"node_modules/preact/hooks/dist/hooks.module.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.useCallback = x;
+exports.useContext = P;
+exports.useDebugValue = V;
+exports.useEffect = _;
+exports.useErrorBoundary = b;
+exports.useId = g;
+exports.useImperativeHandle = T;
+exports.useLayoutEffect = A;
+exports.useMemo = q;
+exports.useReducer = y;
+exports.useRef = F;
+exports.useState = p;
+var _preact = require("preact");
+var t,
+  r,
+  u,
+  i,
+  o = 0,
+  f = [],
+  c = [],
+  e = _preact.options,
+  a = e.__b,
+  v = e.__r,
+  l = e.diffed,
+  m = e.__c,
+  s = e.unmount,
+  d = e.__;
+function h(n, t) {
+  e.__h && e.__h(r, n, o || t), o = 0;
+  var u = r.__H || (r.__H = {
+    __: [],
+    __h: []
+  });
+  return n >= u.__.length && u.__.push({
+    __V: c
+  }), u.__[n];
+}
+function p(n) {
+  return o = 1, y(D, n);
+}
+function y(n, u, i) {
+  var o = h(t++, 2);
+  if (o.t = n, !o.__c && (o.__ = [i ? i(u) : D(void 0, u), function (n) {
+    var t = o.__N ? o.__N[0] : o.__[0],
+      r = o.t(t, n);
+    t !== r && (o.__N = [r, o.__[1]], o.__c.setState({}));
+  }], o.__c = r, !r.u)) {
+    var f = function (n, t, r) {
+      if (!o.__c.__H) return !0;
+      var u = o.__c.__H.__.filter(function (n) {
+        return !!n.__c;
+      });
+      if (u.every(function (n) {
+        return !n.__N;
+      })) return !c || c.call(this, n, t, r);
+      var i = !1;
+      return u.forEach(function (n) {
+        if (n.__N) {
+          var t = n.__[0];
+          n.__ = n.__N, n.__N = void 0, t !== n.__[0] && (i = !0);
+        }
+      }), !(!i && o.__c.props === n) && (!c || c.call(this, n, t, r));
+    };
+    r.u = !0;
+    var c = r.shouldComponentUpdate,
+      e = r.componentWillUpdate;
+    r.componentWillUpdate = function (n, t, r) {
+      if (this.__e) {
+        var u = c;
+        c = void 0, f(n, t, r), c = u;
+      }
+      e && e.call(this, n, t, r);
+    }, r.shouldComponentUpdate = f;
+  }
+  return o.__N || o.__;
+}
+function _(n, u) {
+  var i = h(t++, 3);
+  !e.__s && C(i.__H, u) && (i.__ = n, i.i = u, r.__H.__h.push(i));
+}
+function A(n, u) {
+  var i = h(t++, 4);
+  !e.__s && C(i.__H, u) && (i.__ = n, i.i = u, r.__h.push(i));
+}
+function F(n) {
+  return o = 5, q(function () {
+    return {
+      current: n
+    };
+  }, []);
+}
+function T(n, t, r) {
+  o = 6, A(function () {
+    return "function" == typeof n ? (n(t()), function () {
+      return n(null);
+    }) : n ? (n.current = t(), function () {
+      return n.current = null;
+    }) : void 0;
+  }, null == r ? r : r.concat(n));
+}
+function q(n, r) {
+  var u = h(t++, 7);
+  return C(u.__H, r) ? (u.__V = n(), u.i = r, u.__h = n, u.__V) : u.__;
+}
+function x(n, t) {
+  return o = 8, q(function () {
+    return n;
+  }, t);
+}
+function P(n) {
+  var u = r.context[n.__c],
+    i = h(t++, 9);
+  return i.c = n, u ? (null == i.__ && (i.__ = !0, u.sub(r)), u.props.value) : n.__;
+}
+function V(n, t) {
+  e.useDebugValue && e.useDebugValue(t ? t(n) : n);
+}
+function b(n) {
+  var u = h(t++, 10),
+    i = p();
+  return u.__ = n, r.componentDidCatch || (r.componentDidCatch = function (n, t) {
+    u.__ && u.__(n, t), i[1](n);
+  }), [i[0], function () {
+    i[1](void 0);
+  }];
+}
+function g() {
+  var n = h(t++, 11);
+  if (!n.__) {
+    for (var u = r.__v; null !== u && !u.__m && null !== u.__;) u = u.__;
+    var i = u.__m || (u.__m = [0, 0]);
+    n.__ = "P" + i[0] + "-" + i[1]++;
+  }
+  return n.__;
+}
+function j() {
+  for (var n; n = f.shift();) if (n.__P && n.__H) try {
+    n.__H.__h.forEach(z), n.__H.__h.forEach(B), n.__H.__h = [];
+  } catch (t) {
+    n.__H.__h = [], e.__e(t, n.__v);
+  }
+}
+e.__b = function (n) {
+  r = null, a && a(n);
+}, e.__ = function (n, t) {
+  t.__k && t.__k.__m && (n.__m = t.__k.__m), d && d(n, t);
+}, e.__r = function (n) {
+  v && v(n), t = 0;
+  var i = (r = n.__c).__H;
+  i && (u === r ? (i.__h = [], r.__h = [], i.__.forEach(function (n) {
+    n.__N && (n.__ = n.__N), n.__V = c, n.__N = n.i = void 0;
+  })) : (i.__h.forEach(z), i.__h.forEach(B), i.__h = [], t = 0)), u = r;
+}, e.diffed = function (n) {
+  l && l(n);
+  var t = n.__c;
+  t && t.__H && (t.__H.__h.length && (1 !== f.push(t) && i === e.requestAnimationFrame || ((i = e.requestAnimationFrame) || w)(j)), t.__H.__.forEach(function (n) {
+    n.i && (n.__H = n.i), n.__V !== c && (n.__ = n.__V), n.i = void 0, n.__V = c;
+  })), u = r = null;
+}, e.__c = function (n, t) {
+  t.some(function (n) {
+    try {
+      n.__h.forEach(z), n.__h = n.__h.filter(function (n) {
+        return !n.__ || B(n);
+      });
+    } catch (r) {
+      t.some(function (n) {
+        n.__h && (n.__h = []);
+      }), t = [], e.__e(r, n.__v);
+    }
+  }), m && m(n, t);
+}, e.unmount = function (n) {
+  s && s(n);
+  var t,
+    r = n.__c;
+  r && r.__H && (r.__H.__.forEach(function (n) {
+    try {
+      z(n);
+    } catch (n) {
+      t = n;
+    }
+  }), r.__H = void 0, t && e.__e(t, r.__v));
+};
+var k = "function" == typeof requestAnimationFrame;
+function w(n) {
+  var t,
+    r = function () {
+      clearTimeout(u), k && cancelAnimationFrame(t), setTimeout(n);
+    },
+    u = setTimeout(r, 100);
+  k && (t = requestAnimationFrame(r));
+}
+function z(n) {
+  var t = r,
+    u = n.__c;
+  "function" == typeof u && (n.__c = void 0, u()), r = t;
+}
+function B(n) {
+  var t = r;
+  n.__c = n.__(), r = t;
+}
+function C(n, t) {
+  return !n || n.length !== t.length || t.some(function (t, r) {
+    return t !== n[r];
+  });
+}
+function D(n, t) {
+  return "function" == typeof t ? t(n) : t;
+}
+},{"preact":"node_modules/preact/dist/preact.module.js"}],"src/Job.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1517,8 +1736,24 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = Job;
 var _preact = require("preact");
+var _hooks = require("preact/hooks");
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
+function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t.return && (u = t.return(), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 function Job(_ref) {
   var job = _ref.job;
+  var _useState = (0, _hooks.useState)(false),
+    _useState2 = _slicedToArray(_useState, 2),
+    isDescriptionVisible = _useState2[0],
+    setDescriptionVisible = _useState2[1];
+
+  // Function to toggle the description visibility
+  var toggleDescription = function toggleDescription() {
+    return setDescriptionVisible(!isDescriptionVisible);
+  };
   return (0, _preact.h)("div", {
     className: "job-experience"
   }, (0, _preact.h)("div", {
@@ -1531,15 +1766,24 @@ function Job(_ref) {
     className: "job-date"
   }, job.jobDates), (0, _preact.h)("p", {
     className: "job-location"
-  }, job.jobLocation))), (0, _preact.h)("h4", {
+  }, job.jobLocation))), (0, _preact.h)("div", {
+    className: "job-title-container"
+  }, (0, _preact.h)("h4", {
     className: "job-heading"
-  }, job.jobTitle), (0, _preact.h)("ul", {
+  }, job.jobTitle), (0, _preact.h)("div", {
+    className: "toggle-container",
+    onClick: toggleDescription
+  }, (0, _preact.h)("span", {
+    className: "description-toggle"
+  }, isDescriptionVisible ? '-' : '+'))), isDescriptionVisible && (0, _preact.h)("ul", {
     className: "job-description"
-  }, job.jobDescription.map(function (desc) {
-    return (0, _preact.h)("li", null, desc);
+  }, job.jobDescription.map(function (desc, index) {
+    return (0, _preact.h)("li", {
+      key: index
+    }, desc);
   })));
 }
-},{"preact":"node_modules/preact/dist/preact.module.js"}],"src/Project.js":[function(require,module,exports) {
+},{"preact":"node_modules/preact/dist/preact.module.js","preact/hooks":"node_modules/preact/hooks/dist/hooks.module.js"}],"src/Project.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1547,9 +1791,23 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = Project;
 var _preact = require("preact");
+var _hooks = require("preact/hooks");
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
+function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t.return && (u = t.return(), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 function Project(_ref) {
   var project = _ref.project;
+  var _useState = (0, _hooks.useState)(false),
+    _useState2 = _slicedToArray(_useState, 2),
+    isDescriptionVisible = _useState2[0],
+    setDescriptionVisible = _useState2[1];
   var urlRegex = /(https?:\/\/[^\s]+)/g;
+  var toggleDescription = function toggleDescription() {
+    return setDescriptionVisible(!isDescriptionVisible);
+  };
   return (0, _preact.h)("div", {
     className: "project"
   }, (0, _preact.h)("div", {
@@ -1562,9 +1820,16 @@ function Project(_ref) {
     className: "project-date"
   }, project.projectDates), (0, _preact.h)("p", {
     className: "project-location"
-  }, project.projectLocation))), (0, _preact.h)("h4", {
+  }, project.projectLocation))), (0, _preact.h)("div", {
+    className: "job-title-container"
+  }, (0, _preact.h)("h4", {
     className: "project-heading"
-  }, project.projectTitle), (0, _preact.h)("ul", {
+  }, project.projectTitle), (0, _preact.h)("div", {
+    className: "toggle-container",
+    onClick: toggleDescription
+  }, (0, _preact.h)("span", {
+    className: "description-toggle"
+  }, isDescriptionVisible ? '−' : '+'))), isDescriptionVisible && (0, _preact.h)("ul", {
     className: "project-description"
   }, project.projectDescription.map(function (desc, index) {
     var parts = desc.split(urlRegex);
@@ -1573,13 +1838,16 @@ function Project(_ref) {
     }, parts.map(function (part, i) {
       return urlRegex.test(part) ? (0, _preact.h)("a", {
         href: part,
+        key: i,
         target: "_blank",
         rel: "noopener noreferrer"
-      }, part) : (0, _preact.h)("span", null, part);
+      }, part) : (0, _preact.h)("span", {
+        key: i
+      }, part);
     }));
   })));
 }
-},{"preact":"node_modules/preact/dist/preact.module.js"}],"src/projectData.json":[function(require,module,exports) {
+},{"preact":"node_modules/preact/dist/preact.module.js","preact/hooks":"node_modules/preact/hooks/dist/hooks.module.js"}],"src/projectData.json":[function(require,module,exports) {
 module.exports = [{
   "projectName": "Distributed Systems Final Project",
   "institutionName": "University of Notre Dame",
@@ -2075,7 +2343,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60587" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63798" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];

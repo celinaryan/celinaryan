@@ -126,7 +126,7 @@ class About extends Component {
             </p>
             <br />
             <p>
-              Fun side note-- all of the photos on this website are taken by me—either taken on
+              Fun side note—all of the photos on this website are taken by me—either taken on
               my phone or taken on a little digital camera that I bring around
               everywhere. I wanted this website to be easy to navigate, to have
               aesthetically pleasing scrolling animations, and to be an accurate

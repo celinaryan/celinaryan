@@ -87,7 +87,10 @@ body {
 .title-date-container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding-top: 5px;
 }
+
 
 .date-location-container {
   display: flex;
@@ -147,3 +150,37 @@ body {
     font-size: 0.6em;
   }
 }
+/* Assuming .job-title-container is the container you're referring to */
+.project-heading,
+.job-title-container {
+  display: flex;
+  justify-content: space-between; /* Aligns children to start and end of container */
+  align-items: center; /* Centers children vertically */
+  /* other styles */
+  padding-top: 5px;
+}
+
+.toggle-container {
+  display: flex;
+  margin-left: 10px;
+  align-items: center;
+  justify-content: center;
+  width: 30px; /* Width of the box */
+  height: 30px; /* Height of the box */
+  background-color: #3e7fbf; /* blue */
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0 1px #80a0c0; /* Light blue */ 
+  cursor: pointer;
+}
+
+.description-toggle {
+  font-weight: bold;
+  font-size: 20px; /* Adjust size as needed */
+  user-select: none; /* Prevent text selection */
+  cursor: pointer;
+  outline-color: white;
+  color: white;
+  
+}
+
