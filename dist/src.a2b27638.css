@@ -174,7 +174,7 @@ html {
 .story-item {
   position: relative;
 }
-.skills, .exp{
+.skills, .exp, .about{
   background-color: #8bb8dd;
 }
 .story-text {
@@ -270,7 +270,7 @@ body {
   background-color: white;
 }
 
-.about,
+
 .contact {
   background-color: rgb(158, 202, 236);
 }

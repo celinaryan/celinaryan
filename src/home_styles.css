@@ -44,7 +44,7 @@ html {
 .story-item {
   position: relative;
 }
-.skills, .exp{
+.skills, .exp, .about{
   background-color: #8bb8dd;
 }
 .story-text {
