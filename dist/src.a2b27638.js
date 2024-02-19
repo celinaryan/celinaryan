@@ -1874,21 +1874,24 @@ module.exports = [{
   "projectLocation": "Notre Dame, Indiana",
   "projectDates": "September 2023 – December 2023",
   "projectTitle": "Study Buddy Connect: Student Collaboration Platform",
-  "projectDescription": ["Developed a centralized platform, Study Buddy Connect, to address the challenges faced by students in finding suitable study partners, thus enhancing collaborative learning opportunities.", "Utilized React to build the website, providing persistent user storage through Back4App. Integrated a chat feature to facilitate communication between students, using Google Firebase’s Cloud Firestore.", "Find the project at: https://study-buddy-connect.vercel.app/"]
+  "projectDescription": ["Developed a centralized platform, Study Buddy Connect, to address the challenges faced by students in finding suitable study partners, thus enhancing collaborative learning opportunities.", "Utilized React to build the website, providing persistent user storage through Back4App. Integrated a chat feature to facilitate communication between students, using Google Firebase’s Cloud Firestore.", "Find the project at: https://study-buddy-connect.vercel.app/"],
+  "pdfs": ["pdfs/Demo Day - Study Buddy Connect.pdf"]
 }, {
   "projectName": "Distributed Systems Final Project",
   "institutionName": "University of Notre Dame",
   "projectLocation": "Notre Dame, Indiana",
   "projectDates": "March 2023 – May 2023",
   "projectTitle": "SpoonNet: An Interactive Multiplayer Card Game",
-  "projectDescription": ["Recreated the Spoons Card game with asynchronous client-server communication. Invoked remote procedure call using a custom client and server within Python.", "Worked with an event-driven server to ensure consistency and low latency of communication while using threading."]
+  "projectDescription": ["Recreated the Spoons Card game with asynchronous client-server communication. Invoked remote procedure call using a custom client and server within Python.", "Worked with an event-driven server to ensure consistency and low latency of communication while using threading."],
+  "pdfs": ["pdfs/Final Distributed Project_ Spoons.pdf"]
 }, {
   "projectName": "Data Science Final Project",
   "institutionName": "University of Notre Dame",
   "projectLocation": "Notre Dame, Indiana",
   "projectDates": "September 2022 – December 2022",
   "projectTitle": "Predicting the Number of Starbucks Based on Geo-Economic Data",
-  "projectDescription": ["Explored the relationship between geo-economic data and the number of Starbucks stores in a given zip code by training linear and non-linear models within Python. The data used had 13608 rows and 13 columns.", "Analyzed data using Naive-Bayes Classifier, and different forms of regression: Lasso, Support Vector, and K-Nearest Neighbors."]
+  "projectDescription": ["Explored the relationship between geo-economic data and the number of Starbucks stores in a given zip code by training linear and non-linear models within Python. The data used had 13608 rows and 13 columns.", "Analyzed data using Naive-Bayes Classifier, and different forms of regression: Lasso, Support Vector, and K-Nearest Neighbors."],
+  "pdfs": ["pdfs/Predicting_the_Number_of_Starbucks_Based_on_Geo_Economic_Data.pdf"]
 }, {
   "projectName": "Data Structures Project",
   "institutionName": "University of Notre Dame",
@@ -2410,7 +2413,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52811" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53156" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];

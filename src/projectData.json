@@ -9,7 +9,10 @@
     "projectDescription": [
       "Developed a centralized platform, Study Buddy Connect, to address the challenges faced by students in finding suitable study partners, thus enhancing collaborative learning opportunities.",
       "Utilized React to build the website, providing persistent user storage through Back4App. Integrated a chat feature to facilitate communication between students, using Google Firebase’s Cloud Firestore.",
-        "Find the project at: https://study-buddy-connect.vercel.app/"
+      "Find the project at: https://study-buddy-connect.vercel.app/"
+    ],
+    "pdfs":[
+      "pdfs/Demo Day - Study Buddy Connect.pdf"
     ]
   },
   {
@@ -21,6 +24,9 @@
     "projectDescription": [
       "Recreated the Spoons Card game with asynchronous client-server communication. Invoked remote procedure call using a custom client and server within Python.",
       "Worked with an event-driven server to ensure consistency and low latency of communication while using threading."
+    ],
+    "pdfs":[
+      "pdfs/Final Distributed Project_ Spoons.pdf"
     ]
   },
   {
@@ -32,6 +38,9 @@
     "projectDescription": [
       "Explored the relationship between geo-economic data and the number of Starbucks stores in a given zip code by training linear and non-linear models within Python. The data used had 13608 rows and 13 columns.",
       "Analyzed data using Naive-Bayes Classifier, and different forms of regression: Lasso, Support Vector, and K-Nearest Neighbors."
+    ],
+    "pdfs":[
+      "pdfs/Predicting_the_Number_of_Starbucks_Based_on_Geo_Economic_Data.pdf"
     ]
   },
   {

@@ -25,20 +25,21 @@ export default function Project({ project }) {
           </div>
       {/* Only show the project description if isDescriptionVisible is true */}
       {isDescriptionVisible && (
-        <ul className="project-description">
-          {project.projectDescription.map((desc, index) => {
-            const parts = desc.split(urlRegex);
-            return (
-              <li key={index}>
-                {parts.map((part, i) => 
-                  urlRegex.test(part)
-                  ? <a href={part} key={i} target="_blank" rel="noopener noreferrer">{part}</a> 
-                  : <span key={i}>{part}</span>
-                )}
-              </li>
-            );
-          })}
-        </ul>
+          <ul className="project-description">
+            {project.projectDescription.map((desc, index) => {
+              const parts = desc.split(urlRegex);
+              return (
+                <li key={index}>
+                  {parts.map((part, i) => 
+                    urlRegex.test(part)
+                    ? <a href={part} key={i} target="_blank" rel="noopener noreferrer">{part}</a> 
+                    : <span key={i}>{part}</span>
+                  )}
+                </li>
+              );
+            })}
+          </ul>
+         
       )}
     </div>
   );
