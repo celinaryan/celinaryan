@@ -1522,12 +1522,6 @@ module.exports = [{
   "jobLocation": "Austin, Texas",
   "jobDescription": ["Developed new features within Apple’s internal apps with Xcode using Swift, SwiftUI, and Objective-C on the FDE Tools, Automation, and Robotics Team.", "Added feature connected another internal Apple app to our team’s internal app. This streamlined the processes already in place which thus enhances the system validation process for devices tested by the FDE team.", "Developed and integrated internal iOS frameworks for reusability of the code. The new feature is used by Apple engineers across worldwide locations for their validation efforts."]
 }, {
-  "companyName": "University of Notre Dame",
-  "jobTitle": "Teaching Assistant for Fundamentals of Computing",
-  "jobDates": "August 2022 – December 2023",
-  "jobLocation": "Notre Dame, Indiana",
-  "jobDescription": ["Oversaw labs and assisted office hours for a required class for Notre Dame CS majors; students learn C and Linux."]
-}, {
   "companyName": "CACI International",
   "jobTitle": "Data Science Intern on Digital Transformations Team",
   "jobDates": "May 2022 – August 2022",
@@ -2416,7 +2410,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49225" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52150" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
