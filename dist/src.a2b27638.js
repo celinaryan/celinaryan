@@ -824,7 +824,7 @@ Router.exec = exec;
 var _default = exports.default = Router;
 },{"preact":"node_modules/preact/dist/preact.module.js"}],"images/cr_logo_up.png":[function(require,module,exports) {
 module.exports = "/cr_logo_up.ff1f0cf6.png";
-},{}],"../../../../.npm-global/lib/node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
+},{}],"node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
 var bundleURL = null;
 function getBundleURLCached() {
   if (!bundleURL) {
@@ -849,7 +849,7 @@ function getBaseURL(url) {
 }
 exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
-},{}],"../../../../.npm-global/lib/node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
+},{}],"node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
 var bundle = require('./bundle-url');
 function updateLink(link) {
   var newLink = link.cloneNode();
@@ -875,11 +875,11 @@ function reloadCSS() {
   }, 50);
 }
 module.exports = reloadCSS;
-},{"./bundle-url":"../../../../.npm-global/lib/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"src/navbar_styles.css":[function(require,module,exports) {
+},{"./bundle-url":"node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"src/navbar_styles.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"../../../../.npm-global/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/NavBar.js":[function(require,module,exports) {
+},{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/NavBar.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -983,58 +983,7 @@ var NavBar = /*#__PURE__*/function (_Component) {
   return NavBar;
 }(_preact.Component);
 var _default = exports.default = NavBar;
-},{"preact":"node_modules/preact/dist/preact.module.js","../images/cr_logo_up.png":"images/cr_logo_up.png","./navbar_styles.css":"src/navbar_styles.css"}],"node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
-var bundleURL = null;
-function getBundleURLCached() {
-  if (!bundleURL) {
-    bundleURL = getBundleURL();
-  }
-  return bundleURL;
-}
-function getBundleURL() {
-  // Attempt to find the URL of the current script and use that as the base URL
-  try {
-    throw new Error();
-  } catch (err) {
-    var matches = ('' + err.stack).match(/(https?|file|ftp|chrome-extension|moz-extension):\/\/[^)\n]+/g);
-    if (matches) {
-      return getBaseURL(matches[0]);
-    }
-  }
-  return '/';
-}
-function getBaseURL(url) {
-  return ('' + url).replace(/^((?:https?|file|ftp|chrome-extension|moz-extension):\/\/.+)?\/[^/]+(?:\?.*)?$/, '$1') + '/';
-}
-exports.getBundleURL = getBundleURLCached;
-exports.getBaseURL = getBaseURL;
-},{}],"node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
-var bundle = require('./bundle-url');
-function updateLink(link) {
-  var newLink = link.cloneNode();
-  newLink.onload = function () {
-    link.remove();
-  };
-  newLink.href = link.href.split('?')[0] + '?' + Date.now();
-  link.parentNode.insertBefore(newLink, link.nextSibling);
-}
-var cssTimeout = null;
-function reloadCSS() {
-  if (cssTimeout) {
-    return;
-  }
-  cssTimeout = setTimeout(function () {
-    var links = document.querySelectorAll('link[rel="stylesheet"]');
-    for (var i = 0; i < links.length; i++) {
-      if (bundle.getBaseURL(links[i].href) === bundle.getBundleURL()) {
-        updateLink(links[i]);
-      }
-    }
-    cssTimeout = null;
-  }, 50);
-}
-module.exports = reloadCSS;
-},{"./bundle-url":"node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"src/home_styles.css":[function(require,module,exports) {
+},{"preact":"node_modules/preact/dist/preact.module.js","../images/cr_logo_up.png":"images/cr_logo_up.png","./navbar_styles.css":"src/navbar_styles.css"}],"src/home_styles.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
@@ -1174,7 +1123,7 @@ var _default = exports.default = Home;
 var reloadCSS = require('_css_loader');
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"../../../../.npm-global/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"images/hotel_at_lake.jpg":[function(require,module,exports) {
+},{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"images/hotel_at_lake.jpg":[function(require,module,exports) {
 module.exports = "/hotel_at_lake.21bc3b0f.jpg";
 },{}],"images/me.jpg":[function(require,module,exports) {
 module.exports = "/me.31ff53e3.jpg";
@@ -1221,22 +1170,34 @@ var About = /*#__PURE__*/function (_Component) {
     _defineProperty(_assertThisInitialized(_this), "handleScroll", function () {
       var newTextElements = Array.from(document.querySelectorAll(".story-text"));
       var windowHeight = window.innerHeight;
-      newTextElements.forEach(function (el) {
+      newTextElements.forEach(function (el, index) {
         var rect = el.getBoundingClientRect();
         var rectCenter = rect.top + rect.height / 2; /* center Y-coordinate of the element in the viewport */
+        //   let rectCenter = rect.top;
+        //   // For the first element, we consider only the top edge
+        //   // For other elements, we still rely on the center.
+        //   if(index !== 0){
+        //     rectCenter += rect.height / 4; /* center Y-coordinate of the element in the viewport */
+        //  }
 
         var newOpacity = 0;
         var newSize = 1.5; /* font size for smaller screens */
 
         // larger screens
         if (window.innerWidth > 961) {
-          newOpacity = Math.max(Math.min(2 * (windowHeight - rectCenter) / windowHeight, 1), 0);
-          newSize = 3 * newOpacity; /* so the size will range from 0 to 3 */
+          newOpacity = Math.max(Math.min(2 * (windowHeight - rectCenter) / windowHeight, 1), 0.8);
+          newSize += newOpacity / 1.5; /* so the size will range from 0 to 3 */
         }
         // smaller screens
         else {
-          newOpacity = Math.max(Math.min(3 * rectCenter / windowHeight, 1), 0.8);
-          newSize += newOpacity / 2; /* so the size will range from 1.5 to 3 */
+          var helper = Math.max(Math.min(3 * rectCenter / windowHeight, 1), 0.7);
+          if (index == 0) {
+            newOpacity = Math.max(Math.min(3 * rectCenter / windowHeight, 1), 0.9);
+            newSize += helper / 2; /* so the size will range from 1.5 to 3 */
+          } else {
+            newOpacity = helper;
+            newSize += helper / 2; /* so the size will range from 1.5 to 3 */
+          }
         }
 
         el.style.opacity = newOpacity;
@@ -1356,7 +1317,58 @@ function Skill(_ref) {
     return (0, _preact.h)("li", null, desc);
   })));
 }
-},{"preact":"node_modules/preact/dist/preact.module.js"}],"src/animation.css":[function(require,module,exports) {
+},{"preact":"node_modules/preact/dist/preact.module.js"}],"../../../../.npm-global/lib/node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
+var bundleURL = null;
+function getBundleURLCached() {
+  if (!bundleURL) {
+    bundleURL = getBundleURL();
+  }
+  return bundleURL;
+}
+function getBundleURL() {
+  // Attempt to find the URL of the current script and use that as the base URL
+  try {
+    throw new Error();
+  } catch (err) {
+    var matches = ('' + err.stack).match(/(https?|file|ftp|chrome-extension|moz-extension):\/\/[^)\n]+/g);
+    if (matches) {
+      return getBaseURL(matches[0]);
+    }
+  }
+  return '/';
+}
+function getBaseURL(url) {
+  return ('' + url).replace(/^((?:https?|file|ftp|chrome-extension|moz-extension):\/\/.+)?\/[^/]+(?:\?.*)?$/, '$1') + '/';
+}
+exports.getBundleURL = getBundleURLCached;
+exports.getBaseURL = getBaseURL;
+},{}],"../../../../.npm-global/lib/node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
+var bundle = require('./bundle-url');
+function updateLink(link) {
+  var newLink = link.cloneNode();
+  newLink.onload = function () {
+    link.remove();
+  };
+  newLink.href = link.href.split('?')[0] + '?' + Date.now();
+  link.parentNode.insertBefore(newLink, link.nextSibling);
+}
+var cssTimeout = null;
+function reloadCSS() {
+  if (cssTimeout) {
+    return;
+  }
+  cssTimeout = setTimeout(function () {
+    var links = document.querySelectorAll('link[rel="stylesheet"]');
+    for (var i = 0; i < links.length; i++) {
+      if (bundle.getBaseURL(links[i].href) === bundle.getBundleURL()) {
+        updateLink(links[i]);
+      }
+    }
+    cssTimeout = null;
+  }, 50);
+}
+module.exports = reloadCSS;
+},{"./bundle-url":"../../../../.npm-global/lib/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"src/animation.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
@@ -1386,25 +1398,26 @@ function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, _toPropertyKey(descriptor.key), descriptor); } }
 function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
-function _callSuper(t, o, e) { return o = _getPrototypeOf(o), _possibleConstructorReturn(t, _isNativeReflectConstruct() ? Reflect.construct(o, e || [], _getPrototypeOf(t).constructor) : o.apply(t, e)); }
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return _assertThisInitialized(self); }
-function _isNativeReflectConstruct() { try { var t = !Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); } catch (t) {} return (_isNativeReflectConstruct = function _isNativeReflectConstruct() { return !!t; })(); }
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) _setPrototypeOf(subClass, superClass); }
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return _assertThisInitialized(self); }
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
 function _defineProperty(obj, key, value) { key = _toPropertyKey(key); if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == _typeof(i) ? i : String(i); }
-function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != _typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
+function _toPropertyKey(arg) { var key = _toPrimitive(arg, "string"); return _typeof(key) === "symbol" ? key : String(key); }
+function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
 var Skills = /*#__PURE__*/function (_Component) {
   _inherits(Skills, _Component);
+  var _super = _createSuper(Skills);
   function Skills() {
     var _this;
     _classCallCheck(this, Skills);
     for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
       args[_key] = arguments[_key];
     }
-    _this = _callSuper(this, Skills, [].concat(args));
+    _this = _super.call.apply(_super, [this].concat(args));
     _defineProperty(_assertThisInitialized(_this), "fadeIn", function () {
       var elements = Array.from(document.querySelectorAll(".project, .job-experience, .activity"));
       elements.forEach(function (el) {
@@ -1417,23 +1430,36 @@ var Skills = /*#__PURE__*/function (_Component) {
     _defineProperty(_assertThisInitialized(_this), "handleScroll", function () {
       var newTextElements = Array.from(document.querySelectorAll(".story-text"));
       var windowHeight = window.innerHeight;
-      newTextElements.forEach(function (el) {
+      newTextElements.forEach(function (el, index) {
         var rect = el.getBoundingClientRect();
         var rectCenter = rect.top + rect.height / 2; /* center Y-coordinate of the element in the viewport */
+        //   let rectCenter = rect.top;
+        //   // For the first element, we consider only the top edge
+        //   // For other elements, we still rely on the center.
+        //   if(index !== 0){
+        //     rectCenter += rect.height / 4; /* center Y-coordinate of the element in the viewport */
+        //  }
 
         var newOpacity = 0;
         var newSize = 1.5; /* font size for smaller screens */
 
         // larger screens
         if (window.innerWidth > 961) {
-          newOpacity = Math.max(Math.min(2 * (windowHeight - rectCenter) / windowHeight, 1), 0);
-          newSize = 3 * newOpacity; /* so the size will range from 0 to 3 */
+          newOpacity = Math.max(Math.min(2 * (windowHeight - rectCenter) / windowHeight, 1), 0.8);
+          newSize += newOpacity / 1.5; /* so the size will range from 0 to 3 */
         }
         // smaller screens
         else {
-          newOpacity = Math.max(Math.min(3 * rectCenter / windowHeight, 1), 0.8);
-          newSize += newOpacity / 2; /* so the size will range from 1.5 to 3 */
+          var helper = Math.max(Math.min(3 * rectCenter / windowHeight, 1), 0.7);
+          if (index == 0) {
+            newOpacity = Math.max(Math.min(3 * rectCenter / windowHeight, 1), 0.9);
+            newSize += helper / 2; /* so the size will range from 1.5 to 3 */
+          } else {
+            newOpacity = helper;
+            newSize += helper / 2; /* so the size will range from 1.5 to 3 */
+          }
         }
+
         el.style.opacity = newOpacity;
         el.style.fontSize = "".concat(newSize, "em");
       });
@@ -1849,13 +1875,6 @@ function Project(_ref) {
 }
 },{"preact":"node_modules/preact/dist/preact.module.js","preact/hooks":"node_modules/preact/hooks/dist/hooks.module.js"}],"src/projectData.json":[function(require,module,exports) {
 module.exports = [{
-  "projectName": "Distributed Systems Final Project",
-  "institutionName": "University of Notre Dame",
-  "projectLocation": "Notre Dame, Indiana",
-  "projectDates": "March 2023 – May 2023",
-  "projectTitle": "SpoonNet: An Interactive Multiplayer Card Game",
-  "projectDescription": ["Recreated the Spoons Card game with asynchronous client-server communication. Invoked remote procedure call using a custom client and server within Python.", "Worked with an event-driven server to ensure consistency and low latency of communication while using threading."]
-}, {
   "projectName": "Modern Web Development Final Project",
   "institutionName": "University of Notre Dame",
   "projectLocation": "Notre Dame, Indiana",
@@ -1863,19 +1882,19 @@ module.exports = [{
   "projectTitle": "Study Buddy Connect: Student Collaboration Platform",
   "projectDescription": ["Developed a centralized platform, Study Buddy Connect, to address the challenges faced by students in finding suitable study partners, thus enhancing collaborative learning opportunities.", "Utilized React to build the website, providing persistent user storage through Back4App. Integrated a chat feature to facilitate communication between students, using Google Firebase’s Cloud Firestore.", "Find the project at: https://study-buddy-connect.vercel.app/"]
 }, {
+  "projectName": "Distributed Systems Final Project",
+  "institutionName": "University of Notre Dame",
+  "projectLocation": "Notre Dame, Indiana",
+  "projectDates": "March 2023 – May 2023",
+  "projectTitle": "SpoonNet: An Interactive Multiplayer Card Game",
+  "projectDescription": ["Recreated the Spoons Card game with asynchronous client-server communication. Invoked remote procedure call using a custom client and server within Python.", "Worked with an event-driven server to ensure consistency and low latency of communication while using threading."]
+}, {
   "projectName": "Data Science Final Project",
   "institutionName": "University of Notre Dame",
   "projectLocation": "Notre Dame, Indiana",
   "projectDates": "September 2022 – December 2022",
   "projectTitle": "Predicting the Number of Starbucks Based on Geo-Economic Data",
   "projectDescription": ["Explored the relationship between geo-economic data and the number of Starbucks stores in a given zip code by training linear and non-linear models within Python. The data used had 13608 rows and 13 columns.", "Analyzed data using Naive-Bayes Classifier, and different forms of regression: Lasso, Support Vector, and K-Nearest Neighbors."]
-}, {
-  "projectName": "High School Senior Project",
-  "institutionName": "The Potomac School",
-  "projectLocation": "McLean, Virginia",
-  "projectDates": "April 2020 – May 2020",
-  "projectTitle": "Learning Swift and Creating an App Interface",
-  "projectDescription": ["Produced an interactive app interface after learning Swift. The app helps students take more organized notes in class by sorting photos from homework and classwork."]
 }, {
   "projectName": "Data Structures Project",
   "institutionName": "University of Notre Dame",
@@ -1890,6 +1909,13 @@ module.exports = [{
   "projectDates": "September 2021 – December 2021",
   "projectTitle": "Level Measuring Set",
   "projectDescription": ["Prototyped and developed a business plan with my group for our idea: a measuring cup set for those with upper limb reductions.", "The final product was a sleek, stainless-steel measuring cup set that can be used easily with one hand, as the current products on the market look as if they belong in a hospital, not in a kitchen."]
+}, {
+  "projectName": "High School Senior Project",
+  "institutionName": "The Potomac School",
+  "projectLocation": "McLean, Virginia",
+  "projectDates": "April 2020 – May 2020",
+  "projectTitle": "Learning Swift and Creating an App Interface",
+  "projectDescription": ["Produced an interactive app interface after learning Swift. The app helps students take more organized notes in class by sorting photos from homework and classwork."]
 }];
 },{}],"src/moreExpData.json":[function(require,module,exports) {
 module.exports = [{
@@ -1906,6 +1932,20 @@ module.exports = [{
   "projectDates": "January 2022 - December 2023",
   "projectTitle": "Team Member",
   "projectDescription": ["Created activities and informational guides to help members of an elderly home in South Bend become more proficient in technology and software."]
+}];
+},{}],"src/universityContData.json":[function(require,module,exports) {
+module.exports = [{
+  "projectName": "Research Assistant for DroneResponse",
+  "projectDates": "January 2024 – Present",
+  "projectDescription": ["Took online courses for Angular and NodeJS in order to contribute to both the frontend and backend for the project.", "DroneResponse is funded by the NSF and aims to automate drone Emergency Response using LLM, CV, and more."]
+}, {
+  "projectName": "Engineering Tutor for ACES",
+  "projectDates": "February 2024 – Present",
+  "projectDescription": ["Contributed to a peer-led academic support program--Academically Collaborative Engineering Spaces--enhancing study habits and mentoring ND engineers.", "Tutored a student one-on-one for Data Structures, Systems Programming, and Logic Design."]
+}, {
+  "projectName": "TA for Fundamentals of Computing",
+  "projectDates": "August 2022 – December 2023",
+  "projectDescription": ["Oversaw labs and assisted office hours for a required class for Notre Dame CS majors; students learn C and Linux."]
 }];
 },{}],"src/button_styles.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
@@ -1930,6 +1970,7 @@ var _Job = _interopRequireDefault(require("./Job"));
 var _Project = _interopRequireDefault(require("./Project"));
 var _projectData = _interopRequireDefault(require("./projectData.json"));
 var _moreExpData = _interopRequireDefault(require("./moreExpData.json"));
+var _universityContData = _interopRequireDefault(require("./universityContData.json"));
 require("./animation.css");
 require("./button_styles.css");
 var _at_apple = _interopRequireDefault(require("../images/at_apple.jpg"));
@@ -1939,25 +1980,26 @@ function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, _toPropertyKey(descriptor.key), descriptor); } }
 function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
-function _callSuper(t, o, e) { return o = _getPrototypeOf(o), _possibleConstructorReturn(t, _isNativeReflectConstruct() ? Reflect.construct(o, e || [], _getPrototypeOf(t).constructor) : o.apply(t, e)); }
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return _assertThisInitialized(self); }
-function _isNativeReflectConstruct() { try { var t = !Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); } catch (t) {} return (_isNativeReflectConstruct = function _isNativeReflectConstruct() { return !!t; })(); }
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) _setPrototypeOf(subClass, superClass); }
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return _assertThisInitialized(self); }
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
 function _defineProperty(obj, key, value) { key = _toPropertyKey(key); if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == _typeof(i) ? i : String(i); }
-function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != _typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
+function _toPropertyKey(arg) { var key = _toPrimitive(arg, "string"); return _typeof(key) === "symbol" ? key : String(key); }
+function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
 var Exp = /*#__PURE__*/function (_Component) {
   _inherits(Exp, _Component);
+  var _super = _createSuper(Exp);
   function Exp() {
     var _this;
     _classCallCheck(this, Exp);
     for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
       args[_key] = arguments[_key];
     }
-    _this = _callSuper(this, Exp, [].concat(args));
+    _this = _super.call.apply(_super, [this].concat(args));
     _defineProperty(_assertThisInitialized(_this), "fadeIn", function () {
       var elements = Array.from(document.querySelectorAll(".project, .job-experience, .activity"));
       elements.forEach(function (el) {
@@ -1976,23 +2018,36 @@ var Exp = /*#__PURE__*/function (_Component) {
     _defineProperty(_assertThisInitialized(_this), "handleScroll", function () {
       var newTextElements = Array.from(document.querySelectorAll(".story-text"));
       var windowHeight = window.innerHeight;
-      newTextElements.forEach(function (el) {
+      newTextElements.forEach(function (el, index) {
         var rect = el.getBoundingClientRect();
         var rectCenter = rect.top + rect.height / 2; /* center Y-coordinate of the element in the viewport */
+        //   let rectCenter = rect.top;
+        //   // For the first element, we consider only the top edge
+        //   // For other elements, we still rely on the center.
+        //   if(index !== 0){
+        //     rectCenter += rect.height / 4; /* center Y-coordinate of the element in the viewport */
+        //  }
 
         var newOpacity = 0;
         var newSize = 1.5; /* font size for smaller screens */
 
         // larger screens
         if (window.innerWidth > 961) {
-          newOpacity = Math.max(Math.min(2 * (windowHeight - rectCenter) / windowHeight, 1), 0);
-          newSize = 3 * newOpacity; /* so the size will range from 0 to 3 */
+          newOpacity = Math.max(Math.min(2 * (windowHeight - rectCenter) / windowHeight, 1), 0.8);
+          newSize += newOpacity / 1.5; /* so the size will range from 0 to 3 */
         }
         // smaller screens
         else {
-          newOpacity = Math.max(Math.min(3 * rectCenter / windowHeight, 1), 0.8);
-          newSize += newOpacity / 2; /* so the size will range from 1.5 to 3 */
+          var helper = Math.max(Math.min(3 * rectCenter / windowHeight, 1), 0.7);
+          if (index == 0) {
+            newOpacity = Math.max(Math.min(3 * rectCenter / windowHeight, 1), 0.9);
+            newSize += helper / 2; /* so the size will range from 1.5 to 3 */
+          } else {
+            newOpacity = helper;
+            newSize += helper / 2; /* so the size will range from 1.5 to 3 */
+          }
         }
+
         el.style.opacity = newOpacity;
         el.style.fontSize = "".concat(newSize, "em");
       });
@@ -2038,6 +2093,11 @@ var Exp = /*#__PURE__*/function (_Component) {
       }, "work experience"), (0, _preact.h)("button", {
         className: "button-style",
         onClick: function onClick() {
+          return _this2.scrollToElement("university-section");
+        }
+      }, "university contributions"), (0, _preact.h)("button", {
+        className: "button-style",
+        onClick: function onClick() {
           return _this2.scrollToElement("projects-section");
         }
       }, "related projects"), (0, _preact.h)("button", {
@@ -2053,6 +2113,14 @@ var Exp = /*#__PURE__*/function (_Component) {
       }, (0, _preact.h)("h2", null, "Work Experience"), _jobData.default.map(function (job, index) {
         return (0, _preact.h)(_Job.default, {
           job: job,
+          key: index
+        });
+      })), (0, _preact.h)("div", {
+        class: "university-section",
+        id: "university-section"
+      }, (0, _preact.h)("h2", null, "University Contributions and Leadership"), _universityContData.default.map(function (project, index) {
+        return (0, _preact.h)(_Project.default, {
+          project: project,
           key: index
         });
       })), (0, _preact.h)("div", {
@@ -2077,14 +2145,16 @@ var Exp = /*#__PURE__*/function (_Component) {
         class: "story-item"
       }, (0, _preact.h)("img", {
         src: _at_apple.default,
-        alt: "Lake Maggiore"
+        alt: "Apple Interns"
       }))));
     }
   }]);
   return Exp;
 }(_preact.Component);
 var _default = exports.default = Exp;
-},{"preact":"node_modules/preact/dist/preact.module.js","./home_styles.css":"src/home_styles.css","./exp_styles.css":"src/exp_styles.css","./jobData.json":"src/jobData.json","./Job":"src/Job.js","./Project":"src/Project.js","./projectData.json":"src/projectData.json","./moreExpData.json":"src/moreExpData.json","./animation.css":"src/animation.css","./button_styles.css":"src/button_styles.css","../images/at_apple.jpg":"images/at_apple.jpg","../images/nd_snow.jpg":"images/nd_snow.jpg"}],"images/peacock.jpg":[function(require,module,exports) {
+},{"preact":"node_modules/preact/dist/preact.module.js","./home_styles.css":"src/home_styles.css","./exp_styles.css":"src/exp_styles.css","./jobData.json":"src/jobData.json","./Job":"src/Job.js","./Project":"src/Project.js","./projectData.json":"src/projectData.json","./moreExpData.json":"src/moreExpData.json","./universityContData.json":"src/universityContData.json","./animation.css":"src/animation.css","./button_styles.css":"src/button_styles.css","../images/at_apple.jpg":"images/at_apple.jpg","../images/nd_snow.jpg":"images/nd_snow.jpg"}],"images/statue.jpg":[function(require,module,exports) {
+module.exports = "/statue.fc4feac6.jpg";
+},{}],"images/peacock.jpg":[function(require,module,exports) {
 module.exports = "/peacock.f9ebe1e2.jpg";
 },{}],"images/sorrento.jpg":[function(require,module,exports) {
 module.exports = "/sorrento.a4aa4271.jpg";
@@ -2098,6 +2168,7 @@ exports.default = void 0;
 var _preact = require("preact");
 require("./home_styles.css");
 require("./about_styles.css");
+var _statue = _interopRequireDefault(require("../images/statue.jpg"));
 var _peacock = _interopRequireDefault(require("../images/peacock.jpg"));
 var _jpw_headshot_blue = _interopRequireDefault(require("../images/jpw_headshot_blue.jpg"));
 var _sorrento = _interopRequireDefault(require("../images/sorrento.jpg"));
@@ -2106,45 +2177,59 @@ function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, _toPropertyKey(descriptor.key), descriptor); } }
 function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
-function _callSuper(t, o, e) { return o = _getPrototypeOf(o), _possibleConstructorReturn(t, _isNativeReflectConstruct() ? Reflect.construct(o, e || [], _getPrototypeOf(t).constructor) : o.apply(t, e)); }
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return _assertThisInitialized(self); }
-function _isNativeReflectConstruct() { try { var t = !Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); } catch (t) {} return (_isNativeReflectConstruct = function _isNativeReflectConstruct() { return !!t; })(); }
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) _setPrototypeOf(subClass, superClass); }
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return _assertThisInitialized(self); }
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
 function _defineProperty(obj, key, value) { key = _toPropertyKey(key); if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == _typeof(i) ? i : String(i); }
-function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != _typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
+function _toPropertyKey(arg) { var key = _toPrimitive(arg, "string"); return _typeof(key) === "symbol" ? key : String(key); }
+function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
 var Contact = /*#__PURE__*/function (_Component) {
   _inherits(Contact, _Component);
+  var _super = _createSuper(Contact);
   function Contact() {
     var _this;
     _classCallCheck(this, Contact);
     for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
       args[_key] = arguments[_key];
     }
-    _this = _callSuper(this, Contact, [].concat(args));
+    _this = _super.call.apply(_super, [this].concat(args));
     _defineProperty(_assertThisInitialized(_this), "handleScroll", function () {
       var newTextElements = Array.from(document.querySelectorAll(".story-text"));
       var windowHeight = window.innerHeight;
-      newTextElements.forEach(function (el) {
+      newTextElements.forEach(function (el, index) {
         var rect = el.getBoundingClientRect();
         var rectCenter = rect.top + rect.height / 2; /* center Y-coordinate of the element in the viewport */
+        //   let rectCenter = rect.top;
+        //   // For the first element, we consider only the top edge
+        //   // For other elements, we still rely on the center.
+        //   if(index !== 0){
+        //     rectCenter += rect.height / 4; /* center Y-coordinate of the element in the viewport */
+        //  }
 
         var newOpacity = 0;
         var newSize = 1.5; /* font size for smaller screens */
 
         // larger screens
         if (window.innerWidth > 961) {
-          newOpacity = Math.max(Math.min(2 * (windowHeight - rectCenter) / windowHeight, 1), 0);
-          newSize = 3 * newOpacity; /* so the size will range from 0 to 3 */
+          newOpacity = Math.max(Math.min(2 * (windowHeight - rectCenter) / windowHeight, 1), 0.8);
+          newSize += newOpacity / 1.5; /* so the size will range from 0 to 3 */
         }
         // smaller screens
         else {
-          newOpacity = Math.max(Math.min(3 * rectCenter / windowHeight, 1), 0.8);
-          newSize += newOpacity / 2; /* so the size will range from 1.5 to 3 */
+          var helper = Math.max(Math.min(3 * rectCenter / windowHeight, 1), 0.7);
+          if (index == 0) {
+            newOpacity = Math.max(Math.min(3 * rectCenter / windowHeight, 1), 0.9);
+            newSize += helper / 2; /* so the size will range from 1.5 to 3 */
+          } else {
+            newOpacity = helper;
+            newSize += helper / 2; /* so the size will range from 1.5 to 3 */
+          }
         }
+
         el.style.opacity = newOpacity;
         el.style.fontSize = "".concat(newSize, "em");
       });
@@ -2176,29 +2261,17 @@ var Contact = /*#__PURE__*/function (_Component) {
       }), (0, _preact.h)("h2", {
         class: "story-text"
       }, (0, _preact.h)("p", null, "Please reach out to me about any job opportunities you think I'd be a good fit for. You'll find my contact information below."))), (0, _preact.h)("div", {
-        class: "about-section"
-      }, (0, _preact.h)("div", {
-        class: "quick-look-section"
-      }, (0, _preact.h)("div", {
-        class: "quick-look-bullets"
-      }, (0, _preact.h)("h3", {
-        class: "quicklook-title"
-      }, (0, _preact.h)("u", null, "Celina Ryan")), (0, _preact.h)("h3", {
-        class: "quicklook-title"
-      }, "Contact me via ", " ", (0, _preact.h)("a", {
-        href: "mailto:cryan27@nd.edu"
-      }, "cryan27@nd.edu")), (0, _preact.h)("h3", {
-        class: "quicklook-title"
-      }, "Check out my", " ", (0, _preact.h)("a", {
-        href: "https://www.linkedin.com/in/celina-ryan-870641168/"
-      }, "LinkedIn")), (0, _preact.h)("div", {
-        class: "centered-frame"
-      })), (0, _preact.h)("figure", {
-        class: "frame-image"
+        class: "story-item"
       }, (0, _preact.h)("img", {
-        src: _jpw_headshot_blue.default,
-        alt: "photo of me"
-      })))), (0, _preact.h)("div", {
+        src: _statue.default,
+        alt: "Lake Maggiore, statue"
+      }), (0, _preact.h)("h2", {
+        class: "story-text"
+      }, (0, _preact.h)("p", null, "Contact me via ", " ", (0, _preact.h)("a", {
+        href: "mailto:cryan27@nd.edu"
+      }, "cryan27@nd.edu"), (0, _preact.h)("br", null), "Check out my", " ", (0, _preact.h)("a", {
+        href: "https://www.linkedin.com/in/celina-ryan-870641168/"
+      }, "LinkedIn")))), (0, _preact.h)("div", {
         class: "story-item"
       }, (0, _preact.h)("img", {
         src: _sorrento.default,
@@ -2209,7 +2282,7 @@ var Contact = /*#__PURE__*/function (_Component) {
   return Contact;
 }(_preact.Component);
 var _default = exports.default = Contact;
-},{"preact":"node_modules/preact/dist/preact.module.js","./home_styles.css":"src/home_styles.css","./about_styles.css":"src/about_styles.css","../images/peacock.jpg":"images/peacock.jpg","../images/jpw_headshot_blue.jpg":"images/jpw_headshot_blue.jpg","../images/sorrento.jpg":"images/sorrento.jpg"}],"src/Footer.js":[function(require,module,exports) {
+},{"preact":"node_modules/preact/dist/preact.module.js","./home_styles.css":"src/home_styles.css","./about_styles.css":"src/about_styles.css","../images/statue.jpg":"images/statue.jpg","../images/peacock.jpg":"images/peacock.jpg","../images/jpw_headshot_blue.jpg":"images/jpw_headshot_blue.jpg","../images/sorrento.jpg":"images/sorrento.jpg"}],"src/Footer.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -2343,7 +2416,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63798" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49225" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];

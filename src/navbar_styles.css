@@ -28,6 +28,7 @@
 
 .nav-links li:hover {
   background-color: white;
+  border-radius: 3px;
 }
 
 .nav-links li:hover a {
@@ -86,10 +87,12 @@ footer .navbar-container .frame {
 
   .nav-links a {
     font-size: 20px;
+    
   }
   .logo img{
     width: 80px;
   }
+
   .nav-item:first-child {
     margin-top: 0px; /* Adjust the distance between the first item and the logo/menu icon */
   }

@@ -28,6 +28,7 @@
 
 .nav-links li:hover {
   background-color: white;
+  border-radius: 3px;
 }
 
 .nav-links li:hover a {
@@ -86,10 +87,12 @@ footer .navbar-container .frame {
 
   .nav-links a {
     font-size: 20px;
+    
   }
   .logo img{
     width: 80px;
   }
+
   .nav-item:first-child {
     margin-top: 0px; /* Adjust the distance between the first item and the logo/menu icon */
   }
@@ -329,8 +332,8 @@ body {
   
 }
 
-.quicklook-title a:link,
-.quicklook-title a:visited,
+.story-item a:link,
+.story-item a:visited,
 .about-career-section a:link,
 .about-site-section a:link,
 .about-site-section a:visited,
@@ -340,7 +343,8 @@ body {
   text-decoration: none;
 }
 
-
+.story-item a:hover,
+.story-item a:active,
 .quicklook-title a:hover,
 .quicklook-title a:active,
 .about-career-section a:hover,
@@ -439,6 +443,7 @@ body {
 .experience-section,
 .projects-section,
 .skills-section,
+.university-section,
 .extracurricular-section {
   margin-bottom: 20px; /* Adding some space between sections */
   padding: 14px;

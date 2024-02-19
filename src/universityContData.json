@@ -1,0 +1,25 @@
+[
+    {
+      "projectName": "Research Assistant for DroneResponse",
+      "projectDates": "January 2024 – Present",
+      "projectDescription": [
+        "Took online courses for Angular and NodeJS in order to contribute to both the frontend and backend for the project.",
+        "DroneResponse is funded by the NSF and aims to automate drone Emergency Response using LLM, CV, and more."
+      ]
+    },
+    {
+        "projectName": "Engineering Tutor for ACES",
+        "projectDates": "February 2024 – Present",
+        "projectDescription": [
+            "Contributed to a peer-led academic support program--Academically Collaborative Engineering Spaces--enhancing study habits and mentoring ND engineers.",
+            "Tutored a student one-on-one for Data Structures, Systems Programming, and Logic Design."
+        ]
+      },
+      {
+        "projectName": "TA for Fundamentals of Computing",
+        "projectDates": "August 2022 – December 2023",
+        "projectDescription": [
+          "Oversaw labs and assisted office hours for a required class for Notre Dame CS majors; students learn C and Linux."
+        ]
+      }
+  ]

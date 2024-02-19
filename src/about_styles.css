@@ -68,8 +68,8 @@ body {
   
 }
 
-.quicklook-title a:link,
-.quicklook-title a:visited,
+.story-item a:link,
+.story-item a:visited,
 .about-career-section a:link,
 .about-site-section a:link,
 .about-site-section a:visited,
@@ -79,7 +79,8 @@ body {
   text-decoration: none;
 }
 
-
+.story-item a:hover,
+.story-item a:active,
 .quicklook-title a:hover,
 .quicklook-title a:active,
 .about-career-section a:hover,

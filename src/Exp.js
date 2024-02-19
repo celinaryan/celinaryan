@@ -6,6 +6,7 @@ import Job from "./Job";
 import Project from "./Project";
 import projectData from "./projectData.json";
 import moreExpData from "./moreExpData.json";
+import univData from "./universityContData.json"
 import "./animation.css";
 import "./button_styles.css";
 import apple_image from "../images/at_apple.jpg";
@@ -44,28 +45,39 @@ class Exp extends Component {
     );
     const windowHeight = window.innerHeight;
 
-    newTextElements.forEach((el) => {
+    newTextElements.forEach((el, index) => {
       const rect = el.getBoundingClientRect();
-      const rectCenter =
+      let rectCenter =
         rect.top +
         rect.height /
           2; /* center Y-coordinate of the element in the viewport */
+    //   let rectCenter = rect.top;
+    //   // For the first element, we consider only the top edge
+    //   // For other elements, we still rely on the center.
+    //   if(index !== 0){
+    //     rectCenter += rect.height / 4; /* center Y-coordinate of the element in the viewport */
+    //  }
 
       let newOpacity = 0;
       let newSize = 1.5; /* font size for smaller screens */
 
       // larger screens
       if (window.innerWidth > 961) {
-        newOpacity = Math.max(
-          Math.min((2 * (windowHeight - rectCenter)) / windowHeight, 1),
-          0
-        );
-        newSize = 3 * newOpacity; /* so the size will range from 0 to 3 */
+          newOpacity = Math.max(Math.min((2 * (windowHeight - rectCenter)) / windowHeight, 1), 0.8);
+          newSize += newOpacity / 1.5; /* so the size will range from 0 to 3 */
       }
       // smaller screens
       else {
-        newOpacity = Math.max(Math.min((3 * rectCenter) / windowHeight, 1), 0.8);
-        newSize += newOpacity / 2; /* so the size will range from 1.5 to 3 */
+        let helper = Math.max(Math.min((3 * rectCenter) / windowHeight, 1), 0.7);
+        if(index == 0){
+          newOpacity = Math.max(Math.min((3 * rectCenter) / windowHeight, 1), 0.9);
+          newSize += helper / 2; /* so the size will range from 1.5 to 3 */
+        }
+        else{
+          newOpacity = helper;
+          newSize += helper / 2; /* so the size will range from 1.5 to 3 */
+        }
+       
       }
 
       el.style.opacity = newOpacity;
@@ -95,6 +107,12 @@ class Exp extends Component {
             </button>
             <button
               className="button-style"
+              onClick={() => this.scrollToElement("university-section")}
+            >
+              university contributions
+            </button>
+            <button
+              className="button-style"
               onClick={() => this.scrollToElement("projects-section")}
             >
               related projects
@@ -112,6 +130,12 @@ class Exp extends Component {
             <h2>Work Experience</h2>
             {jobData.map((job, index) => (
               <Job job={job} key={index} />
+            ))}
+          </div>
+          <div class="university-section" id="university-section">
+            <h2>University Contributions and Leadership</h2>
+            {univData.map((project, index) => (
+              <Project project={project} key={index} />
             ))}
           </div>
           {/* Add a line, or use CSS for padding/margins */}
@@ -133,7 +157,7 @@ class Exp extends Component {
         </div>
         <div class="story-container">
           <div class="story-item">
-          <img src={apple_image} alt="Lake Maggiore" />
+          <img src={apple_image} alt="Apple Interns" />
           </div>
         </div>
       </div>
