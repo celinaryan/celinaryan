@@ -37,35 +37,16 @@ body {
 }
 
 .quick-look-section {
-  text-align: left;
-  padding: 2em 0;
+  text-align: left;;
   display: flex;
   align-items: center;
 }
 
-.figure {
-  margin-left: auto;
-}
+
 .quicklook-title {
   font-size: 1.2em;
   color: white;
   margin-bottom: 0.5em;
-}
-
-.about-header {
-  font-size: 1.5em;
-  color: white;
-  margin: 1em 0;
-  text-decoration: underline;
-}
-
-.about-me-section,
-.about-site-section,
-.about-career-section {
-  padding: 1em 0;
-  line-height: 1.7em;
-  font-size: 1em;
-  
 }
 
 .story-item a:link,
@@ -113,7 +94,7 @@ body {
 
 .quick-look-section {
   text-align: left;
-  padding: 2em 0;
+  margin:50px;
   display: flex;
   flex-direction: column; /* Stacks children vertically by default */
   align-items: center; /* Centers children horizontally */

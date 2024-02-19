@@ -13,12 +13,20 @@ body {
   margin: 0 15px;
 }
 
+.about-career-section,
+.about-site-section,
+.about-me-section,
+.experience-section,
 .resume-section,
 .skills-section {
   margin: 20px 0;
   padding: 20px;
   box-sizing: border-box;
 }
+.about-career-section,
+.about-site-section,
+.about-me-section,
+.about-section-p1,
 .skills-section {
   margin: 20px;
   padding: 20px;
@@ -27,6 +35,10 @@ body {
   border: 2px solid rgb(158, 202, 236);
   border-radius: 15px;
 }
+
+.about-career-section,
+.about-site-section,
+.about-me-section,
 .experience-section,
 .projects-section,
 .skills-section,
@@ -40,6 +52,9 @@ body {
   background-color: #3e7fbf;
 }
 
+.about-career-section,
+.about-site-section,
+.about-me-section,
 .job-experience,
 .project,
 .skill,
@@ -50,6 +65,9 @@ body {
   border: 1px solid white;
   margin-top: 10px;
 }
+.about-career-section:hover,
+.about-site-section:hover,
+.about-me-section:hover,
 .job-experience:hover,
 .project:hover,
 .skill:hover,
@@ -57,6 +75,7 @@ body {
   transform: scale(1.03); /* Enlarge the box to 103% of its original size */
   transition: transform 0.3s ease-in-out; /* Animation effect */
 }
+.about-header,
 .job-title,
 .project-title,
 .skill-category,
@@ -152,6 +171,7 @@ body {
   }
 }
 /* Assuming .job-title-container is the container you're referring to */
+.about-header,
 .project-heading,
 .job-title-container {
   display: flex;

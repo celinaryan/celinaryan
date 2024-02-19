@@ -1231,14 +1231,12 @@ var About = /*#__PURE__*/function (_Component) {
       }), (0, _preact.h)("h2", {
         class: "story-text"
       }, (0, _preact.h)("p", null, "Answering the classic question: \"so tell me a little about yourself\"... This page will tell you more about me, my goals, and why and how I made this website.")))), (0, _preact.h)("div", {
-        class: "about-section"
+        class: "about-section-p1"
       }, (0, _preact.h)("div", {
         class: "quick-look-section"
       }, (0, _preact.h)("div", {
         class: "quick-look-bullets"
       }, (0, _preact.h)("h3", {
-        class: "quicklook-title"
-      }, (0, _preact.h)("u", null, "Celina Ryan")), (0, _preact.h)("h3", {
         class: "quicklook-title"
       }, "Education: University of Notre Dame"), (0, _preact.h)("h3", {
         class: "quicklook-title"
@@ -2413,7 +2411,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53156" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54230" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];

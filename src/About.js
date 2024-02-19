@@ -1,4 +1,5 @@
 import { h, Component } from "preact";
+
 import "./about_styles.css";
 import "./home_styles.css";
 import hotel_at_lake_img from "../images/hotel_at_lake.jpg";
@@ -75,12 +76,9 @@ class About extends Component {
             </h2>
           </div>
         </div>
-        <div class="about-section">
+        <div class="about-section-p1">
           <div class="quick-look-section">
             <div class="quick-look-bullets">
-              <h3 class="quicklook-title">
-                <u>Celina Ryan</u>
-              </h3>
               <h3 class="quicklook-title">
                 Education: University of Notre Dame
               </h3>
@@ -174,6 +172,7 @@ class About extends Component {
         <img src={me_in_HI_img} alt="me in hawaii" />
         </div>
       </div>
+      
     );
   }
 }
