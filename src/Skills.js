@@ -82,7 +82,7 @@ class Skills extends Component {
               <p>
                 So what do I bring to the table? If it's Thanksgiving, I'm
                 bringing a mean mac and cheese, but more likely than not it's
-                not Thanksgiving. Scroll down to see my technical skills.
+                not Thanksgiving. Scroll down to see my technical skills and understanding.
               </p>
             </h2>
           </div>

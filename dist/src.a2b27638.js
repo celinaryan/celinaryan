@@ -1230,7 +1230,7 @@ var About = /*#__PURE__*/function (_Component) {
         alt: "Lake Maggiore, from the hotel"
       }), (0, _preact.h)("h2", {
         class: "story-text"
-      }, (0, _preact.h)("p", null, "Answering the classic question: \"so tell me a little about yourself\"... This page will tell you more about me, my goals, and why I made this website.")))), (0, _preact.h)("div", {
+      }, (0, _preact.h)("p", null, "Answering the classic question: \"so tell me a little about yourself\"... This page will tell you more about me, my goals, and why and how I made this website.")))), (0, _preact.h)("div", {
         class: "about-section"
       }, (0, _preact.h)("div", {
         class: "quick-look-section"
@@ -1261,13 +1261,13 @@ var About = /*#__PURE__*/function (_Component) {
         class: "about-site-section"
       }, (0, _preact.h)("h2", {
         class: "about-header"
-      }, "About this Website"), (0, _preact.h)("p", null, "It\u2019s been a goal of mine to make a personal website for a while now. Resumes nowadays are fairly cookie-cutter. I wanted this website to be a showcase of all of my skills, past projects, and jobs. I also wanted to show potential employers a bit more of my personality as it\u2019s hard to come across on a simple one page resume."), (0, _preact.h)("br", null), (0, _preact.h)("p", null, "This website was made with a JavaScript library called Preact. This semester (Fall 2023) I'm taking Modern Web Development, and I took advantage of new content from this class and some extra office hours with my teacher to make the website you see now. This past summer, I found that I really like iOS Development, and this past semester I found that I really like Web Development, too. For this website I used Preact as opposed to React because I liked how Preact is a bit closer to HTML-style code which I'm more familiar with. After working at Apple this past summer, I found myself excited to learn more about their web development process. One of my roommates this summer was working on one of the apple.com teams and I was always curious about it. If you look at the ", (0, _preact.h)("a", {
+      }, "About this Website"), (0, _preact.h)("p", null, "It\u2019s been a goal of mine to make a personal website for a while now. Resumes nowadays are fairly cookie-cutter. I wanted this website to be a showcase of all of my skills, past projects, and jobs. I also wanted to show potential employers a bit more of my personality as it\u2019s hard to come across on a simple one page resume."), (0, _preact.h)("br", null), (0, _preact.h)("p", null, "This website was made with a JavaScript library called Preact. During my Senior Fall (2023) semester, I took Modern Web Development, and I took advantage of new content from this class and some extra office hours with my teacher to make the website you see now. This past summer, I found that I really like iOS Development, and this past semester I found that I really like Web Development, too. For this website I used Preact as opposed to React because I liked how Preact is a bit closer to HTML-style code which I'm more familiar with."), (0, _preact.h)("br", null), (0, _preact.h)("p", null, "After working at Apple this past summer, I found myself excited to learn more about their web development process. One of my roommates this summer was working on one of the apple.com teams and I was always curious about it. If you look at the ", (0, _preact.h)("a", {
         href: "https://www.apple.com/airpods-pro/"
-      }, "Apple AirPods Pro Page"), " you'll find something that truly excited me about Apple -- not only do they make great technology products, they utilize their mastery in technology (in this case, their mastery of web development) to showcase their products. The scrolling images along with the expanding text on this website are inspired by what I've been intrigued by on the Apple website."), (0, _preact.h)("br", null), (0, _preact.h)("p", null, "Fun side note\u2014all of the photos on this website are taken by me\u2014either taken on my phone or taken on a little digital camera that I bring around everywhere. I wanted this website to be easy to navigate, to have aesthetically pleasing scrolling animations, and to be an accurate reflection of myself.", " ")), (0, _preact.h)("div", {
+      }, "Apple AirPods Pro Page"), " you'll find something that truly excited me about Apple -- not only do they make great technology products, they utilize their mastery in technology (in this case, their mastery of web development) to showcase their products. The scrolling images along with the expanding text on this website are inspired by what I've been intrigued by on the Apple website."), (0, _preact.h)("br", null), (0, _preact.h)("p", null, "I wanted this website to be easy to navigate, to have aesthetically pleasing scrolling animations, and to be an accurate reflection of myself.", " ")), (0, _preact.h)("div", {
         class: "about-career-section"
       }, (0, _preact.h)("h2", {
         class: "about-header"
-      }, "About my Career"), (0, _preact.h)("p", null, "I\u2019ve interned as a Data Scientist at CACI and as a Software Developer at Apple. Of these two disciplines, I found I really enjoy software development. I had a great mentor and team at Apple that really helped me dig into the realm of Software Engineering and iOS Development. I really love problem-solving which is why I think I want to pursue software development/engineering for a full-time position.", (0, _preact.h)("br", null)), (0, _preact.h)("p", null, (0, _preact.h)("br", null), "I graduate May 2024 and hope to start a full-time position by September 2024. I\u2019m a US citizen so I don\u2019t require sponsorship, and I\u2019m willing to relocate. I\u2019m not really picky where I end up, but I do have some preferences: Washington, D.C. area, Austin, Texas, California, New York City, or Denver, Colorado. If you think I\u2019d be a good fit for your company, head on over to the ", (0, _preact.h)("a", {
+      }, "About my Career"), (0, _preact.h)("p", null, "I\u2019ve interned as a Data Scientist at CACI and as a Software Developer at Apple. Of these two disciplines, I found I really enjoy software development. Even at CACI my favorite aspect of my job was the more software engineer aspect of Data Science--designing and optimizing solutions. Then at Apple I had a great mentor and team that really helped me dig into the realm of Software Engineering and iOS Development. I really love problem-solving which is why I want to pursue software development/engineering for a full-time position.", (0, _preact.h)("br", null)), (0, _preact.h)("p", null, (0, _preact.h)("br", null), "I graduate May 2024 and hope to start a full-time position by September 2024. I\u2019m a US citizen so I don\u2019t require sponsorship, and I\u2019m willing to relocate. I\u2019m not really picky where I end up, but I do have some preferences: Washington, D.C. area, Austin, Texas, California, New York City, or Denver, Colorado. If you think I\u2019d be a good fit for your company, head on over to the ", (0, _preact.h)("a", {
         href: "/contact"
       }, "Contact Me"), " section and reach out."))), (0, _preact.h)("div", {
         class: "story-item"
@@ -1283,7 +1283,7 @@ var _default = exports.default = About;
 },{"preact":"node_modules/preact/dist/preact.module.js","./about_styles.css":"src/about_styles.css","./home_styles.css":"src/home_styles.css","../images/hotel_at_lake.jpg":"images/hotel_at_lake.jpg","../images/me.jpg":"images/me.jpg","../images/jpw_headshot_blue.jpg":"images/jpw_headshot_blue.jpg"}],"src/skillsData.json":[function(require,module,exports) {
 module.exports = [{
   "skillCategory": "Coding Languages",
-  "skillsList": ["Python", "C", "C++", "Java", "MATLAB", "SQL", "NoSQL", "JavaScript, Preact, and React", "Swift", "Objective-C", "HTML and CSS"]
+  "skillsList": ["Python", "C", "C++", "Java", "MATLAB", "SQL", "NoSQL", "JavaScript, Preact, React, and Angular", "Swift", "Objective-C", "HTML and CSS"]
 }, {
   "skillCategory": "Assembly Languages",
   "skillsList": ["Verilog", "albacore", "ARM"]
@@ -1490,7 +1490,7 @@ var Skills = /*#__PURE__*/function (_Component) {
         alt: "boat"
       }), (0, _preact.h)("h2", {
         class: "story-text"
-      }, (0, _preact.h)("p", null, "So what do I bring to the table? If it's Thanksgiving, I'm bringing a mean mac and cheese, but more likely than not it's not Thanksgiving. Scroll down to see my technical skills.")))), (0, _preact.h)("div", {
+      }, (0, _preact.h)("p", null, "So what do I bring to the table? If it's Thanksgiving, I'm bringing a mean mac and cheese, but more likely than not it's not Thanksgiving. Scroll down to see my technical skills and understanding.")))), (0, _preact.h)("div", {
         class: "skills-section"
       }, _skillsData.default.map(function (skill, index) {
         return (0, _preact.h)(_Skill.default, {
@@ -1918,7 +1918,7 @@ module.exports = [{
   "projectLocation": "San Francisco, California",
   "projectDates": "July 2022",
   "projectTitle": "Young Fellow at DAC '22",
-  "projectDescription": ["Granted scholarship from Notre Dame and the Design Automation Conference Young Fellows board to travel to San Francisco, CA to participate in the 59th annual conference. (ML, AI, Computer Vision, and SW/HW Codesign)."]
+  "projectDescription": ["Granted scholarship from Notre Dame and the Design Automation Conference Young Fellows board to travel to San Francisco, CA to participate in the 59th annual conference. (ML, AI, Computer Vision, and HW/SW Codesign)."]
 }, {
   "projectName": "CS4Good",
   "institutionName": "University of Notre Dame",
@@ -2410,7 +2410,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52150" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52811" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
