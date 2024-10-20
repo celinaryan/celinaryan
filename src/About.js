@@ -145,9 +145,8 @@ class About extends Component {
             <h2 class="about-header">About my Career</h2>
             <p>
               I chose a career in software engineering/development because of my passion for problem-solving and constant learning.
-              I'm currently working at GEICO as a Software Engineer, mainly working on Web Development--frontend and backend. I'm a part of the Technology Development Program (TDP) 
-              which I really enjoy because I can take classes that help further my understanding and career while also working on a dynamic, tech-focused team.
-
+              I'm currently a Software Engineer at GEICO, specializing in both frontend and backend web development. I'm part of the Technology Development Program (TDP), 
+              which I really enjoy because it allows me to take courses that enhance my skills and career while also collaborating with my dynamic, tech-driven team.
               <br />
             </p>
             <p>
