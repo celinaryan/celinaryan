@@ -5,11 +5,12 @@
       "Python",
       "C",
       "C++",
+      "C#",
       "Java",
       "MATLAB",
       "SQL",
       "NoSQL",
-      "JavaScript, Preact, React, and Angular",
+      "JavaScript, Typescript, Preact, React, and Angular",
       "Swift",
       "Objective-C",
       "HTML and CSS"
@@ -26,7 +27,8 @@
       "AWS",
       "Tableau",
       "PowerBI",
-      "XCode"
+      "XCode",
+      "Visual Studio"
     ]
   },
   {
@@ -39,7 +41,14 @@
       "Computer Vision",
       "3D Modeling",
       "Graphics",
-      "iOS Development"
+      "iOS Development",
+      "Distributed Systems",
+      "API integration",
+      "Client-server communication",
+      "Remote Procedure Call",
+      "HW/SW Codesign",
+      "Bash",
+      "Linux"
     ]
   },
   {

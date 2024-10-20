@@ -88,7 +88,7 @@ class About extends Component {
               <h3 class="quicklook-title">
                 Minor: Engineering Corporate Practice
               </h3>
-              <h3 class="quicklook-title">Expected Graduation: May 2024</h3>
+              <h3 class="quicklook-title">Graduated: May 2024</h3>
               <div class="centered-frame"></div>
             </div>
             <figure class="frame-image">
@@ -98,14 +98,13 @@ class About extends Component {
           <div class="about-me-section">
             <h2 class="about-header">About Me</h2>
             <p>
-              If I had to describe myself in one word, it’d probably be
-              hyperactive. I live a fairly active lifestyle and love to learn. I
+              I live a fairly active lifestyle and love to learn. I
               enjoy just about any form of exercise: weight-lifting, yoga,
-              running, swimming, and hiking. As well as staying active I enjoy reading, normally several books
-              at a time. I’m also learning the guitar and the bass guitar. I’m an avid dog
-              lover; I have four dogs back home in Virginia. I’m a big fan of the great outdoors,
-              cooking, and coffee shops. So that’s what I keep myself busy with
-              when I’m not busy with school or work!
+              running, swimming, and hiking. In addition to staying active I enjoy reading, 
+              normally several books at a time. I’m also learning the guitar and the bass guitar. 
+              I’m an avid dog lover; I have four dogs back home in Virginia. I’m a big fan of the 
+              great outdoors, cooking, and coffee shops. So that’s what I keep myself busy with
+              when I’m not busy with work.
             </p>
           </div>
           <div class="about-site-section">
@@ -128,8 +127,7 @@ class About extends Component {
              </p>
             <br />
             <p>
-             After working at 
-            Apple this past summer, I found myself excited to learn more about their
+            After working at Apple in Summer 2023, I found myself excited to learn more about their
             web development process. One of my roommates this summer was working on one of the apple.com teams and I was always curious about it. 
             If you look at the <a href="https://www.apple.com/airpods-pro/">Apple AirPods Pro Page</a> you'll find something that truly excited me about Apple -- not only do they make 
             great technology products, they utilize their mastery in technology (in this case, 
@@ -146,24 +144,24 @@ class About extends Component {
           <div class="about-career-section">
             <h2 class="about-header">About my Career</h2>
             <p>
-              I’ve interned as a Data Scientist at CACI and as a Software
+              I chose a career in software engineering/development because of my passion for problem-solving and constant learning.
+              I'm currently working at GEICO as a Software Engineer, mainly working on Web Development--frontend and backend. I'm a part of the Technology Development Program (TDP) 
+              which I really enjoy because I can take classes that help further my understanding and career while also working on a dynamic, tech-focused team.
+
+              <br />
+            </p>
+            <p>
+            <br />As for past work experience, I’ve interned as a Data Scientist at CACI and as a Software
               Developer at Apple. Of these two disciplines, I found I really
               enjoy software development. Even at CACI my favorite aspect of my job was the more 
               software engineer aspect of Data Science--designing and optimizing solutions. 
               Then at Apple I had a great mentor and team
               that really helped me dig into the realm of Software Engineering
-              and iOS Development. I really love problem-solving which is why
-              I want to pursue software development/engineering for a
-              full-time position.
+              and iOS Development.
               <br />
             </p>
             <p>
-              <br />I graduate May 2024 and hope to start a full-time position
-              by September 2024. I’m a US citizen so I don’t require
-              sponsorship, and I’m willing to relocate. I’m not really picky
-              where I end up, but I do have some preferences: Washington, D.C.
-              area, Austin, Texas, California, New York City, or Denver,
-              Colorado. If you think I’d be a good fit for your company, head on
+            <br />If you'd like to chat, please head 
               over to the <a href="/contact">Contact Me</a> section and reach out.
             </p>
           </div>

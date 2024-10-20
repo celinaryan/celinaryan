@@ -1,5 +1,17 @@
 [
-  
+  {
+    "projectName": "Human AI-Collaborative Systems Final Project ",
+    "institutionName": "University of Notre Dame",
+    "projectLocation": "Notre Dame, Indiana",
+    "projectDates": "January 2024 – May 2024",
+    "projectTitle": "Meal Maestro: AI Recipe Generator",
+    "projectDescription": [
+      "Using Node.js, my team and I built out a web app that takes images of a user’s fridge and ingredients, into recipes.",
+      "Conducted needfinding research with the ultimate goal of finding a multimodal way for users to interact with AI.",
+      "Stored user context (personal preferences, requests, and persistently stored allergies, likes and dislikes) in the backend.",
+      "Used OpenAI’s API to send user input images, user context, and user specific requests. Fed OpenAI response into RecipeCard components for a streamlined Human-AI interaction."
+    ]
+  },
   {
     "projectName": "Modern Web Development Final Project",
     "institutionName": "University of Notre Dame",

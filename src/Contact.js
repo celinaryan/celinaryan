@@ -70,8 +70,8 @@ class Contact extends Component {
           <img src={peacock_img} alt="Lake Maggiore, peacock" />
             <h2 class="story-text">
               <p>
-                Please reach out to me about any job opportunities you think I'd
-                be a good fit for. You'll find my contact information below.
+                Please reach out to me about any opportunities you think I'd
+                be a good fit for.
               </p>
             </h2>
           </div>
@@ -79,8 +79,6 @@ class Contact extends Component {
           <img src={statue_img} alt="Lake Maggiore, statue" />
             <h2 class="story-text">
               <p>
-               Contact me via {" "}
-                <a href="mailto:cryan27@nd.edu">cryan27@nd.edu</a>
                 <br></br>Check out my{" "}
                   <a href="https://www.linkedin.com/in/celina-ryan-870641168/">
                     LinkedIn

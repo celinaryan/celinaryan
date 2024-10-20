@@ -67,11 +67,10 @@ class Home extends Component {
         <img src={lake_mag} alt="Lake Maggiore" />
           <h2 class="story-text">
             <p>
-              Welcome to my personal website. I'm Celina Ryan, a Computer
-              Science major at the University of Notre Dame. I made this website
-              to tell potential employers a bit more about myself beyond my
-              resume, to dig a bit deeper into web development, and to explain
-              what I hope to achieve with my career.
+              Welcome to my personal website. I'm Celina Ryan, a Software Engineer
+              that graduated in May 2024 with a B.S. degree in Computer Science at the 
+              University of Notre Dame. I created this website to showcase who I am beyond my resume, 
+              delve deeper into web development, and highlight what I aim to accomplish in my career.
             </p>
           </h2>
         </div>
@@ -79,9 +78,10 @@ class Home extends Component {
           <img src={hawaiiTreesImgSrc} alt="hawaii" />
           <h2 class="story-text">
             <p>
-              I'm currently a senior and graduating in May 2024. I'm looking for a full-time 
-              software development and/or engineering position. I’m open to exploring new places
-              and would be happy to start my career anywhere...
+              I'm currently in the Technology Development Program (TDP) at GEICO. I'm a Software 
+              Engineer on the Core Insurance Platform. As a TDP, half of my time is spent taking classes 
+              focused on SWE development and the other half of my time is spent contributing 
+              to projects on my team.
             </p>
           </h2>
         </div>
@@ -89,10 +89,8 @@ class Home extends Component {
         <img src={geis_img} alt="Geissenheim" />
           <h2 class="story-text">
             <p>
-              My areas of preference are Austin, New York City, Denver, the Bay area, and the 
-              Washington D.C. area, but I’m always open to exploring new places. So that's my spiel. 
-              You're welcome to look around this site and learn more about me. If you'd like to chat
-              about a potential position, please feel free to reach out.
+              You're welcome to look around this site and learn more about me. If you'd like to chat,
+              please feel free to reach out.
             </p>
           </h2>
         </div>

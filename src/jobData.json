@@ -1,13 +1,24 @@
 [
+{
+  "companyName": "GEICO",
+  "jobTitle": "Software Engineer I on Core Insurance Platform",
+  "jobDates": "July 2024 – Present",
+  "jobLocation": "Remote based in Washington, D.C.",
+  "jobDescription": [
+    "Developed new features within Apple’s internal apps with Xcode using Swift, SwiftUI, and Objective-C on the FDE Tools, Automation, and Robotics Team.",
+    "Added feature connected another internal Apple app to our team’s internal app. This streamlined the processes already in place which thus enhances the system validation process for devices tested by the FDE team.",
+    "Developed and integrated internal iOS frameworks for reusability of the code. The new feature is used by Apple engineers across worldwide locations for their validation efforts."
+  ]
+},
   {
     "companyName": "Apple",
     "jobTitle": "Software Development Intern on Field Design Engineering Team",
     "jobDates": "May 2023 – August 2023",
     "jobLocation": "Austin, Texas",
     "jobDescription": [
-      "Developed new features within Apple’s internal apps with Xcode using Swift, SwiftUI, and Objective-C on the FDE Tools, Automation, and Robotics Team.",
-      "Added feature connected another internal Apple app to our team’s internal app. This streamlined the processes already in place which thus enhances the system validation process for devices tested by the FDE team.",
-      "Developed and integrated internal iOS frameworks for reusability of the code. The new feature is used by Apple engineers across worldwide locations for their validation efforts."
+      "Participant in GEICO’s Technology Development Program (TDP) on the Software Engineering track. The TDP program entails structured classes on manager-requested languages or concepts. Half of a TDP engineer's time is spent on development and the other half is spent working on real projects with their assigned GEICO team.",
+      "Took classes in C#/.NET and Java. Spent further time understanding system design and Event Driven Architecture.",
+      "Contributed to API integration and UI functionality on the CIP team. CIP is a new GEICO organization focused on making GEICO not only a competitive insurance company, but also a company that prioritizes tech innovation."
     ]
   },
   {

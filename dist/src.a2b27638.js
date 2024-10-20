@@ -1094,21 +1094,21 @@ var Home = /*#__PURE__*/function (_Component) {
         alt: "Lake Maggiore"
       }), (0, _preact.h)("h2", {
         class: "story-text"
-      }, (0, _preact.h)("p", null, "Welcome to my personal website. I'm Celina Ryan, a Computer Science major at the University of Notre Dame. I made this website to tell potential employers a bit more about myself beyond my resume, to dig a bit deeper into web development, and to explain what I hope to achieve with my career."))), (0, _preact.h)("div", {
+      }, (0, _preact.h)("p", null, "Welcome to my personal website. I'm Celina Ryan, a Software Engineer that graduated in May 2024 with a B.S. degree in Computer Science at the University of Notre Dame. I created this website to showcase who I am beyond my resume, delve deeper into web development, and highlight what I aim to accomplish in my career."))), (0, _preact.h)("div", {
         class: "story-item"
       }, (0, _preact.h)("img", {
         src: _hawaii_trees.default,
         alt: "hawaii"
       }), (0, _preact.h)("h2", {
         class: "story-text"
-      }, (0, _preact.h)("p", null, "I'm currently a senior and graduating in May 2024. I'm looking for a full-time software development and/or engineering position. I\u2019m open to exploring new places and would be happy to start my career anywhere..."))), (0, _preact.h)("div", {
+      }, (0, _preact.h)("p", null, "I'm currently in the Technology Development Program (TDP) at GEICO. I'm a Software Engineer on the Core Insurance Platform. As a TDP, half of my time is spent taking classes focused on SWE development and the other half of my time is spent contributing to projects on my team."))), (0, _preact.h)("div", {
         class: "story-item"
       }, (0, _preact.h)("img", {
         src: _geis.default,
         alt: "Geissenheim"
       }), (0, _preact.h)("h2", {
         class: "story-text"
-      }, (0, _preact.h)("p", null, "My areas of preference are Austin, New York City, Denver, the Bay area, and the Washington D.C. area, but I\u2019m always open to exploring new places. So that's my spiel. You're welcome to look around this site and learn more about me. If you'd like to chat about a potential position, please feel free to reach out."))), (0, _preact.h)("div", {
+      }, (0, _preact.h)("p", null, "You're welcome to look around this site and learn more about me. If you'd like to chat, please feel free to reach out."))), (0, _preact.h)("div", {
         class: "story-item"
       }, (0, _preact.h)("img", {
         src: _amalfi_boat.default,
@@ -1244,7 +1244,7 @@ var About = /*#__PURE__*/function (_Component) {
         class: "quicklook-title"
       }, "Minor: Engineering Corporate Practice"), (0, _preact.h)("h3", {
         class: "quicklook-title"
-      }, "Expected Graduation: May 2024"), (0, _preact.h)("div", {
+      }, "Graduated: May 2024"), (0, _preact.h)("div", {
         class: "centered-frame"
       })), (0, _preact.h)("figure", {
         class: "frame-image"
@@ -1255,17 +1255,17 @@ var About = /*#__PURE__*/function (_Component) {
         class: "about-me-section"
       }, (0, _preact.h)("h2", {
         class: "about-header"
-      }, "About Me"), (0, _preact.h)("p", null, "If I had to describe myself in one word, it\u2019d probably be hyperactive. I live a fairly active lifestyle and love to learn. I enjoy just about any form of exercise: weight-lifting, yoga, running, swimming, and hiking. As well as staying active I enjoy reading, normally several books at a time. I\u2019m also learning the guitar and the bass guitar. I\u2019m an avid dog lover; I have four dogs back home in Virginia. I\u2019m a big fan of the great outdoors, cooking, and coffee shops. So that\u2019s what I keep myself busy with when I\u2019m not busy with school or work!")), (0, _preact.h)("div", {
+      }, "About Me"), (0, _preact.h)("p", null, "I live a fairly active lifestyle and love to learn. I enjoy just about any form of exercise: weight-lifting, yoga, running, swimming, and hiking. In addition to staying active I enjoy reading, normally several books at a time. I\u2019m also learning the guitar and the bass guitar. I\u2019m an avid dog lover; I have four dogs back home in Virginia. I\u2019m a big fan of the great outdoors, cooking, and coffee shops. So that\u2019s what I keep myself busy with when I\u2019m not busy with work.")), (0, _preact.h)("div", {
         class: "about-site-section"
       }, (0, _preact.h)("h2", {
         class: "about-header"
-      }, "About this Website"), (0, _preact.h)("p", null, "It\u2019s been a goal of mine to make a personal website for a while now. Resumes nowadays are fairly cookie-cutter. I wanted this website to be a showcase of all of my skills, past projects, and jobs. I also wanted to show potential employers a bit more of my personality as it\u2019s hard to come across on a simple one page resume."), (0, _preact.h)("br", null), (0, _preact.h)("p", null, "This website was made with a JavaScript library called Preact. During my Senior Fall (2023) semester, I took Modern Web Development, and I took advantage of new content from this class and some extra office hours with my teacher to make the website you see now. This past summer, I found that I really like iOS Development, and this past semester I found that I really like Web Development, too. For this website I used Preact as opposed to React because I liked how Preact is a bit closer to HTML-style code which I'm more familiar with."), (0, _preact.h)("br", null), (0, _preact.h)("p", null, "After working at Apple this past summer, I found myself excited to learn more about their web development process. One of my roommates this summer was working on one of the apple.com teams and I was always curious about it. If you look at the ", (0, _preact.h)("a", {
+      }, "About this Website"), (0, _preact.h)("p", null, "It\u2019s been a goal of mine to make a personal website for a while now. Resumes nowadays are fairly cookie-cutter. I wanted this website to be a showcase of all of my skills, past projects, and jobs. I also wanted to show potential employers a bit more of my personality as it\u2019s hard to come across on a simple one page resume."), (0, _preact.h)("br", null), (0, _preact.h)("p", null, "This website was made with a JavaScript library called Preact. During my Senior Fall (2023) semester, I took Modern Web Development, and I took advantage of new content from this class and some extra office hours with my teacher to make the website you see now. This past summer, I found that I really like iOS Development, and this past semester I found that I really like Web Development, too. For this website I used Preact as opposed to React because I liked how Preact is a bit closer to HTML-style code which I'm more familiar with."), (0, _preact.h)("br", null), (0, _preact.h)("p", null, "After working at Apple in Summer 2023, I found myself excited to learn more about their web development process. One of my roommates this summer was working on one of the apple.com teams and I was always curious about it. If you look at the ", (0, _preact.h)("a", {
         href: "https://www.apple.com/airpods-pro/"
       }, "Apple AirPods Pro Page"), " you'll find something that truly excited me about Apple -- not only do they make great technology products, they utilize their mastery in technology (in this case, their mastery of web development) to showcase their products. The scrolling images along with the expanding text on this website are inspired by what I've been intrigued by on the Apple website."), (0, _preact.h)("br", null), (0, _preact.h)("p", null, "I wanted this website to be easy to navigate, to have aesthetically pleasing scrolling animations, and to be an accurate reflection of myself.", " ")), (0, _preact.h)("div", {
         class: "about-career-section"
       }, (0, _preact.h)("h2", {
         class: "about-header"
-      }, "About my Career"), (0, _preact.h)("p", null, "I\u2019ve interned as a Data Scientist at CACI and as a Software Developer at Apple. Of these two disciplines, I found I really enjoy software development. Even at CACI my favorite aspect of my job was the more software engineer aspect of Data Science--designing and optimizing solutions. Then at Apple I had a great mentor and team that really helped me dig into the realm of Software Engineering and iOS Development. I really love problem-solving which is why I want to pursue software development/engineering for a full-time position.", (0, _preact.h)("br", null)), (0, _preact.h)("p", null, (0, _preact.h)("br", null), "I graduate May 2024 and hope to start a full-time position by September 2024. I\u2019m a US citizen so I don\u2019t require sponsorship, and I\u2019m willing to relocate. I\u2019m not really picky where I end up, but I do have some preferences: Washington, D.C. area, Austin, Texas, California, New York City, or Denver, Colorado. If you think I\u2019d be a good fit for your company, head on over to the ", (0, _preact.h)("a", {
+      }, "About my Career"), (0, _preact.h)("p", null, "I chose a career in software engineering/development because of my passion for problem-solving and constant learning. I'm currently working at GEICO as a Software Engineer, mainly working on Web Development--frontend and backend. I'm a part of the Technology Development Program (TDP) which I really enjoy because I can take classes that help further my understanding and career while also working on a dynamic, tech-focused team.", (0, _preact.h)("br", null)), (0, _preact.h)("p", null, (0, _preact.h)("br", null), "As for past work experience, I\u2019ve interned as a Data Scientist at CACI and as a Software Developer at Apple. Of these two disciplines, I found I really enjoy software development. Even at CACI my favorite aspect of my job was the more software engineer aspect of Data Science--designing and optimizing solutions. Then at Apple I had a great mentor and team that really helped me dig into the realm of Software Engineering and iOS Development.", (0, _preact.h)("br", null)), (0, _preact.h)("p", null, (0, _preact.h)("br", null), "If you'd like to chat, please head over to the ", (0, _preact.h)("a", {
         href: "/contact"
       }, "Contact Me"), " section and reach out."))), (0, _preact.h)("div", {
         class: "story-item"
@@ -1281,16 +1281,16 @@ var _default = exports.default = About;
 },{"preact":"node_modules/preact/dist/preact.module.js","./about_styles.css":"src/about_styles.css","./home_styles.css":"src/home_styles.css","../images/hotel_at_lake.jpg":"images/hotel_at_lake.jpg","../images/me.jpg":"images/me.jpg","../images/jpw_headshot_blue.jpg":"images/jpw_headshot_blue.jpg"}],"src/skillsData.json":[function(require,module,exports) {
 module.exports = [{
   "skillCategory": "Coding Languages",
-  "skillsList": ["Python", "C", "C++", "Java", "MATLAB", "SQL", "NoSQL", "JavaScript, Preact, React, and Angular", "Swift", "Objective-C", "HTML and CSS"]
+  "skillsList": ["Python", "C", "C++", "C#", "Java", "MATLAB", "SQL", "NoSQL", "JavaScript, Typescript, Preact, React, and Angular", "Swift", "Objective-C", "HTML and CSS"]
 }, {
   "skillCategory": "Assembly Languages",
   "skillsList": ["Verilog", "albacore", "ARM"]
 }, {
   "skillCategory": "Industry Specific Software",
-  "skillsList": ["UiPath (Robotic Process Automation)", "AWS", "Tableau", "PowerBI", "XCode"]
+  "skillsList": ["UiPath (Robotic Process Automation)", "AWS", "Tableau", "PowerBI", "XCode", "Visual Studio"]
 }, {
   "skillCategory": "Industry Understanding",
-  "skillsList": ["Natural Language Processing", "Artificial Intelligence", "Machine Learning", "Data Lakes", "Computer Vision", "3D Modeling", "Graphics", "iOS Development"]
+  "skillsList": ["Natural Language Processing", "Artificial Intelligence", "Machine Learning", "Data Lakes", "Computer Vision", "3D Modeling", "Graphics", "iOS Development", "Distributed Systems", "API integration", "Client-server communication", "Remote Procedure Call", "HW/SW Codesign", "Bash", "Linux"]
 }, {
   "skillCategory": "Relevant Courses",
   "skillsList": ["Discrete Mathematics — CSE 20110", "Fundamentals of Computing — CSE 20311", "Data Structures — CSE 20312", "Logic Design — CSE 20221 ", "Systems Programming — CSE 20289", "Computer Architecture — CSE 30321", "Operating System Principles — CSE 30341", "Compilers and Language Design — CSE 40243", "Data Science — CSE 40647", "Linear Algebra/Diff Eq — MATH 20580", "Generative AI in the Wild — CDT 30750", "Distributed Systems — CSE 40771", "Theory of Computing — CSE 30151", "Programming Paradigms — CSE 30332", "Design/Analysis of Algorithms — CSE 40113", "Probability and Statistics — ACMS 30440", "Modern Web Development — CSE 40693", "Human-AI Collaborative Systems — CSE 40748", "Computer Networks — CSE 30264"]
@@ -1514,11 +1514,17 @@ module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
 },{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/jobData.json":[function(require,module,exports) {
 module.exports = [{
+  "companyName": "GEICO",
+  "jobTitle": "Software Engineer I on Core Insurance Platform",
+  "jobDates": "July 2024 – Present",
+  "jobLocation": "Remote based in Washington, D.C.",
+  "jobDescription": ["Developed new features within Apple’s internal apps with Xcode using Swift, SwiftUI, and Objective-C on the FDE Tools, Automation, and Robotics Team.", "Added feature connected another internal Apple app to our team’s internal app. This streamlined the processes already in place which thus enhances the system validation process for devices tested by the FDE team.", "Developed and integrated internal iOS frameworks for reusability of the code. The new feature is used by Apple engineers across worldwide locations for their validation efforts."]
+}, {
   "companyName": "Apple",
   "jobTitle": "Software Development Intern on Field Design Engineering Team",
   "jobDates": "May 2023 – August 2023",
   "jobLocation": "Austin, Texas",
-  "jobDescription": ["Developed new features within Apple’s internal apps with Xcode using Swift, SwiftUI, and Objective-C on the FDE Tools, Automation, and Robotics Team.", "Added feature connected another internal Apple app to our team’s internal app. This streamlined the processes already in place which thus enhances the system validation process for devices tested by the FDE team.", "Developed and integrated internal iOS frameworks for reusability of the code. The new feature is used by Apple engineers across worldwide locations for their validation efforts."]
+  "jobDescription": ["Participant in GEICO’s Technology Development Program (TDP) on the Software Engineering track. The TDP program entails structured classes on manager-requested languages or concepts. Half of a TDP engineer's time is spent on development and the other half is spent working on real projects with their assigned GEICO team.", "Took classes in C#/.NET and Java. Spent further time understanding system design and Event Driven Architecture.", "Contributed to API integration and UI functionality on the CIP team. CIP is a new GEICO organization focused on making GEICO not only a competitive insurance company, but also a company that prioritizes tech innovation."]
 }, {
   "companyName": "CACI International",
   "jobTitle": "Data Science Intern on Digital Transformations Team",
@@ -1867,6 +1873,13 @@ function Project(_ref) {
 }
 },{"preact":"node_modules/preact/dist/preact.module.js","preact/hooks":"node_modules/preact/hooks/dist/hooks.module.js"}],"src/projectData.json":[function(require,module,exports) {
 module.exports = [{
+  "projectName": "Human AI-Collaborative Systems Final Project ",
+  "institutionName": "University of Notre Dame",
+  "projectLocation": "Notre Dame, Indiana",
+  "projectDates": "January 2024 – May 2024",
+  "projectTitle": "Meal Maestro: AI Recipe Generator",
+  "projectDescription": ["Using Node.js, my team and I built out a web app that takes images of a user’s fridge and ingredients, into recipes.", "Conducted needfinding research with the ultimate goal of finding a multimodal way for users to interact with AI.", "Stored user context (personal preferences, requests, and persistently stored allergies, likes and dislikes) in the backend.", "Used OpenAI’s API to send user input images, user context, and user specific requests. Fed OpenAI response into RecipeCard components for a streamlined Human-AI interaction."]
+}, {
   "projectName": "Modern Web Development Final Project",
   "institutionName": "University of Notre Dame",
   "projectLocation": "Notre Dame, Indiana",
@@ -1931,11 +1944,11 @@ module.exports = [{
 },{}],"src/universityContData.json":[function(require,module,exports) {
 module.exports = [{
   "projectName": "Research Assistant for DroneResponse",
-  "projectDates": "January 2024 – Present",
+  "projectDates": "January 2024 – May 2024",
   "projectDescription": ["Took online courses for Angular and NodeJS in order to contribute to both the frontend and backend for the project.", "DroneResponse is funded by the NSF and aims to automate drone Emergency Response using LLM, CV, and more."]
 }, {
   "projectName": "Engineering Tutor for ACES",
-  "projectDates": "February 2024 – Present",
+  "projectDates": "February 2024 – May 2024",
   "projectDescription": ["Contributed to a peer-led academic support program--Academically Collaborative Engineering Spaces--enhancing study habits and mentoring ND engineers.", "Tutored a student one-on-one for Data Structures, Systems Programming, and Logic Design."]
 }, {
   "projectName": "TA for Fundamentals of Computing",
@@ -2255,16 +2268,14 @@ var Contact = /*#__PURE__*/function (_Component) {
         alt: "Lake Maggiore, peacock"
       }), (0, _preact.h)("h2", {
         class: "story-text"
-      }, (0, _preact.h)("p", null, "Please reach out to me about any job opportunities you think I'd be a good fit for. You'll find my contact information below."))), (0, _preact.h)("div", {
+      }, (0, _preact.h)("p", null, "Please reach out to me about any opportunities you think I'd be a good fit for."))), (0, _preact.h)("div", {
         class: "story-item"
       }, (0, _preact.h)("img", {
         src: _statue.default,
         alt: "Lake Maggiore, statue"
       }), (0, _preact.h)("h2", {
         class: "story-text"
-      }, (0, _preact.h)("p", null, "Contact me via ", " ", (0, _preact.h)("a", {
-        href: "mailto:cryan27@nd.edu"
-      }, "cryan27@nd.edu"), (0, _preact.h)("br", null), "Check out my", " ", (0, _preact.h)("a", {
+      }, (0, _preact.h)("p", null, (0, _preact.h)("br", null), "Check out my", " ", (0, _preact.h)("a", {
         href: "https://www.linkedin.com/in/celina-ryan-870641168/"
       }, "LinkedIn")))), (0, _preact.h)("div", {
         class: "story-item"
@@ -2411,7 +2422,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61777" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64823" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
